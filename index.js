@@ -1,0 +1,534 @@
+
+'use strict';
+const express = require('express');
+const bodyParser = require('body-parser');
+const timeout = require('connect-timeout');
+const fs = require('fs')
+const cors = require('cors');
+var http = require('http');
+var axios = require('axios');
+const app = express();
+const device = require('express-device');
+const requestIp = require('request-ip');
+const session = require('express-session');
+require('./app/cors/global');
+var cheerio = require("cheerio");
+app.use(timeout(5 * 60 * 1000));
+app.use(bodyParser.json({ type: 'application/json' }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
+app.set("views", "./app/views");
+app.use(express.static('public'));
+const path = require('path');
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: global.config.keyJWT,
+    cookie: { maxAge: 24 * 60 * 60 * 1000 }
+}));
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, path.join(__dirname, '/public/uploads'))
+    },
+    filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now() + '-' + file.originalname
+        cb(null, uniqueSuffix)
+    }
+})
+
+const upload = multer({ storage: storage })
+var server = http.createServer(app);
+
+//config update file
+/** @namespace global.config */
+app.use(cors(global.config.cors));
+//get device name
+app.use(device.capture());
+//get IP device
+app.use(requestIp.mw());
+app.use(express.static(__dirname + '/public/admin'));
+
+app.use(function (err, req, res, next) {
+    return res.send({ status: false, msg: "error", code: 700, data: err });
+});
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.locals.token = req.session.token;
+    next();
+});
+const delay = (ms) =>
+    new Promise((resolve) => setTimeout(() => resolve(), ms));
+
+const url_dich = 'https://api-edge.cognitive.microsofttranslator.com/translate?from=ja&to=en&api-version=3.0&includeSentenceLength=true' //vi
+app.all('/client/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
+
+    let dataReponse = null;
+    let dataError = null;
+    try {
+
+        let act = request.params.act.replace(/[^a-z0-9\_\-]/i, '').toLowerCase();
+        let mod = (request.mod) ? request.mod : request.query.mod;
+        let nameRole = request.body.userInfo ? request.body.userInfo.level : '';
+
+        let authMethod = global.authMethod.check_function(request.method, act, mod, nameRole);
+        /** @namespace request.files */
+
+        request.body.files = request.files ? request.files : '';
+        if (authMethod) {
+
+            let controller = require('./app/modules/' + act + '/controller');
+            if ((controller) && (controller[mod])) {
+                let query = request.body;
+                query.param = request.query;
+                query.clientIp = request.clientIp;
+                query.device = request.device;
+                try {
+                    dataReponse = await controller[mod](query);
+
+                } catch (ex) {
+                    console.log(ex);
+                    dataReponse = { status: false, msg: "error", code: 700, data: [] };
+                }
+            } else {
+                dataReponse = { status: false, msg: "error", code: 703, data: [] };
+            }
+        } else {
+            dataReponse = { status: false, msg: "error", code: 701, data: [] };
+        }
+    } catch (sys) {
+        console.log(sys)
+        dataReponse = { status: false, msg: "error", code: 700, data: sys };
+    }
+    response.send(dataReponse)
+});
+app.all('/admin/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
+
+    let dataReponse = null;
+    let dataError = null;
+    try {
+        let act = request.params.act.replace(/[^a-z0-9\_\-]/i, '').toLowerCase();
+        let mod = (request.mod) ? request.mod : request.query.mod;
+        let nameRole = request.body.userInfo ? request.body.userInfo.level : '';
+        let authMethod = global.authMethod.check_function(request.method, act, mod, nameRole);
+        /** @namespace request.files */
+        request.body.files = request.files ? request.files : '';
+        if (authMethod) {
+            let controller = require('./app/admin/' + act + '/controller');
+            if ((controller) && (controller[mod])) {
+                let query = request.body;
+                query.param = request.query;
+                query.clientIp = request.clientIp;
+                query.device = request.device;
+                try {
+                    dataReponse = await controller[mod](query);
+
+                } catch (ex) {
+                    console.log(ex);
+                    dataReponse = { status: false, msg: "error", code: 700, data: [] };
+                }
+            } else {
+                dataReponse = { status: false, msg: "error", code: 703, data: [] };
+            }
+        } else {
+            dataReponse = { status: false, msg: "error", code: 701, data: [] };
+        }
+    } catch (sys) {
+        console.log(sys)
+        dataReponse = { status: false, msg: "error", code: 700, data: sys };
+    }
+    response.send(dataReponse)
+});
+app.post('/apiupload', [middleware.verifyToken, middleware.checkadmin], upload.single('single'), async function (request, response) {
+    let dataReponse;
+
+    try {
+        const file = request.file
+        if (!file) {
+            return dataReponse = { status: false, msg: "error", code: 700, data: 'sys' };
+        }
+        let url = 'http://157.230.27.124:2021/uploads/';
+
+        dataReponse = {
+            status: true,
+            msg: "success",
+            code: 0,
+            data: url + file.filename
+        }
+    } catch (sys) {
+        console.log(sys)
+        dataReponse = { status: false, msg: "error", code: 700, data: sys };
+    }
+    response.send(dataReponse)
+});
+app.post('/getinfor_file', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
+
+    let { name } = req.body;
+    if (name) {
+        if (!fs.existsSync(`./output/json/${name}.json`)) {
+            return res.json({
+                status: false,
+                msg: "file không tồn tại",
+                code: 700, data: []
+            })
+        }
+        const rawData = fs.readFileSync(`./output/json/${name}.json`);
+        const data = JSON.parse(rawData);
+        res.json({
+            status: true,
+            msg: "success",
+            code: 0,
+            data: data
+        })
+    } else {
+        res.json(
+            { status: false, msg: "file khong ton tai", code: 700, data: [] }
+        )
+    }
+
+})
+
+
+app.get('/update_date_build', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
+    var currentDate = new Date();
+    // Lấy ngày, tháng và năm hiện tại
+    var day = currentDate.getDate(); // Ngày
+    var month = currentDate.getMonth() + 1; // Tháng (lưu ý: tháng bắt đầu từ 0, nên cần cộng thêm 1)
+    var year = currentDate.getFullYear(); // Năm
+    // so sánh vs ngày update gần nhất. nếu ngày update gần nhất trùng thì chỉ cần update. nếu ngày cũ rồi thì  update lại toàn bộ
+    if (!fs.existsSync(`./output/update/update.json`)) {
+        return res.json({
+            status: false,
+            msg: "file không tồn tại",
+            code: 700, data: []
+        })
+    }
+    const rawData = fs.readFileSync(`./output/update/update.json`);
+    const data_last_update = JSON.parse(rawData);
+    if (year != data_last_update.year || month != data_last_update.month || day != data_last_update.day) {
+        await db('building2').update('status_crawl', 'process')
+        let new_update = {
+            "day": day,
+            "month": month,
+            "year": year
+
+        }
+        const exp4 = JSON.stringify(new_update, null, 4);
+        fs.writeFileSync(`./output/update/update.json`, exp4)
+        await delay(1000)
+    }
+       
+
+    let list = await global.db('building2').select("id", 'detail_id').where({
+        status: 1,
+        status_crawl: 'process'
+
+    }).paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+    if (list.data.length > 0) {
+        res.json({
+            status: true,
+            msg: "success",
+            code: 0,
+            data: list
+        })
+
+    } else {
+        res.json({
+            status: true,
+            msg: "success",
+            code: 0,
+            data: [],
+            done: true
+        })
+    }
+
+})
+
+async function dichchu(a, Bearer) {
+    try {
+        let b = await axios.post(url_dich, a, {
+            headers: {
+                'Content-Type': 'application/json',
+                authorization: 'Bearer ' + Bearer
+            }
+        })
+        if (b.status == 200) {
+            let text = b.data ?? false
+            return text
+        } else {
+            return false
+        }
+    } catch (e) {
+        return false
+    }
+
+
+}
+
+app.get('/need_update/:id', async (req, res) => {
+    let id = req.params.id;
+    if (!id) return res.json({
+        status: false,
+        data: [],
+        code: 450,
+        msg: "error",
+    })
+    if (id == 'all') {
+        await db('building2').update('status_crawl', 'process')
+    } else {
+        await db('building2').update('status_crawl', 'process').where('detail_id', id)
+    }
+    return res.json({
+        status: true,
+        msg: "success",
+        code: 0,
+        data: [],
+    })
+
+})
+
+app.post('/getdetail', async (req, res) => {
+    let { url, cookie, id } = req.body;
+    if(!url || !cookie ||!id){
+        return res.json({
+            status: false,
+            code: 700,
+            err: "Lỗi hệ thống"
+        })
+    }
+    let check_id = await db('building2').select('*').where({
+        'detail_id': id,
+
+    }).first()
+    if (check_id) {
+        res.json({
+            data: [],
+            status: true,
+            msg: "success",
+            code: 0,
+            pass: true
+        })
+    }
+    let html = await axios.get(url, {
+        headers: {
+            "cookie": cookie,
+            'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69',
+            "origin": 'https://www.realnetpro.com',
+            "referer": url
+        }
+    })
+    if (html.data == 'この部屋の情報は入居中であるか公開されていません。') {
+        await db('building2').delete().where('detail_id', id)
+        return res.json({
+            status: true,
+            data: [],
+            delete: true,
+            pass:true
+
+        })
+    }
+    if (html.data) {
+        let $ = cheerio.load(html.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true })
+        let listimage = $('.photo_list_box .image_list img')
+        let imageavt = ""
+        let a = $("#maparea2")
+        let vido = a.attr('src')
+        let list_img_url = ''
+        for (let img of listimage) {
+            let url = $(img).attr('src')
+            if (!imageavt) {
+                imageavt = url
+            }
+            list_img_url = list_img_url + ',' + url
+        }
+        let infor = $('.room_info .basic_table tr')
+        let list_infor = []
+        for (let el of infor) {
+            let key = $(el).find('td.td_m').text()
+            if (key) {
+                let value = $(el).find('td:nth-child(2)').text()
+                if (value) {
+                    list_infor.push({
+                        key: key.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' '),
+                        value: value.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' ')
+                    })
+                }
+            }
+        }
+
+        let token = await axios.get('https://edge.microsoft.com/translate/auth', {
+            headers: { "content-type": "text/plain" }
+        })
+        let Bearer = ''
+        if (token.status == 200) {
+            Bearer = token.data
+        }
+        let arr = list_infor.map(e => {
+            return {
+                Text: e.value
+            }
+        })
+
+        let b = await dichchu(arr, Bearer)
+
+        list_infor = list_infor.map((e, i) => {
+            let el_en = b[i].translations[0].text
+            e.value2 = el_en
+            return e
+        })
+
+        res.json({
+            data: {
+                list_img_url,
+                list_infor,
+                imageavt,
+                vido
+            },
+            status: true,
+            msg: "success",
+            code: 0,
+
+        })
+    } else {
+
+        res.json({
+            status: false,
+            code: 700,
+            err: "Lỗi hệ thống"
+        })
+    }
+
+})
+app.post('/getlist_home', async (req, res) => {
+
+    let { url, name, cookie, pagemin, pagemax } = req.body;
+    if (!url || !cookie || !pagemin || !pagemax) {
+        return res.json({
+            status: false, msg: "error", code: 770, data: []
+        })
+    }
+    name = name ?? 'file_crawl'
+    try {
+        let arr = []
+        for (let i = pagemin; i <= pagemax; i++) {
+            let f = await axios.get('https://www.realnetpro.com/main.php?method=estate&display=building&page=' + i, {
+                headers: {
+                    "cookie": cookie,
+                    'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"',
+                    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69',
+                    "origin": 'https://www.realnetpro.com'
+                }
+            });
+
+            if (f.data) {
+
+                let $ = cheerio.load(f.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true });
+                let list = $('.main_contents .one_building')
+                if (list) {
+
+                    for (let element of list) {
+                        let name = $(element).find('.building_info .building_name').text()
+
+                        let data = $(element).find('.building_info > div:nth-child(2)').text().trim()
+
+                        let address = ''
+                        let line = ''
+
+                        let rooms = $(element).find('.room_info_tr')
+                        let real_id = "";
+                        if (rooms) {
+                            for (let el of rooms) {
+                                real_id = $(el).find('.browsing_date').attr('id')
+                                break;
+                            }
+                        }
+                        if (real_id) {
+                            {
+                                let el = {
+                                    name: name ? name.trim() : '',
+                                    real_id: real_id,
+                                    address: address ? address.trim() : '',
+                                    line: line ? line.trim() : '',
+                                }
+                                arr.push(el)
+                            }
+                        }
+
+
+                    }
+                } else {
+                    console.log('break list', i)
+                    break;
+
+                }
+            } else {
+                console.log('break list 2', i)
+                break;
+            }
+
+            await delay(1000)
+        }
+        if (arr.length == 0) {
+            return res.json({
+                status: false, msg: "error", code: 600, data: []
+            })
+        }
+        const today = new Date();
+
+        // Lấy ngày, tháng và năm hiện tại
+        const day = today.getDate();
+        const month = today.getMonth() + 1; // Lưu ý: Tháng trong JavaScript bắt đầu từ 0, nên cần cộng thêm 1
+        const year = today.getFullYear();
+        let time = name ;
+        const exp4 = JSON.stringify({
+            data: arr,
+            cookie,
+            pagemin,
+            pagemax,
+            time: time
+        }, null, 4);
+        fs.writeFileSync(`./output/json/${time}.json`, exp4)
+        let data_insert = {
+            name: time
+        }
+        await db('ten_file_crawl').insert(data_insert)
+        return res.json({
+            status: true,
+            msg: "success",
+            code: 0,
+            data: arr,
+            name: time
+        })
+
+    } catch (e) {
+        console.log('loi ', e)
+        res.json({
+            status: false, msg: "error", code: 700, data: e
+        })
+    }
+    console.log('end')
+
+
+})
+
+app.get('/' , (req, res) => {
+    res.redirect('/quanly');
+  
+})
+app.get('/quanly', async (req, res) => {
+    console.log('admin2')
+    res.render('admin')
+})
+app.get('/quanly/*', async (req, res) => {
+    console.log('admin')
+    res.render('admin')
+})
+
+
+server.listen(config.SPort, function () {
+    console.log("API Init Completed in Port " + config.SPort);
+
+})

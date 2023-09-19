@@ -1,0 +1,21 @@
+//system error code
+700: Lỗi hệ thống xin làm lại
+701: bạn không có quyền sử dụng tính năng này
+702: token sai hoặc hết hạn
+703: không tìm thấy function này
+707: Validate
+653: password va user khong duoc rong
+654: tai khoan khong ton tai
+655: Mật khẩu sai
+656: Số điện thoại không đúng.
+657: token fb sai hãy login lại
+658: số lượng file không đủ
+677: SĐT đã được sử dụng
+501: Exchange này đã được sử dụng
+502: id sàn giao dịch không tồn tại
+503: Trường passphrase cho okex không được trống
+504: API key khÔng chính xác
+505: Bot vào lệnh không tồn tại
+506: Không tìm thấy cài đặt cho bot vào lệnh
+507: Một bot chỉ được sử dụng 1 cài đặt cho 1 đồng tiền
+508: Không tìm thấy cài đặt

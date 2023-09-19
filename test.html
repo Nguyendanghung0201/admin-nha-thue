@@ -1,0 +1,271 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リアプロ仲介ログイン画面</title>
+    <script src="../js/jquery-1.8.2.min.js" type="text/javascript" language="javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FXQTNH0JJ"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfSaRwbAAAAAC6lFrjE44srClYh3-lTMlwAJVQk"></script>
+    <link href="../css/rnp_login_20210623.css?20220513" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+//googleアナリティクス
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9FXQTNH0JJ');
+
+function login_send(){
+    //$('#login_form').submit();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfSaRwbAAAAAC6lFrjE44srClYh3-lTMlwAJVQk', {action:'homepage'}).then(function(token) {
+                $('#login_form').append('<input type="hidden" name="gr" value="'+token+'">');
+                $('#login_form').submit();
+            });
+        });
+}
+
+</script>
+
+<body>
+    <div id="subbody">
+            <div id="content">
+            <!-- <img src='../svg/login_bg.svg' id="rnp_login_bg"> -->
+            <div id="bg">
+            <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 594.3 155.6" style="enable-background:new 0 
+0 594.3 155.6;" xml:space="preserve" preserveAspectRatio="none">
+
+                <style type="text/css">
+                    <!-- .st0{opacity:0.1;fill:#F29100;} -->
+                    .background_color{opacity:0.1;fill:#F29100;}
+                </style>
+
+                <path class="background_color" d="M594.3,138c0,0-98.6-29.1-177.2-22.2S262.9,138,262.9,138s-84.2,13.4-143.4,13.4S0,138,0,138v-260.9h594.3V138z"/>
+            </svg>
+            </div>
+                <table id="rnp_content_table">
+                    <tr id="rnp_header_td">
+                        <td colspan="2" id="rnp_header_td">
+<style>
+* {
+        -webkit-overflow-scrolling: touch
+}
+
+a {
+        outline: none;
+}
+img {
+        border:none;
+}
+.header {
+        position:relative;
+        height:50px;
+        background-image:url(/img/orange80.png);
+        z-index:1000;
+}
+
+.header img {
+        height:50px;
+        width:auto;
+}
+
+</style>
+
+
+<div class="header">
+    <a href="/index.php"><img src="/img/white_rnp.png" /></a>
+    <div class="header_menu">
+    </div>
+</div></td>
+                    </tr>
+                    <!-- <tr class="rnp_content_bg"> -->
+                    <tr id="rnp_content_table_tr">
+                        <td id="left_content_table_td">
+                            <div id="center_content">
+                                <div>
+                                    <div id="rnp_logo">
+                                        <img src="../svg/login_logo.svg" alt="" id="rnp_logo_img">
+                                    </div>
+                                    <div id="rnp_for_business">業務用</div>
+                                    <div id="rnp_explanation">リアルタイムに反映される日本全国の元付け物件検索サイト</div>
+                                    <div id="rnp_explanation_sp">リアルタイムに反映される日本全国の<br/>元付け物件検索サイト</div>
+                                </div>
+                                <div id="left_content_size">
+                                    <div id="left_top">
+                                        <div id="chukai_content">
+                                            <img src="../svg/rnp_login_chukai.svg" alt="" id="rnp_chukai_svg">
+                                        </div>
+                                        <div id="chukai_total">
+                                            <table id="chukai_total_table">
+                                                <tr class="chukai_total_tr">
+                                                    <td colspan="2">
+                                                        <div id="total_property_label">総登録物件数</div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="chukai_total_tr">
+                                                    <td>
+                                                        <div id="total_property_number" class="to_orange"><!--総登録物件数5,853,517-->5,853,517</div>
+                                                    </td>
+                                                    <td>
+                                                        <div id="chukai_household" class="table_right to_orange">世帯</div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="chukai_total_tr">
+                                                    <td>
+                                                        <div class="to_bold">管理会社 登録数</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="table_right to_orange"><!--管理会社3,283-->3,283店舗</div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="chukai_total_tr">
+                                                    <td>
+                                                        <div class="to_bold">仲介会社 登録数</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="table_right to_orange"><!--仲介会社44,286-->44,286店舗</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="table_right"><!--2023/09/18-->2023/09/18 (全国)</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div id="left_bottom">
+                                        <div id="about_rnp">
+                                            <div id="about_rnp_head">リアプロ仲介とは？</div>
+                                            <table id="left_rnp_table">
+                                                <tr>
+                                                    <td>
+                                                        <div class="rnp_kind">
+                                                            <div class="rnp_check"><img src="../svg/rnp_login_check.svg" alt=""></div>
+                                                            <div class="rnp_function">物件情報重複なし</div>
+                                                            <div id="marker1"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="left_space">
+                                                        <div class="rnp_kind">
+                                                            <div class="rnp_check"><img src="../svg/rnp_login_check.svg" alt=""></div>
+                                                            <div class="rnp_function">内見方法の確認</div>
+                                                            <div id="marker2"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="rnp_kind">
+                                                            <div class="rnp_check"><img src="../svg/rnp_login_check.svg" alt=""></div>
+                                                            <div class="rnp_function">図面、空室一覧出力</div>
+                                                            <div id="marker3"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="left_space">
+                                                        <div class="rnp_kind">
+                                                            <div class="rnp_check"><img src="../svg/rnp_login_check.svg" alt=""></div>
+                                                            <div class="rnp_function">WEB入居申請</div>
+                                                            <div id="marker4"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="rnp_kind">
+                                                            <div class="rnp_check"><img src="../svg/rnp_login_check.svg" alt=""></div>
+                                                            <div class="rnp_function">申込書のダウンロード</div>
+                                                            <div id="marker5"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td  class="left_space"><div id="to_rnp_corporate"><a href="https://www.rnp.jp/" target="_blank" rel="noopener">リアプロの詳細はこちら ▶</a></div>
+</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="right_content_table_td">
+                            <div id="right_content">
+                                <div class="rnp_sp">
+                                    <img src="../svg/login_logo.svg" alt="" id="login_logo_sp">
+                                </div>
+                                <div class="rnp_sp">
+                                    <div id="login_title_sp">リアルタイムに反映される</br>日本全国の元付け物件検索サイト</div>
+                                </div>
+                                    <form action="" method="post" id="login_form">
+                                        <table id="login_table">
+                                            <tr>
+                                                <td>
+                                                    <div>ログインID</div>
+                                                    <!-- <div><input type="text"></div> -->
+                                                    <div><input type="text" id="login_input" name="id" value=""></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>パスワード</div>
+                                                    <div><input type="password" id="password_input" name="pass" value=""><span class="eye"><svg class="open_eye" xmlns="http://www.w3.org/2000/svg"  v
+iewBox="0 0 24 24"  fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-
+5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg><svg class="close_eye" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="#000000"><p
+ath d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0
+-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.5
+5 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/></s
+vg></span></div>
+                                                    <!-- <div><input type="text"></div> -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div id="login">
+                                            <!-- <input type="submit" id="login_button" value="ログイン"> -->
+                                            <button type="button" id="login_button" onClick="login_send();">ログイン</button>
+                                        </div>
+                                    </form>
+                                <div id="id_pass"><a href="/main_error.php">ID・パスワードを忘れた場合はこちら▶</a></div>
+                                <div id="account">
+                                    <div>初めてご利用の方はこちら</div>
+                                    <div id="license_required">※登録時には宅建免許番号が必要です</div>
+                                    <div>
+                                        <div id="create_account"><a href="/introduce/">新規アカウント作成</a></div>
+                                    </div>
+                                    <div id="browser">推奨ブラウザ：<div class="id-item">Google Chrome / Firefox / Safari  / Edge</div></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+
+    <script>
+
+        $('.eye').click(toggleType);
+
+        function toggleType(){
+            let inputPassword = this.previousElementSibling;
+            let val = inputPassword.value;
+            let type = inputPassword.getAttribute('type');
+            let openEye = document.querySelector('.open_eye');
+            let closeEye = document.querySelector('.close_eye');
+
+
+            if(type == 'password'){
+                inputPassword.setAttribute('type','text');
+                closeEye.style.display = 'block';
+                openEye.style.display = 'none';
+
+            }else if(type == 'text') {
+                inputPassword.setAttribute('type','password');
+                closeEye.style.display = 'none';
+                openEye.style.display = 'block';
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
