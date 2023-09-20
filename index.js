@@ -476,12 +476,7 @@ app.post('/getlist_home', async (req, res) => {
                 status: false, msg: "error", code: 600, data: []
             })
         }
-        const today = new Date();
-
-        // Lấy ngày, tháng và năm hiện tại
-        const day = today.getDate();
-        const month = today.getMonth() + 1; // Lưu ý: Tháng trong JavaScript bắt đầu từ 0, nên cần cộng thêm 1
-        const year = today.getFullYear();
+      
         let time = name ;
         const exp4 = JSON.stringify({
             data: arr,
@@ -491,10 +486,7 @@ app.post('/getlist_home', async (req, res) => {
             time: time
         }, null, 4);
         fs.writeFileSync(`./output/json/${time}.json`, exp4)
-        let data_insert = {
-            name: time
-        }
-        await db('ten_file_crawl').insert(data_insert)
+      
         return res.json({
             status: true,
             msg: "success",
