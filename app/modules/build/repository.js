@@ -68,7 +68,7 @@ class build_repository {
     }
 
     async detail(uid) {
-        return await db(this.db).select('*').where(this.column.id, uid).first()
+        return await db(this.db).select('*').where("detail_id", uid).first()
     }
     async check(uid, buiding_id) {
         return await db('my_build').select('*').where('user_id', uid).andWhere('buiding_id', buiding_id).first()
