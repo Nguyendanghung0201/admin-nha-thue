@@ -191,7 +191,8 @@ app.post('/getinfor_file', [middleware.verifyToken, middleware.checkadmin], asyn
 })
 
 
-app.get('/update_date_build', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
+app.get('/update_date_build/:id', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
+    let id = req.params.id
     var currentDate = new Date();
     // Lấy ngày, tháng và năm hiện tại
     var day = currentDate.getDate(); // Ngày
@@ -220,12 +221,24 @@ app.get('/update_date_build', [middleware.verifyToken, middleware.checkadmin], a
         await delay(1000)
     }
        
-
-    let list = await global.db('building2').select("id", 'detail_id').where({
-        status: 1,
-        status_crawl: 'process'
-
-    }).paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+    let list =[]
+    if(id ==1){
+        list = await global.db('building2').select("id", 'detail_id').where({
+            status: 1,
+            status_crawl: 'process'
+    
+        }).orderBy('id','asc')
+        .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+    }else{
+        list = await global.db('building2').select("id", 'detail_id').where({
+            status: 1,
+            status_crawl: 'process'
+    
+        }).orderBy('id','desc')
+        .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+    }
+   
+   
     if (list.data.length > 0) {
         res.json({
             status: true,
@@ -290,116 +303,120 @@ app.get('/need_update/:id', async (req, res) => {
 })
 
 app.post('/getdetail', async (req, res) => {
-    let { url, cookie, id } = req.body;
-    if(!url || !cookie ||!id){
-        return res.json({
-            status: false,
-            code: 700,
-            err: "Lỗi hệ thống"
-        })
-    }
-    let check_id = await db('building2').select('*').where({
-        'detail_id': id,
-
-    }).first()
-    if (check_id) {
-        res.json({
-            data: [],
-            status: true,
-            msg: "success",
-            code: 0,
-            pass: true
-        })
-    }
-    let html = await axios.get(url, {
-        headers: {
-            "cookie": cookie,
-            'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69',
-            "origin": 'https://www.realnetpro.com',
-            "referer": url
+    try{
+        let { url, cookie, id } = req.body;
+        if(!url || !cookie ||!id){
+            return res.json({
+                status: false,
+                code: 700,
+                err: "Lỗi hệ thống"
+            })
         }
-    })
-    if (html.data == 'この部屋の情報は入居中であるか公開されていません。') {
-        await db('building2').delete().where('detail_id', id)
-        return res.json({
-            status: true,
-            data: [],
-            delete: true,
-            pass:true
-
-        })
-    }
-    if (html.data) {
-        let $ = cheerio.load(html.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true })
-        let listimage = $('.photo_list_box .image_list img')
-        let imageavt = ""
-        let a = $("#maparea2")
-        let vido = a.attr('src')
-        let list_img_url = ''
-        for (let img of listimage) {
-            let url = $(img).attr('src')
-            if (!imageavt) {
-                imageavt = url
+       
+        let html = await axios.get(url, {
+            headers: {
+                "cookie": cookie,
+                'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69',
+                "origin": 'https://www.realnetpro.com',
+                "referer": url
             }
-            list_img_url = list_img_url + ',' + url
+        })
+        if (html.data == 'この部屋の情報は入居中であるか公開されていません。') {
+            await db('building2').delete().where('detail_id', id)
+            return res.json({
+                status: true,
+                data: [],
+                delete: true,
+                code:0,
+                pass:true
+    
+            })
         }
-        let infor = $('.room_info .basic_table tr')
-        let list_infor = []
-        for (let el of infor) {
-            let key = $(el).find('td.td_m').text()
-            if (key) {
-                let value = $(el).find('td:nth-child(2)').text()
-                if (value) {
-                    list_infor.push({
-                        key: key.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' '),
-                        value: value.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' ')
-                    })
+        if (html.data) {
+            let $ = cheerio.load(html.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true })
+            let listimage = $('.photo_list_box .image_list img')
+            if(!listimage){
+                return res.json({
+                    status: false,
+                    code: 700,
+                    err: "Cập nhật lại cookie"
+                })
+            }
+            let imageavt = ""
+            let a = $("#maparea2")
+            let vido = a.attr('src')
+            let list_img_url = ''
+            for (let img of listimage) {
+                let url = $(img).attr('src')
+                if (!imageavt) {
+                    imageavt = url
+                }
+                list_img_url = list_img_url + ',' + url
+            }
+            let infor = $('.room_info .basic_table tr')
+            let list_infor = []
+            for (let el of infor) {
+                let key = $(el).find('td.td_m').text()
+                if (key) {
+                    let value = $(el).find('td:nth-child(2)').text()
+                    if (value) {
+                        list_infor.push({
+                            key: key.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' '),
+                            value: value.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' ')
+                        })
+                    }
                 }
             }
-        }
-
-        let token = await axios.get('https://edge.microsoft.com/translate/auth', {
-            headers: { "content-type": "text/plain" }
-        })
-        let Bearer = ''
-        if (token.status == 200) {
-            Bearer = token.data
-        }
-        let arr = list_infor.map(e => {
-            return {
-                Text: e.value
+    
+            let token = await axios.get('https://edge.microsoft.com/translate/auth', {
+                headers: { "content-type": "text/plain" }
+            })
+            let Bearer = ''
+            if (token.status == 200) {
+                Bearer = token.data
             }
-        })
-
-        let b = await dichchu(arr, Bearer)
-
-        list_infor = list_infor.map((e, i) => {
-            let el_en = b[i].translations[0].text
-            e.value2 = el_en
-            return e
-        })
-
-        res.json({
-            data: {
-                list_img_url,
-                list_infor,
-                imageavt,
-                vido
-            },
-            status: true,
-            msg: "success",
-            code: 0,
-
-        })
-    } else {
-
+            let arr = list_infor.map(e => {
+                return {
+                    Text: e.value
+                }
+            })
+    
+            let b = await dichchu(arr, Bearer)
+    
+            list_infor = list_infor.map((e, i) => {
+                let el_en = b[i].translations[0].text
+                e.value2 = el_en
+                return e
+            })
+    
+            res.json({
+                data: {
+                    list_img_url,
+                    list_infor,
+                    imageavt,
+                    vido
+                },
+                status: true,
+                msg: "success",
+                code: 0,
+    
+            })
+        } else {
+            res.json({
+                status: false,
+                code: 700,
+                err: "Lỗi hệ thống"
+            })
+        }
+    }catch(e){
         res.json({
             status: false,
             code: 700,
             err: "Lỗi hệ thống"
         })
     }
+   
 
 })
 app.post('/getlist_home', async (req, res) => {
@@ -508,7 +525,6 @@ app.post('/getlist_home', async (req, res) => {
 
 app.get('/' , (req, res) => {
     res.redirect('/quanly');
-  
 })
 app.get('/quanly', async (req, res) => {
     console.log('admin2')
