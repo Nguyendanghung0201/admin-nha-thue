@@ -220,25 +220,25 @@ app.get('/update_date_build/:id', [middleware.verifyToken, middleware.checkadmin
         fs.writeFileSync(`./output/update/update.json`, exp4)
         await delay(1000)
     }
-       
-    let list =[]
-    if(id ==1){
+
+    let list = []
+    if (id == 1) {
         list = await global.db('building2').select("id", 'detail_id').where({
             status: 1,
             status_crawl: 'process'
-    
-        }).orderBy('id','asc')
-        .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
-    }else{
+
+        }).orderBy('id', 'asc')
+            .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+    } else {
         list = await global.db('building2').select("id", 'detail_id').where({
             status: 1,
             status_crawl: 'process'
-    
-        }).orderBy('id','desc')
-        .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
+
+        }).orderBy('id', 'desc')
+            .paginate({ perPage: 100, isLengthAware: true, currentPage: 1 })
     }
-   
-   
+
+
     if (list.data.length > 0) {
         res.json({
             status: true,
@@ -303,16 +303,27 @@ app.get('/need_update/:id', async (req, res) => {
 })
 
 app.post('/getdetail', async (req, res) => {
-    try{
+    try {
         let { url, cookie, id } = req.body;
-        if(!url || !cookie ||!id){
+        if (!url || !cookie || !id) {
             return res.json({
                 status: false,
                 code: 700,
                 err: "Lỗi hệ thống"
             })
         }
-       
+        let getnha = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl','<>','process').first()
+        if (getnha) {
+            return res.json({
+                status: true,
+                data: [],
+                delete: true,
+                code: 0,
+                pass: true
+
+            })
+        }
+
         let html = await axios.get(url, {
             headers: {
                 "cookie": cookie,
@@ -328,15 +339,15 @@ app.post('/getdetail', async (req, res) => {
                 status: true,
                 data: [],
                 delete: true,
-                code:0,
-                pass:true
-    
+                code: 0,
+                pass: true
+
             })
         }
         if (html.data) {
             let $ = cheerio.load(html.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true })
             let listimage = $('.photo_list_box .image_list img')
-            if(!listimage){
+            if (!listimage) {
                 return res.json({
                     status: false,
                     code: 700,
@@ -368,7 +379,7 @@ app.post('/getdetail', async (req, res) => {
                     }
                 }
             }
-    
+
             let token = await axios.get('https://edge.microsoft.com/translate/auth', {
                 headers: { "content-type": "text/plain" }
             })
@@ -381,15 +392,15 @@ app.post('/getdetail', async (req, res) => {
                     Text: e.value
                 }
             })
-    
+
             let b = await dichchu(arr, Bearer)
-    
+
             list_infor = list_infor.map((e, i) => {
                 let el_en = b[i].translations[0].text
                 e.value2 = el_en
                 return e
             })
-    
+
             res.json({
                 data: {
                     list_img_url,
@@ -400,7 +411,7 @@ app.post('/getdetail', async (req, res) => {
                 status: true,
                 msg: "success",
                 code: 0,
-    
+
             })
         } else {
             res.json({
@@ -409,14 +420,14 @@ app.post('/getdetail', async (req, res) => {
                 err: "Lỗi hệ thống"
             })
         }
-    }catch(e){
+    } catch (e) {
         res.json({
             status: false,
             code: 700,
             err: "Lỗi hệ thống"
         })
     }
-   
+
 
 })
 app.post('/getlist_home', async (req, res) => {
@@ -493,8 +504,8 @@ app.post('/getlist_home', async (req, res) => {
                 status: false, msg: "error", code: 600, data: []
             })
         }
-      
-        let time = name ;
+
+        let time = name;
         const exp4 = JSON.stringify({
             data: arr,
             cookie,
@@ -503,7 +514,7 @@ app.post('/getlist_home', async (req, res) => {
             time: time
         }, null, 4);
         fs.writeFileSync(`./output/json/${time}.json`, exp4)
-      
+
         return res.json({
             status: true,
             msg: "success",
@@ -523,7 +534,7 @@ app.post('/getlist_home', async (req, res) => {
 
 })
 
-app.get('/' , (req, res) => {
+app.get('/', (req, res) => {
     res.redirect('/quanly');
 })
 app.get('/quanly', async (req, res) => {
