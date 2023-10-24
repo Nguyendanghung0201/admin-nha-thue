@@ -21,7 +21,7 @@ exports.list_nha_gan = async function (query) {
 };
 
 exports.list_ga = async function(query){
-    console.log(query)
+   
     let validate = await val.Form(query.param, {
         page: 'required',
         ga:'required',

@@ -3,7 +3,7 @@ const json = permission.all;
 const ignore = permission.ignore;
 const list_page = permission.list_page;
 exports.check_function = function (method, controller, fun, role) {
-    console.log(method, controller, fun, role )
+
     if (json[method.toLowerCase()][controller] && json[method.toLowerCase()][controller][fun]) {
         if (json[method.toLowerCase()][controller][fun] === 'all') {
             return true;

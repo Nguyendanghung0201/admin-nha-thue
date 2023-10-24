@@ -55,5 +55,8 @@ exports.login = async function (query) {
 
 exports.my_profile = async (query) => {
     let profile = await URep.my_profile(query.userInfo.Id);
+    if(!profile || profile.level ==0){
+        return { status: false, msg: "error", code: 675, data: [] };
+    }
     return { status: true, msg: "success", code: 0, data: [profile] };
 };

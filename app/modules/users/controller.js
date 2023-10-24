@@ -1,6 +1,6 @@
 const model = require('./model');
 exports.login = async function (query) {
-    console.log('login ',query)
+   
     let validate = await val.Form(query, {
         username: "required|email",
         password: "required"
