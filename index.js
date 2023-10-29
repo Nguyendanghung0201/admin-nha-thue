@@ -302,6 +302,29 @@ app.get('/need_update/:id', async (req, res) => {
 
 })
 
+app.get('/checkgetdetail/:id', async (req, res) => {
+
+    let a = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl', '<>', 'process').first()
+    if (a) {
+        return res.json({
+            status: true,
+            data: [],
+            delete: true,
+            code: 0,
+            pass: true
+
+        })
+    } else {
+        return res.json({
+            status: false,
+            data: [],
+            code: 0,
+            pass: false
+
+        })
+    }
+})
+
 app.post('/getdetail', async (req, res) => {
     try {
         let { url, cookie, id } = req.body;
@@ -312,17 +335,17 @@ app.post('/getdetail', async (req, res) => {
                 err: "Lỗi hệ thống"
             })
         }
-        let getnha = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl','<>','process').first()
-        if (getnha) {
-            return res.json({
-                status: true,
-                data: [],
-                delete: true,
-                code: 0,
-                pass: true
+        // let getnha = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl','<>','process').first()
+        // if (getnha) {
+        //     return res.json({
+        //         status: true,
+        //         data: [],
+        //         delete: true,
+        //         code: 0,
+        //         pass: true
 
-            })
-        }
+        //     })
+        // }
 
         let html = await axios.get(url, {
             headers: {
@@ -334,7 +357,7 @@ app.post('/getdetail', async (req, res) => {
             }
         })
         if (html.data == 'この部屋の情報は入居中であるか公開されていません。') {
-            await db('building2').delete().where('detail_id', id)
+            // await db('building2').delete().where('detail_id', id)
             return res.json({
                 status: true,
                 data: [],
@@ -416,15 +439,16 @@ app.post('/getdetail', async (req, res) => {
         } else {
             res.json({
                 status: false,
-                code: 700,
+                code: 701,
                 err: "Lỗi hệ thống"
             })
         }
     } catch (e) {
+        console.log(e)
         res.json({
             status: false,
-            code: 700,
-            err: "Lỗi hệ thống"
+            code: 702,
+            err: e
         })
     }
 
