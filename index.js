@@ -303,17 +303,29 @@ app.get('/need_update/:id', async (req, res) => {
 })
 
 app.get('/checkgetdetail/:id', async (req, res) => {
-let id = req.params.id
-    let a = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl', '<>', 'process').first()
+    let id = req.params.id
+    let a = await db("building2").select('id', 'detail_id').where('detail_id', id).first() //.andWhere('status_crawl', '<>', 'process')
     if (a) {
-        return res.json({
-            status: true,
-            data: [],
-            delete: true,
-            code: 0,
-            pass: true
+        if (a.status_crawl == 'process') {
+            await db("building2").delete().where('id', a.id)
+            return res.json({
+                status: false,
+                data: [],
+                code: 0,
+                pass: false
 
-        })
+            })
+        } else {
+            return res.json({
+                status: true,
+                data: [],
+                delete: true,
+                code: 0,
+                pass: true
+
+            })
+        }
+
     } else {
         return res.json({
             status: false,
@@ -356,12 +368,14 @@ app.post('/getdetail', async (req, res) => {
                 "referer": url
             }
         })
-        if (html.data == 'この部屋の情報は入居中であるか公開されていません。') {
+        console.log(html.data)
+        if (html.data === 'この部屋の情報は入居中であるか公開されていません。') {
             // await db('building2').delete().where('detail_id', id)
             return res.json({
                 status: true,
                 data: [],
                 delete: true,
+
                 code: 0,
                 pass: true
 
