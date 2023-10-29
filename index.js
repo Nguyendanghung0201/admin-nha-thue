@@ -303,7 +303,7 @@ app.get('/need_update/:id', async (req, res) => {
 })
 
 app.get('/checkgetdetail/:id', async (req, res) => {
-
+let id = req.params.id
     let a = await db("building2").select('id', 'detail_id').where('detail_id', id).andWhere('status_crawl', '<>', 'process').first()
     if (a) {
         return res.json({
