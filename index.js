@@ -407,7 +407,13 @@ app.post('/getdetail', async (req, res) => {
             for (let el of infor) {
                 let key = $(el).find('td.td_m').text()
                 if (key) {
-                    let value = $(el).find('td:nth-child(2)').html()
+                    let value = ""
+                    if(key =='交通'){
+                        value = $(el).find('td:nth-child(2)').html()
+                    }else{
+                        value = $(el).find('td:nth-child(2)').text()
+                    }
+                   
                     if (value) {
                         list_infor.push({
                             key: key.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' '),
