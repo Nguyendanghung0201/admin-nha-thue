@@ -48,7 +48,7 @@ class build_repository {
             .offset((page - 1) * pagination).where('status', 1)
     }
     async get_list_nha_chua_thue(page){
-            return await db(this.db).select('*').paginate({ perPage: 50, currentPage: page });
+            return await db(this.db).select('*').paginate({ perPage: 50,isLengthAware: true, currentPage: page });
     }
     async update(id, data) {
         return await db(this.db).update(data).where('id', id)
