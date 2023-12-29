@@ -53,4 +53,16 @@ exports.update_date_build = async function (query) {
     }
     return await model.update(query);
 }
+exports.getbuilding = async function(query){
+    let validate = await val.Form(query, {
+        page:  'required',
+        type: 'required',
+      
+    });
+
+    if (!validate.status) {
+        return { status: false, msg: validate.error, code: 707, data: [] };
+    }
+    return await model.getbuilding(query);
+}
 

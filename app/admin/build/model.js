@@ -42,3 +42,17 @@ exports.uploadfile = async function (query) {
         data: []
     };
 }
+
+exports.getbuilding = async function (query) {
+    let list =[]
+    if(query.type ==1){
+        //  nhà chưa cho thuê
+         list = await  buildRes.get_list_nha_chua_thue(query.page)
+    }
+    return {
+        status: true,
+        msg: "success",
+        code: 0,
+        data: list
+    }
+}

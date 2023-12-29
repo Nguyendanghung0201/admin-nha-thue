@@ -47,6 +47,9 @@ class build_repository {
         return await db(this.db).select('*').limit(pagination)
             .offset((page - 1) * pagination).where('status', 1)
     }
+    async get_list_nha_chua_thue(page){
+            return await db(this.db).select('*').paginate({ perPage: 50, currentPage: page });
+    }
     async update(id, data) {
         return await db(this.db).update(data).where('id', id)
     }
@@ -55,6 +58,7 @@ class build_repository {
     async delete(uid) {
         return await db(this.db).delete().where('detail_id', uid)
     }
+
 
 }
 

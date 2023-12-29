@@ -38,7 +38,8 @@
         "list": "all",
         "delete": "1,2",
         "list_ga": "all",
-        "update": "1,2"
+        "update": "1,2",
+        "getbuilding":"all"
       },
       "my_build": {
         "add": "all",
