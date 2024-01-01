@@ -57,6 +57,9 @@
         "add": "1,2",
         "delete": "1,2",
         "update": "1,2"
+      },
+      "hoahong":{
+        "add": "all"
       }
     },
     "put": {
