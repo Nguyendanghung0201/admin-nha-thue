@@ -48,6 +48,8 @@ exports.getbuilding = async function (query) {
     if(query.type ==1){
         //  nhà chưa cho thuê
          list = await  buildRes.get_list_nha_chua_thue(query.page)
+    }else{
+        list = await  buildRes.get_list_nha_chua_thue(query.page)
     }
     return {
         status: true,

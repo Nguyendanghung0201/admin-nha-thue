@@ -3,12 +3,13 @@ const model = require('./model')
 exports.add = async (query) => {
     let validate = await val.Form(query, {
         hoahong: "required",
-        gmail:"required",
-        user_id:"required",
-        user_id_thue:"required",
-        name: "required",
-        thanhkhoan:  "required",
-        data: "required",
+        tien_type:"required",// VND yên
+        money:"required" ,// 1000
+        status:"required", //"CREATE" "DONE"
+        // nguoitao :"",//
+        id_nha:"required",//
+        mahopdong:"required",//
+        user_id_thue:"required",//
         
 
     });
