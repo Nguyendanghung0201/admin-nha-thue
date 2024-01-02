@@ -66,3 +66,22 @@ exports.list =async (query) => {
     data:list
 };
 }
+exports.delete =async (query) => {
+    let list = await buildRes.delete(query.id)
+    return {
+     status: true,
+     msg: "success",
+     code: 0,
+     data:list
+ };
+ }
+ exports.update =async (query) => {
+    let list = await buildRes.update(query.id,{status:query.type})
+    return {
+     status: true,
+     msg: "success",
+     code: 0,
+     data:list
+ };
+ }
+ 

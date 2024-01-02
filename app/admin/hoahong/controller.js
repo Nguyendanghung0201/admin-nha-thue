@@ -41,3 +41,24 @@ exports.list =async (query) => {
 
     return model.list(query)
 }
+exports.delete =async (query) => {
+    let validate = await val.Form(query, {
+      id: 'required',
+    })
+    if(!validate.status) {
+        return { status: false, msg: validate.error, code: 707, data: [] };
+    }
+
+    return model.delete(query)
+}
+exports.update =async (query) => {
+    let validate = await val.Form(query, {
+      id: 'required',
+      type: 'required',
+    })
+    if(!validate.status) {
+        return { status: false, msg: validate.error, code: 707, data: [] };
+    }
+
+    return model.update(query)
+}

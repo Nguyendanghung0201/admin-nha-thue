@@ -61,7 +61,10 @@
       "hoahong":{
         "add": "all",
         "checkhandbai":"all",
-        "list":"all"
+        "list":"all",
+        "delete":"all",
+        "update":"all"
+
       }
     },
     "put": {
