@@ -2,7 +2,7 @@ const model = require('./model')
 
 exports.add = async (query) => {
     let validate = await val.Form(query, {
-        hoahong: "required",
+        // hoahong: "required",
         tien_type:"required",// VND yên
         money:"required" ,// 1000
         status:"required", //"CREATE" "DONE"
