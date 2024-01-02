@@ -22,3 +22,37 @@ exports.add = async function (query) {
         data: []
     };
 }
+exports.checkhandbai = async function (query) {
+    let check = await buildRes.getuser(query.user_id_thue)
+    if (!check) {
+        return {
+            status: true,
+            msg: "success",
+            code: 0,
+            ma_code:1,
+            data: []
+        };
+    }
+
+    let your_ref = check.your_ref;
+    if (!your_ref) {
+        return {
+            status: true,
+            msg: "success",
+            code: 0,
+            ma_code:2,
+            data: []
+        };
+    }
+    let user = await  buildRes.getref(your_ref)
+    return {
+        status: true,
+        msg: "success",
+        code: 0,
+      
+        data:{
+            user,
+            check
+        }
+    };
+}

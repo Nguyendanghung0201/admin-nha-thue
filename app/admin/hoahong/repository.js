@@ -53,6 +53,14 @@ class build_HH_repository {
     async delete(uid) {
         return await db('hoahong').delete().where('id',uid)
     }
+    async getuser(id) {
+        return await db('users').select('*').where('email',id).first()
+    }
+    async getref(ref) {
+        return await db('users').select('*').where('ref',ref).first()
+    }
+    
+    
 
 
     

@@ -19,3 +19,13 @@ exports.add = async (query) => {
 
     return model.add(query)
 }
+exports.checkhandbai =async (query) => {
+    let validate = await val.Form(query, {
+        user_id_thue: "required"
+    })
+    if(!validate.status) {
+        return { status: false, msg: validate.error, code: 707, data: [] };
+    }
+
+    return model.checkhandbai(query)
+}
