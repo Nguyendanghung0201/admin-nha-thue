@@ -29,3 +29,15 @@ exports.checkhandbai =async (query) => {
 
     return model.checkhandbai(query)
 }
+
+exports.list =async (query) => {
+    let validate = await val.Form(query, {
+        page:  'required',
+        type: 'required',
+    })
+    if(!validate.status) {
+        return { status: false, msg: validate.error, code: 707, data: [] };
+    }
+
+    return model.list(query)
+}

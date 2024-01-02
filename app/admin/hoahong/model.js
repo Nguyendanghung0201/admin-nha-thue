@@ -56,3 +56,13 @@ exports.checkhandbai = async function (query) {
         }
     };
 }
+
+exports.list =async (query) => {
+   let list = await buildRes.getlist(query)
+   return {
+    status: true,
+    msg: "success",
+    code: 0,
+    data:list
+};
+}

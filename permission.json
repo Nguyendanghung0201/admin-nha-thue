@@ -60,7 +60,8 @@
       },
       "hoahong":{
         "add": "all",
-        "checkhandbai":"all"
+        "checkhandbai":"all",
+        "list":"all"
       }
     },
     "put": {

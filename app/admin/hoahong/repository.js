@@ -59,6 +59,14 @@ class build_HH_repository {
     async getref(ref) {
         return await db('users').select('*').where('ref',ref).first()
     }
+    async getlist(query) {
+        if(query.type =='all'){
+            return await db('hoahong').select('*').paginate({ perPage: 50,isLengthAware: true, currentPage: query.page });
+        } 
+            return await db('hoahong').select('*').where('status',query.type).paginate({ perPage: 50,isLengthAware: true, currentPage: query.page });
+      
+    }
+    
     
     
 
