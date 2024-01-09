@@ -63,7 +63,7 @@ const delay = (ms) =>
     new Promise((resolve) => setTimeout(() => resolve(), ms));
 
 const url_dich = 'https://api-edge.cognitive.microsofttranslator.com/translate?from=ja&to=en&api-version=3.0&includeSentenceLength=true' //vi
-app.all('/client/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
+app.all('/quanly/client/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
 
     let dataReponse = null;
     let dataError = null;
@@ -104,7 +104,7 @@ app.all('/client/:act', [middleware.verifyToken, middleware.checkadmin], async f
     }
     response.send(dataReponse)
 });
-app.all('/admin/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
+app.all('/quanly/admin/:act', [middleware.verifyToken, middleware.checkadmin], async function (request, response) {
 
     let dataReponse = null;
     let dataError = null;
