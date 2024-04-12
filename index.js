@@ -368,7 +368,7 @@ app.post('/getdetail', async (req, res) => {
                 "referer": url
             }
         })
-        console.log(html.data)
+      
         if (html.data === 'この部屋の情報は入居中であるか公開されていません。') {
             // await db('building2').delete().where('detail_id', id)
             return res.json({
