@@ -624,7 +624,7 @@ app.get('/quanly/crawl_villagehouse', async (req, res) => {
                             phi_dich_vu: "",
                             phone: "",
                             price: item.price,
-                            province_id: "",
+                            province_id: 27,
                             real_id: data.house_id,  // id bên web crawl
                             room_number: "", // số phòng tầng trong tòa nà
                             search_key: data.address + data.name, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
