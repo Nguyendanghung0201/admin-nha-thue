@@ -617,6 +617,7 @@ app.get('/quanly/crawl_villagehouse', async (req, res) => {
                             khuyenmai: 0, // ko cần thiết
                             kieu_phong: item.name,
                             lat_map: traffic_coordinates_map[0],  // tọa độ trên map
+                            long_map: traffic_coordinates_map[1],
                             line: "", // ko cần thiết
                             list_img_url: list_image,
                             nam_xay: "",
