@@ -643,7 +643,7 @@ app.get('/quanly/crawl_villagehouse', async (req, res) => {
                         }
 
                         await db('building2').insert(mau_crawl)
-                        continue
+                        break
                     }
 
                 }
