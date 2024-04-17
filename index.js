@@ -304,7 +304,7 @@ app.get('/need_update/:id', async (req, res) => {
 
 })
 
-app.get('/checkgetdetail/:id', async (req, res) => {
+app.get('/quanly/checkgetdetail/:id', async (req, res) => {
     let id = req.params.id
     let a = await db("building2").select('id', 'detail_id').where('detail_id', id).first() //.andWhere('status_crawl', '<>', 'process')
     if (a) {
@@ -579,7 +579,7 @@ app.post('/getlist_home', async (req, res) => {
 
 
 })
-app.get('/crawl_villagehouse', async (req, res) => {
+app.get('/quanly/crawl_villagehouse', async (req, res) => {
     let url = "https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/iwamizawa-shi-012106/kurisawa-1039/" //req.body.url
     if (url) {
         // console.log(url)
