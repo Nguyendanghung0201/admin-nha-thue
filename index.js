@@ -579,18 +579,16 @@ app.post('/getlist_home', async (req, res) => {
 
 
 })
-app.get('/quanly/crawl_villagehouse', async (req, res) => {
-    let url = "https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/iwamizawa-shi-012106/kurisawa-1039/" //req.body.url
+app.post('/quanly/crawl_villagehouse', async (req, res) => {
+    let url = req.body.url
     if (url) {
         // console.log(url)
-        let data3 = await crawler(["https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/iwamizawa-shi-012106/kurisawa-1039/"])
+        let data3 = await crawler([url])
         let data = data3[0]
-        console.log("data ", data)
+      
         if (data && data.house_id && data.address && data.rooms) {
             let rooms = JSON.parse(data.rooms)
-            res.json({
-                data: data
-            })
+          
             if (Array.isArray(rooms)) {
                 let traffic_info = JSON.parse(data.traffic_info)
                 let trafic = ""
@@ -647,6 +645,12 @@ app.get('/quanly/crawl_villagehouse', async (req, res) => {
                     }
 
                 }
+                res.json({
+                    status: true,
+                    msg: "success",
+                    code: 0,
+                    data: [],
+                })
             } else {
                 res.json({
                     status: false, msg: "error", code: 700
