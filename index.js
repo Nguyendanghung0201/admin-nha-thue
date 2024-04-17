@@ -12,6 +12,8 @@ const device = require('express-device');
 const requestIp = require('request-ip');
 const session = require('express-session');
 require('./app/cors/global');
+var randomstring = require("randomstring");
+
 var cheerio = require("cheerio");
 app.use(timeout(5 * 60 * 1000));
 app.use(bodyParser.json({ type: 'application/json' }));
@@ -27,7 +29,7 @@ app.use(session({
     cookie: { maxAge: 24 * 60 * 60 * 1000 }
 }));
 const multer = require('multer');
-
+const crawler = require('./app/modules/build/crawler');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, path.join(__dirname, '/public/uploads'))
@@ -368,7 +370,7 @@ app.post('/getdetail', async (req, res) => {
                 "referer": url
             }
         })
-      
+
         if (html.data === 'この部屋の情報は入居中であるか公開されていません。') {
             // await db('building2').delete().where('detail_id', id)
             return res.json({
@@ -408,12 +410,12 @@ app.post('/getdetail', async (req, res) => {
                 let key = $(el).find('td.td_m').text()
                 if (key) {
                     let value = ""
-                    if(key =='交通'){
+                    if (key == '交通') {
                         value = $(el).find('td:nth-child(2)').html()
-                    }else{
+                    } else {
                         value = $(el).find('td:nth-child(2)').text()
                     }
-                   
+
                     if (value) {
                         list_infor.push({
                             key: key.trim().replace(/\n|\r/g, "").replace(/\s+/g, ' '),
@@ -576,6 +578,91 @@ app.post('/getlist_home', async (req, res) => {
     console.log('end')
 
 
+})
+app.get('/crawl_villagehouse', async (req, res) => {
+    let url = "https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/iwamizawa-shi-012106/kurisawa-1039/" //req.body.url
+    if (url) {
+        // console.log(url)
+        let data3 = await crawler(["https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/iwamizawa-shi-012106/kurisawa-1039/"])
+        let data = data3[0]
+        console.log("data ", data)
+        if (data && data.house_id && data.address && data.rooms) {
+            let rooms = JSON.parse(data.rooms)
+            res.json({
+                data: data
+            })
+            if (Array.isArray(rooms)) {
+                let traffic_info = JSON.parse(data.traffic_info)
+                let trafic = ""
+                for (let item of traffic_info) {
+                    trafic = trafic + item.label + " - " + item.value + '<br>'
+                }
+                let images = JSON.parse(data.images)
+                let avt = images[0]
+                let list_image = images.toString()
+                let traffic_coordinates_map = JSON.parse(data.traffic_coordinates_map)
+                for (let item of rooms) {
+                    if (item.slots && item.slots.length > 0) {
+
+                        let mau_crawl = {
+                            address: data.address, // địa chỉ nhà
+                            along_id: 0,  // ko cần thiết
+                            area: item.size, // diện tích
+                            city_id: 0, // ko cần thiết
+                            date: "defaul",  // ko cần thiết
+                            dau_xe: "",  // ko cần thiết
+                            detail_id: data.house_id + 'VG' + item.name,   //"6985658RE", // ramdom số + ĐUôi web ví dụ VIL
+                            gia_thong: trafic,
+                            images: avt, // ảnh đại diện
+                            khuyenmai: 0, // ko cần thiết
+                            kieu_phong: item.name,
+                            lat_map: traffic_coordinates_map[0],  // tọa độ trên map
+                            line: "", // ko cần thiết
+                            list_img_url: list_image,
+                            nam_xay: "",
+                            name: data.name, // tên khu nhà
+                            phi_dich_vu: "",
+                            phone: "",
+                            price: item.price,
+                            province_id: "",
+                            real_id: data.house_id,  // id bên web crawl
+                            room_number: "", // số phòng tầng trong tòa nà
+                            search_key: data.address + data.name, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
+                            status: 1,
+                            status_crawl: "create",  // trạng thái crawl 
+                            thongtin_1: "",
+                            thongtin_2: "",
+                            thongtin_3: "",
+                            thongtin_4: "",
+                            tien_coc: "",
+                            tien_le: "",
+                            toa_tang: "",
+                            // updated_at: "2023-12-10T04:04:06.000Z",
+                            web: url, //  link crawl
+                        }
+
+                        await db('building2').insert(mau_crawl)
+                        continue
+                    }
+
+                }
+            } else {
+                res.json({
+                    status: false, msg: "error", code: 700
+                })
+            }
+
+        } else {
+            res.json({
+                status: false, msg: "error", code: 700
+            })
+        }
+
+    } else {
+        res.json({
+            status: false, msg: "error", code: 700
+        })
+    }
 })
 
 app.get('/', (req, res) => {
