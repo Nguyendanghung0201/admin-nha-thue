@@ -583,6 +583,7 @@ app.post('/quanly/crawl_villagehouse', async (req, res) => {
 
     let url = req.body.url
     if (url) {
+        let check_cu = await db('building2').where('web',url).del()
         // console.log(url)
         let data3 = await crawler([url])
         let data = data3[0]
