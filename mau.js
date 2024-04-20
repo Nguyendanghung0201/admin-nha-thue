@@ -35,5 +35,6 @@ let mau_crawl = {
     tien_le: "100,000 円",
     toa_tang: "",
     updated_at: "2023-12-10T04:04:06.000Z",
+
     web: "https://www.realnetpro.com/room_detail.php?id=6985658&type=room", //  link crawl
 }

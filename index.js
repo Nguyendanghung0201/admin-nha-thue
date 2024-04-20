@@ -580,15 +580,16 @@ app.post('/getlist_home', async (req, res) => {
 
 })
 app.post('/quanly/crawl_villagehouse', async (req, res) => {
+
     let url = req.body.url
     if (url) {
         // console.log(url)
         let data3 = await crawler([url])
         let data = data3[0]
-      
+
         if (data && data.house_id && data.address && data.rooms) {
             let rooms = JSON.parse(data.rooms)
-          
+
             if (Array.isArray(rooms)) {
                 let traffic_info = JSON.parse(data.traffic_info)
                 let trafic = ""
