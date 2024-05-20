@@ -599,7 +599,8 @@ app.post('/quanly/crawl_villagehouse', async (req, res) => {
                 }
                 let images = JSON.parse(data.images)
                 let avt = images[0]
-                let list_image = images.toString()
+               
+                let list_image =[...new Set(images)].toString()
                 let traffic_coordinates_map = JSON.parse(data.traffic_coordinates_map)
                 for (let item of rooms) {
                     if (item.slots && item.slots.length > 0) {
