@@ -476,7 +476,7 @@ app.post('/getdetail', async (req, res) => {
 
 
 })
-app.post('/getlist_home', async (req, res) => {
+app.post('/quanly/getlist_home', async (req, res) => {
 
     let { url, name, cookie, pagemin, pagemax } = req.body;
     if (!url || !cookie || !pagemin || !pagemax) {
