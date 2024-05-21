@@ -339,7 +339,7 @@ app.get('/quanly/checkgetdetail/:id', async (req, res) => {
     }
 })
 
-app.post('/getdetail', async (req, res) => {
+app.post('/quanly/getdetail', async (req, res) => {
     try {
         let { url, cookie, id } = req.body;
         if (!url || !cookie || !id) {
