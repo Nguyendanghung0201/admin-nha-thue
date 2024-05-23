@@ -746,7 +746,7 @@ app.get('/quanly/test', async (req, res) => {
                     break
                 }
             }
-            break
+            
 
         }
     } catch (e) {
