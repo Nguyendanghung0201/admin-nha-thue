@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const timeout = require('connect-timeout');
 const fs = require('fs')
+const { URL } = require('url');
 const cors = require('cors');
 var http = require('http');
 var axios = require('axios');
@@ -637,7 +638,7 @@ app.get('/quanly/test', async (req, res) => {
 
                             }
                             let result = await crawlNha_village(url)
-                            console.log('ressult ',result)
+                            console.log('ressult ', result)
                             await delay(1000)
                         }
                     }
@@ -670,10 +671,199 @@ app.get('/quanly/test', async (req, res) => {
 
 
 })
+async function crawler3(urls) {
+    let result = await axios.get(urls)
+
+
+    let $ = cheerio.load(result.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true });
+
+    // Extract data from the page using cheerio.
+    const house_id = $('.container-instance.container-showcase').attr(
+        'data-property-id',
+    );
+
+    const title = $('title').text().trim();
+
+    const name = $('h1.container-showcase-heading').text().trim();
+    const address = $('.container-showcase-subheading .element-address')
+        .text()
+        .trim();
+    const images = JSON.stringify(
+        $('.container-gallery-data')
+            .map((_, elem1) => {
+                return $(elem1)
+                    .find('img')
+                    .map((__, elem2) => $(elem2).attr('src'))
+                    .get();
+            })
+            .get(),
+    );
+
+    // traffic
+    const traffic_info = JSON.stringify(
+        $('.container-information-traffic-left li')
+            .map((_, elem) => {
+                return {
+                    label: $(elem)
+                        .find('.container-information-list-heading')
+                        .text()
+                        .trim(),
+                    value: $(elem)
+                        .find('.container-information-list-annotation')
+                        .text()
+                        .trim(),
+                };
+            })
+            .get(),
+    );
+    const traffic_map = $(
+        '.container-information-traffic-right img',
+    ).attr('src');
+    console.log('ajajj ', traffic_map)
+    const traffic_coordinates_map = JSON.stringify(
+        new URL(traffic_map).searchParams.get('center')?.split(','),
+    );
+
+    // house information
+    const houseInfoElem = $('.container-information-summary-item');
+    const information = JSON.stringify(
+        $(houseInfoElem[0])
+            .find('.container-information-list li')
+            .map((index, elem) => $(elem).text().trim())
+            .get(),
+    );
+
+    const public_services = JSON.stringify(
+        $(houseInfoElem[1])
+            .find('.container-information-list li')
+            .map((index, elem) => {
+                return {
+                    label: $(elem)
+                        .find('.container-information-list-heading')
+                        .text()
+                        .trim(),
+                    value: $(elem)
+                        .find('.container-information-list-annotation')
+                        .map((index, elem) => $(elem).text().trim())
+                        .get()
+                        .join(', '),
+                };
+            })
+            .get(),
+    );
+
+    const schools = JSON.stringify(
+        $(houseInfoElem[2])
+            .find('.container-information-list li')
+            .map((index, elem) => {
+                return {
+                    label: $(elem)
+                        .find('.container-information-list-heading')
+                        .text()
+                        .trim(),
+                    value: $(elem)
+                        .find('.container-information-list-annotation')
+                        .map((index, elem) => $(elem).text().trim())
+                        .get()
+                        .join(', '),
+                };
+            })
+            .get(),
+    );
+
+    // rooms
+    const rooms = JSON.stringify(
+        $('.container-rooms-group-card')
+            .map((index, elem) => {
+                // .match(/\d+/g)
+                // const slot = $($(elem).find(".container-rooms-group-card-header-brief span")[0]).text().match(/\d+/g);
+
+                return {
+                    // tên phòng
+                    name: $(elem).attr('data-name'),
+                    // diện tích
+                    size: `${$(elem).attr('data-size')}m²`,
+                    // giá
+                    price: `¥${$(elem).attr('data-rent')}`,
+                    // phòng còn trống
+                    slots: $(elem)
+                        .find(
+                            '.container-rooms-group-card-list-item .container-rooms-group-card-list-item-info',
+                        )
+                        .map((index, elem) => {
+                            const slotInfo = $(elem).find(
+                                '.container-rooms-group-card-list-item-info-property',
+                            );
+
+                            return {
+                                // cho thuê
+                                price: $($(slotInfo).find('dl dd')[0])
+                                    .text()
+                                    .trim(),
+
+                                // diện tích
+                                size: $($(slotInfo).find('dl dd')[1])
+                                    .text()
+                                    .trim(),
+
+                                // phòng
+                                room: $($(slotInfo).find('dl dd')[2])
+                                    .text()
+                                    .trim(),
+
+                                // ngày xem phòng
+                                date: $($(slotInfo).find('dl dd')[3])
+                                    .text()
+                                    .trim(),
+
+                                features: $(elem)
+                                    .find(
+                                        '.container-rooms-group-card-list-item-info-feature dl',
+                                    )
+                                    .map((index, elem) =>
+                                        $(elem).text().trim(),
+                                    )
+                                    .get(),
+                            };
+                        })
+                        .get(),
+                    // detail:
+                };
+            })
+            .get(),
+    );
+
+    const phone_number = $(
+        '.container-contact-bottom-telephone .container-contact-bottom-telephone-number',
+    ).text();
+
+    const result2 = {
+        house_id,
+        // url: request.url,
+        name,
+        address,
+        images,
+
+        traffic_info,
+        traffic_map,
+        traffic_coordinates_map,
+
+        information,
+        public_services,
+        schools,
+        rooms,
+        phone_number,
+        // crawled_at: new Date().toISOString(),
+    };
+
+
+
+    return result2;
+};
 async function crawlNha_village(url) {
     let check_cu = await db('building2').where('web', url).del()
     // console.log(url)
-    let data3 = await crawler([url])
+    let data3 = await crawler3(url)
     let data = data3[0]
 
     if (data && data.house_id && data.address && data.rooms) {
@@ -749,34 +939,32 @@ async function crawlNha_village(url) {
     }
 
 }
+
+//https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/sapporo-shi-011002/sakuradai-1063/ 
 app.get('/tesst2', async (req, res) => {
-    let list = citys.cities.filter(e => 23 == e.pid)
-    let ids = list.map(e => e.id)
-    let ids2 = [ids[0], ids[1]]
-    let query = "type=City&codes=" + ids2.toString().replaceAll(',', "+")
+    // let list = citys.cities.filter(e => 23 == e.pid)
+    // let ids = list.map(e => e.id)
+    // let ids2 = [ids[0], ids[1]]
+    // let query = "type=City&codes=" + ids2.toString().replaceAll(',', "+")
 
-    let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
-        filters: {},
-        lang: 1,
-        limit: 20,
-        list_type: {
-            cities: {
-                ids: ids2
-            }
-        },
-        query: query,
-        offset: 0,
-        sortBy: 0
+    // let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
+    //     filters: {},
+    //     lang: 1,
+    //     limit: 20,
+    //     list_type: {
+    //         cities: {
+    //             ids: ids2
+    //         }
+    //     },
+    //     query: query,
+    //     offset: 0,
+    //     sortBy: 0
 
-    })
-    if (data.status == 200 && data.data && data.data.content) {
-        return res.json({
-            kq: data.data
-        })
-    }
-    res.json({
-        kq: "ring"
-    })
+    // })
+    let data = await crawler3('https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/sapporo-shi-011002/sakuradai-1063/')
+    res.send(
+        data
+    )
 })
 app.post('/quanly/crawl_villagehouse', async (req, res) => {
 
