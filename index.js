@@ -684,7 +684,7 @@ let resigon = [
         "id": 10,
         "path": "kyushu"
     }]
-app.get('/test', async (req, res) => {
+app.get('/quanly/test', async (req, res) => {
     let total = 0
     let error = false
     try {
@@ -746,6 +746,7 @@ app.get('/test', async (req, res) => {
                     break
                 }
             }
+            break
 
         }
     } catch (e) {
