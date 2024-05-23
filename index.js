@@ -589,7 +589,7 @@ app.get('/quanly/test', async (req, res) => {
     let error = false
     try {
         for (let city of resigon.prefectures) {
-            
+
             let id = city.id;
             let list = citys.cities.filter(e => id == e.pid)
             let ids = list.map(e => e.id)
@@ -611,7 +611,7 @@ app.get('/quanly/test', async (req, res) => {
                 })
                 if (data.status == 200 && data.data && data.data.content) {
                     let content = '<div class="mainchinh">' + data.data.content + '</div>'
-                    let has_more = data.data.has_more
+                    let has_more = data.data.has_more ?? false
                     let $ = cheerio.load(content, { decodeEntities: false, xmlMode: true, lowerCaseTags: true });
                     let list = $('.mainchinh > li.container-search-cards-community')
                     let arr = []
@@ -623,7 +623,7 @@ app.get('/quanly/test', async (req, res) => {
                             let url = 'https://www.villagehouse.jp' + link;
                             let check_ = await db('building2').where('web', url).first()
                             if (check_) {
-
+                                console.log('da them')
                                 // const createdAtDate = new Date(check_.created_at);
 
                                 // // Tạo đối tượng Date cho ngày hiện tại
@@ -636,7 +636,8 @@ app.get('/quanly/test', async (req, res) => {
                                 continue
 
                             }
-                            await crawlNha_village(url)
+                            let result = await crawlNha_village(url)
+                            console.log('ressult ',result)
                             await delay(1000)
                         }
                     }
@@ -647,11 +648,12 @@ app.get('/quanly/test', async (req, res) => {
                     break
                 }
             }
-            
+
 
         }
     } catch (e) {
         error = true
+        console.log('looi  ', e)
     }
     if (error) {
         return res.json({
@@ -727,7 +729,7 @@ async function crawlNha_village(url) {
                         // updated_at: "2023-12-10T04:04:06.000Z",
                         web: url, //  link crawl
                     }
-
+                    console.log('them moi vao nha')
                     await db('building2').insert(mau_crawl)
                     break
                 }
@@ -747,6 +749,35 @@ async function crawlNha_village(url) {
     }
 
 }
+app.get('/tesst2', async (req, res) => {
+    let list = citys.cities.filter(e => 23 == e.pid)
+    let ids = list.map(e => e.id)
+    let ids2 = [ids[0], ids[1]]
+    let query = "type=City&codes=" + ids2.toString().replaceAll(',', "+")
+
+    let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
+        filters: {},
+        lang: 1,
+        limit: 20,
+        list_type: {
+            cities: {
+                ids: ids2
+            }
+        },
+        query: query,
+        offset: 0,
+        sortBy: 0
+
+    })
+    if (data.status == 200 && data.data && data.data.content) {
+        return res.json({
+            kq: data.data
+        })
+    }
+    res.json({
+        kq: "ring"
+    })
+})
 app.post('/quanly/crawl_villagehouse', async (req, res) => {
 
     let url = req.body.url
