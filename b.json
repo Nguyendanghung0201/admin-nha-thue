@@ -1,0 +1,6164 @@
+{
+    "cities": [
+        {
+            "names": {
+                "jaJp": "網走市",
+                "jaJpKana": "アバシリシ",
+                "enUs": "Abashiri-shi"
+            },
+            "id": "012114",
+            "path": "abashiri-shi-012114",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "上尾市",
+                "jaJpKana": "アゲオシ",
+                "enUs": "Ageo-shi"
+            },
+            "id": "112194",
+            "path": "ageo-shi-112194",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "愛知郡",
+                "jaJpKana": "アイチグン",
+                "enUs": "Aichi-gun"
+            },
+            "id": "233021",
+            "path": "aichi-gun-233021",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "愛甲郡",
+                "jaJpKana": "アイコウグン",
+                "enUs": "Aikou-gun"
+            },
+            "id": "144011",
+            "path": "aikou-gun-144011",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "会津若松市",
+                "jaJpKana": "アイヅワカマツシ",
+                "enUs": "Aizuwakamatsu-shi"
+            },
+            "id": "072028",
+            "path": "aizuwakamatsu-shi-072028",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "赤平市",
+                "jaJpKana": "アカビラシ",
+                "enUs": "Akabira-shi"
+            },
+            "id": "012181",
+            "path": "akabira-shi-012181",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "赤磐市",
+                "jaJpKana": "アカイワシ",
+                "enUs": "Akaiwa-shi"
+            },
+            "id": "332135",
+            "path": "akaiwa-shi-332135",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "明石市",
+                "jaJpKana": "アカシシ",
+                "enUs": "Akashi-shi"
+            },
+            "id": "282031",
+            "path": "akashi-shi-282031",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "安芸区",
+                "jaJpKana": "アキク",
+                "enUs": "Aki-ku"
+            },
+            "id": "34107",
+            "path": "aki-ku-34107",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "安芸市",
+                "jaJpKana": "アキシ",
+                "enUs": "Aki-shi"
+            },
+            "id": "392031",
+            "path": "aki-shi-392031",
+            "pid": 39
+        },
+        {
+            "names": {
+                "jaJp": "あきる野市",
+                "jaJpKana": "アキルノシ",
+                "enUs": "Akiruno-shi"
+            },
+            "id": "132284",
+            "path": "akiruno-shi-132284",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "昭島市",
+                "jaJpKana": "アキシマシ",
+                "enUs": "Akishima-shi"
+            },
+            "id": "132071",
+            "path": "akishima-shi-132071",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "秋田市",
+                "jaJpKana": "アキタシ",
+                "enUs": "Akita-shi"
+            },
+            "id": "052019",
+            "path": "akita-shi-052019",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "尼崎市",
+                "jaJpKana": "アマガサキシ",
+                "enUs": "Amagasaki-shi"
+            },
+            "id": "282022",
+            "path": "amagasaki-shi-282022",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "安城市",
+                "jaJpKana": "アンジョウシ",
+                "enUs": "Anjo-shi"
+            },
+            "id": "232122",
+            "path": "anjo-shi-232122",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "安八郡",
+                "jaJpKana": "アンパチグン",
+                "enUs": "Anpachi-gun"
+            },
+            "id": "213811",
+            "path": "anpachi-gun-213811",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "葵区",
+                "jaJpKana": "アオイク",
+                "enUs": "Aoi-ku"
+            },
+            "id": "22101",
+            "path": "aoi-ku-22101",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "青森市",
+                "jaJpKana": "アオモリシ",
+                "enUs": "Aomori-shi"
+            },
+            "id": "022012",
+            "path": "aomori-shi-022012",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "有田郡",
+                "jaJpKana": "アリダグン",
+                "enUs": "Arida-gun"
+            },
+            "id": "303615",
+            "path": "arida-gun-303615",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "旭区",
+                "jaJpKana": "アサヒク",
+                "enUs": "Asahi-ku"
+            },
+            "id": "14112",
+            "path": "asahi-ku-14112",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "旭川市",
+                "jaJpKana": "アサヒカワシ",
+                "enUs": "Asahikawa-shi"
+            },
+            "id": "012041",
+            "path": "asahikawa-shi-012041",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "安佐北区",
+                "jaJpKana": "アサキタク",
+                "enUs": "Asakita-ku"
+            },
+            "id": "34106",
+            "path": "asakita-ku-34106",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "朝倉市",
+                "jaJpKana": "アサクラシ",
+                "enUs": "Asakura-shi"
+            },
+            "id": "402281",
+            "path": "asakura-shi-402281",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "安佐南区",
+                "jaJpKana": "アサミナミク",
+                "enUs": "Asaminami-ku"
+            },
+            "id": "34105",
+            "path": "asaminami-ku-34105",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "芦別市",
+                "jaJpKana": "アシベツシ",
+                "enUs": "Ashibetsu-shi"
+            },
+            "id": "012165",
+            "path": "ashibetsu-shi-012165",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "足利市",
+                "jaJpKana": "アシカガシ",
+                "enUs": "Ashikaga-shi"
+            },
+            "id": "092029",
+            "path": "ashikaga-shi-092029",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "熱海市",
+                "jaJpKana": "アタミシ",
+                "enUs": "Atami-shi"
+            },
+            "id": "222054",
+            "path": "atami-shi-222054",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "厚別区",
+                "jaJpKana": "アツベツク",
+                "enUs": "Atsubetsu-ku"
+            },
+            "id": "1108",
+            "path": "atsubetsu-ku-1108",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "厚木市",
+                "jaJpKana": "アツギシ",
+                "enUs": "Atsugi-shi"
+            },
+            "id": "142123",
+            "path": "atsugi-shi-142123",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "あわら市",
+                "jaJpKana": "アワラシ",
+                "enUs": "Awara-shi"
+            },
+            "id": "182087",
+            "path": "awara-shi-182087",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "備前市",
+                "jaJpKana": "ビゼンシ",
+                "enUs": "Bizen-shi"
+            },
+            "id": "332119",
+            "path": "bizen-shi-332119",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "千葉市",
+                "jaJpKana": "千葉市",
+                "enUs": "Chiba-shi"
+            },
+            "id": "121002",
+            "path": "chiba-shi-121002",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "秩父郡",
+                "jaJpKana": "チチブグン",
+                "enUs": "Chichibu-gun"
+            },
+            "id": "113620",
+            "path": "chichibu-gun-113620",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "秩父市",
+                "jaJpKana": "チチブシ",
+                "enUs": "Chichibu-shi"
+            },
+            "id": "112071",
+            "path": "chichibu-shi-112071",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "筑後市",
+                "jaJpKana": "チクゴシ",
+                "enUs": "Chikugo-shi"
+            },
+            "id": "402117",
+            "path": "chikugo-shi-402117",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "千曲市",
+                "jaJpKana": "チクマシ",
+                "enUs": "Chikuma-shi"
+            },
+            "id": "202185",
+            "path": "chikuma-shi-202185",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "筑西市",
+                "jaJpKana": "チクセイシ",
+                "enUs": "Chikusei-shi"
+            },
+            "id": "082279",
+            "path": "chikusei-shi-082279",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "知多郡",
+                "jaJpKana": "チタグン",
+                "enUs": "Chita-gun"
+            },
+            "id": "234478",
+            "path": "chita-gun-234478",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "千歳市",
+                "jaJpKana": "チトセシ",
+                "enUs": "Chitose-shi"
+            },
+            "id": "012246",
+            "path": "chitose-shi-012246",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "中央区",
+                "jaJpKana": "チュウオウク",
+                "enUs": "Chuo-ku"
+            },
+            "id": "14152",
+            "path": "chuo-ku-14152",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "中央区",
+                "jaJpKana": "チュウオウク",
+                "enUs": "Chuo-ku"
+            },
+            "id": "22138",
+            "path": "chuo-ku-22138",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "中央区",
+                "jaJpKana": "チュウオウク",
+                "enUs": "Chuo-ku"
+            },
+            "id": "28110",
+            "path": "chuo-ku-28110",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "中央市",
+                "jaJpKana": "チュウオウシ",
+                "enUs": "Chuo-shi"
+            },
+            "id": "192147",
+            "path": "chuo-shi-192147",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "大仙市",
+                "jaJpKana": "ダイセンシ",
+                "enUs": "Daisen-shi"
+            },
+            "id": "052124",
+            "path": "daisen-shi-052124",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "伊達郡",
+                "jaJpKana": "ダテグン",
+                "enUs": "Date-gun"
+            },
+            "id": "073016",
+            "path": "date-gun-073016",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "伊達市",
+                "jaJpKana": "ダテシ",
+                "enUs": "Date-shi"
+            },
+            "id": "072133",
+            "path": "date-shi-072133",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "江別市",
+                "jaJpKana": "エベツシ",
+                "enUs": "Ebetsu-shi"
+            },
+            "id": "012173",
+            "path": "ebetsu-shi-012173",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "越前市",
+                "jaJpKana": "エチゼンシ",
+                "enUs": "Echizen-shi"
+            },
+            "id": "182095",
+            "path": "echizen-shi-182095",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "恵那市",
+                "jaJpKana": "エナシ",
+                "enUs": "Ena-shi"
+            },
+            "id": "212105",
+            "path": "ena-shi-212105",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "恵庭市",
+                "jaJpKana": "エニワシ",
+                "enUs": "Eniwa-shi"
+            },
+            "id": "012319",
+            "path": "eniwa-shi-012319",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "府中市",
+                "jaJpKana": "フチュウシ",
+                "enUs": "Fuchu-shi"
+            },
+            "id": "342084",
+            "path": "fuchu-shi-342084",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "富士市",
+                "jaJpKana": "フジシ",
+                "enUs": "Fuji-shi"
+            },
+            "id": "222101",
+            "path": "fuji-shi-222101",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "藤枝市",
+                "jaJpKana": "フジエダシ",
+                "enUs": "Fujieda-shi"
+            },
+            "id": "222143",
+            "path": "fujieda-shi-222143",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "富士宮市",
+                "jaJpKana": "フジノミヤシ",
+                "enUs": "Fujinomiya-shi"
+            },
+            "id": "222071",
+            "path": "fujinomiya-shi-222071",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "藤岡市",
+                "jaJpKana": "フジオカシ",
+                "enUs": "Fujioka-shi"
+            },
+            "id": "102091",
+            "path": "fujioka-shi-102091",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "藤沢市",
+                "jaJpKana": "フジサワシ",
+                "enUs": "Fujisawa-shi"
+            },
+            "id": "142051",
+            "path": "fujisawa-shi-142051",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "富士吉田市",
+                "jaJpKana": "フジヨシダシ",
+                "enUs": "Fujiyoshida-shi"
+            },
+            "id": "192023",
+            "path": "fujiyoshida-shi-192023",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "深川市",
+                "jaJpKana": "フカガワシ",
+                "enUs": "Fukagawa-shi"
+            },
+            "id": "012289",
+            "path": "fukagawa-shi-012289",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "深谷市",
+                "jaJpKana": "フカヤシ",
+                "enUs": "Fukaya-shi"
+            },
+            "id": "112186",
+            "path": "fukaya-shi-112186",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "福岡市",
+                "jaJpKana": "福岡市",
+                "enUs": "Fukuoka-shi"
+            },
+            "id": "401307",
+            "path": "fukuoka-shi-401307",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "袋井市",
+                "jaJpKana": "フクロイシ",
+                "enUs": "Fukuroi-shi"
+            },
+            "id": "222160",
+            "path": "fukuroi-shi-222160",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "福島市",
+                "jaJpKana": "フクシマシ",
+                "enUs": "Fukushima-shi"
+            },
+            "id": "072010",
+            "path": "fukushima-shi-072010",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "福山市",
+                "jaJpKana": "フクヤマシ",
+                "enUs": "Fukuyama-shi"
+            },
+            "id": "342076",
+            "path": "fukuyama-shi-342076",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "船橋市",
+                "jaJpKana": "フナバシシ",
+                "enUs": "Funabashi-shi"
+            },
+            "id": "122041",
+            "path": "funabashi-shi-122041",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "二海郡",
+                "jaJpKana": "フタミグン",
+                "enUs": "Futami-gun"
+            },
+            "id": "013463",
+            "path": "futami-gun-013463",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "不破郡",
+                "jaJpKana": "フワグン",
+                "enUs": "Fuwa-gun"
+            },
+            "id": "213616",
+            "path": "fuwa-gun-213616",
+            "pid": 21,
+            "dtl": {
+                "jaJp": "垂井町",
+                "jaJpKana": "タルイチョウ",
+                "enUs": "Tarui-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "不破郡",
+                "jaJpKana": "フワグン",
+                "enUs": "Fuwa-gun"
+            },
+            "id": "213624",
+            "path": "fuwa-gun-213624",
+            "pid": 21,
+            "dtl": {
+                "jaJp": "関ケ原町",
+                "jaJpKana": "セキガハラチョウ",
+                "enUs": "Sekigahara-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "蒲郡市",
+                "jaJpKana": "ガマゴオリシ",
+                "enUs": "Gamagori-shi"
+            },
+            "id": "232149",
+            "path": "gamagori-shi-232149",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "蒲生郡",
+                "jaJpKana": "ガモウグン",
+                "enUs": "Gamou-gun"
+            },
+            "id": "253839",
+            "path": "gamou-gun-253839",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "岐阜市",
+                "jaJpKana": "ギフシ",
+                "enUs": "Gifu-shi"
+            },
+            "id": "212016",
+            "path": "gifu-shi-212016",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "御坊市",
+                "jaJpKana": "ゴボウシ",
+                "enUs": "Gobo-shi"
+            },
+            "id": "302058",
+            "path": "gobo-shi-302058",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "御所市",
+                "jaJpKana": "ゴセシ",
+                "enUs": "Gose-shi"
+            },
+            "id": "292087",
+            "path": "gose-shi-292087",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "五所川原市",
+                "jaJpKana": "ゴショガワラシ",
+                "enUs": "Goshogawara-shi"
+            },
+            "id": "022055",
+            "path": "goshogawara-shi-022055",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "御殿場市",
+                "jaJpKana": "ゴテンバシ",
+                "enUs": "Gotemba-shi"
+            },
+            "id": "222151",
+            "path": "gotemba-shi-222151",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "江津市",
+                "jaJpKana": "ゴウツシ",
+                "enUs": "Gotsu-shi"
+            },
+            "id": "322075",
+            "path": "gotsu-shi-322075",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "郡上市",
+                "jaJpKana": "グジョウシ",
+                "enUs": "Gujo-shi"
+            },
+            "id": "212199",
+            "path": "gujo-shi-212199",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "行田市",
+                "jaJpKana": "ギョウダシ",
+                "enUs": "Gyoda-shi"
+            },
+            "id": "112062",
+            "path": "gyoda-shi-112062",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "八幡平市",
+                "jaJpKana": "ハチマンタイシ",
+                "enUs": "Hachimantai-shi"
+            },
+            "id": "032140",
+            "path": "hachimantai-shi-032140",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "八戸市",
+                "jaJpKana": "ハチノヘシ",
+                "enUs": "Hachinohe-shi"
+            },
+            "id": "022039",
+            "path": "hachinohe-shi-022039",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "八王子市",
+                "jaJpKana": "ハチオウジシ",
+                "enUs": "Hachioji-shi"
+            },
+            "id": "132012",
+            "path": "hachioji-shi-132012",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "秦野市",
+                "jaJpKana": "ハダノシ",
+                "enUs": "Hadano-shi"
+            },
+            "id": "142115",
+            "path": "hadano-shi-142115",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "芳賀郡",
+                "jaJpKana": "ハガグン",
+                "enUs": "Haga-gun"
+            },
+            "id": "093424",
+            "path": "haga-gun-093424",
+            "pid": 9,
+            "dtl": {
+                "jaJp": "益子町",
+                "jaJpKana": "マシコマチ",
+                "enUs": "Mashiko-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "芳賀郡",
+                "jaJpKana": "ハガグン",
+                "enUs": "Haga-gun"
+            },
+            "id": "093459",
+            "path": "haga-gun-093459",
+            "pid": 9,
+            "dtl": {
+                "jaJp": "芳賀町",
+                "jaJpKana": "ハガマチ",
+                "enUs": "Haga-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "博多区",
+                "jaJpKana": "ハカタク",
+                "enUs": "Hakata-ku"
+            },
+            "id": "40132",
+            "path": "hakata-ku-40132",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "函館市",
+                "jaJpKana": "ハコダテシ",
+                "enUs": "Hakodate-shi"
+            },
+            "id": "012025",
+            "path": "hakodate-shi-012025",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "羽咋郡",
+                "jaJpKana": "ハクイグン",
+                "enUs": "Hakui-gun"
+            },
+            "id": "173843",
+            "path": "hakui-gun-173843",
+            "pid": 17,
+            "dtl": {
+                "jaJp": "志賀町",
+                "jaJpKana": "シカマチ",
+                "enUs": "Shika-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "羽咋郡",
+                "jaJpKana": "ハクイグン",
+                "enUs": "Hakui-gun"
+            },
+            "id": "173860",
+            "path": "hakui-gun-173860",
+            "pid": 17,
+            "dtl": {
+                "jaJp": "宝達志水町",
+                "jaJpKana": "ホウダツシミズチョウ",
+                "enUs": "Hodatsushimizu-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "白山市",
+                "jaJpKana": "ハクサンシ",
+                "enUs": "Hakusan-shi"
+            },
+            "id": "172103",
+            "path": "hakusan-shi-172103",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "浜松市",
+                "jaJpKana": "浜松市",
+                "enUs": "Hamamatsu-shi"
+            },
+            "id": "221309",
+            "path": "hamamatsu-shi-221309",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "浜名区",
+                "jaJpKana": "ハマナク",
+                "enUs": "Hamana-ku"
+            },
+            "id": "22139",
+            "path": "hamana-ku-22139",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "花巻市",
+                "jaJpKana": "ハナマキシ",
+                "enUs": "Hanamaki-shi"
+            },
+            "id": "032051",
+            "path": "hanamaki-shi-032051",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "花見川区",
+                "jaJpKana": "ハナミガワク",
+                "enUs": "Hanamigawa-ku"
+            },
+            "id": "12102",
+            "path": "hanamigawa-ku-12102",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "半田市",
+                "jaJpKana": "ハンダシ",
+                "enUs": "Handa-shi"
+            },
+            "id": "232050",
+            "path": "handa-shi-232050",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "埴科郡",
+                "jaJpKana": "ハニシナグン",
+                "enUs": "Hanishina-gun"
+            },
+            "id": "205214",
+            "path": "hanishina-gun-205214",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "羽生市",
+                "jaJpKana": "ハニュウシ",
+                "enUs": "Hanyu-shi"
+            },
+            "id": "112160",
+            "path": "hanyu-shi-112160",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "羽島郡",
+                "jaJpKana": "ハシマグン",
+                "enUs": "Hashima-gun"
+            },
+            "id": "213021",
+            "path": "hashima-gun-213021",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "羽島市",
+                "jaJpKana": "ハシマシ",
+                "enUs": "Hashima-shi"
+            },
+            "id": "212091",
+            "path": "hashima-shi-212091",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "橋本市",
+                "jaJpKana": "ハシモトシ",
+                "enUs": "Hashimoto-shi"
+            },
+            "id": "302031",
+            "path": "hashimoto-shi-302031",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "廿日市市",
+                "jaJpKana": "ハツカイチシ",
+                "enUs": "Hatsukaichi-shi"
+            },
+            "id": "342131",
+            "path": "hatsukaichi-shi-342131",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "碧南市",
+                "jaJpKana": "ヘキナンシ",
+                "enUs": "Hekinan-shi"
+            },
+            "id": "232092",
+            "path": "hekinan-shi-232092",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "飛騨市",
+                "jaJpKana": "ヒダシ",
+                "enUs": "Hida-shi"
+            },
+            "id": "212172",
+            "path": "hida-shi-212172",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "日高郡",
+                "jaJpKana": "ヒダカグン",
+                "enUs": "Hidaka-gun"
+            },
+            "id": "016101",
+            "path": "hidaka-gun-016101",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "日高郡",
+                "jaJpKana": "ヒダカグン",
+                "enUs": "Hidaka-gun"
+            },
+            "id": "303909",
+            "path": "hidaka-gun-303909",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "東かがわ市",
+                "jaJpKana": "ヒガシ",
+                "enUs": "Higa-shi"
+            },
+            "id": "372072",
+            "path": "higa-shi-372072",
+            "pid": 37
+        },
+        {
+            "names": {
+                "jaJp": "東区",
+                "jaJpKana": "ヒガシク",
+                "enUs": "Higashi-ku"
+            },
+            "id": "1103",
+            "path": "higashi-ku-1103",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "東区",
+                "jaJpKana": "ヒガシク",
+                "enUs": "Higashi-ku"
+            },
+            "id": "15102",
+            "path": "higashi-ku-15102",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "東区",
+                "jaJpKana": "ヒガシク",
+                "enUs": "Higashi-ku"
+            },
+            "id": "27143",
+            "path": "higashi-ku-27143",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "東区",
+                "jaJpKana": "ヒガシク",
+                "enUs": "Higashi-ku"
+            },
+            "id": "33103",
+            "path": "higashi-ku-33103",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "東区",
+                "jaJpKana": "ヒガシク",
+                "enUs": "Higashi-ku"
+            },
+            "id": "40131",
+            "path": "higashi-ku-40131",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "東広島市",
+                "jaJpKana": "ヒガシヒロシマシ",
+                "enUs": "Higashihiroshima-shi"
+            },
+            "id": "342122",
+            "path": "higashihiroshima-shi-342122",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "東松島市",
+                "jaJpKana": "ヒガシマツシマシ",
+                "enUs": "Higashimatsushima-shi"
+            },
+            "id": "042145",
+            "path": "higashimatsushima-shi-042145",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "東松山市",
+                "jaJpKana": "ヒガシマツヤマシ",
+                "enUs": "Higashimatsuyama-shi"
+            },
+            "id": "112127",
+            "path": "higashimatsuyama-shi-112127",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "東牟婁郡",
+                "jaJpKana": "ヒガシムログン",
+                "enUs": "Higashimuro-gun"
+            },
+            "id": "304212",
+            "path": "higashimuro-gun-304212",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "東根市",
+                "jaJpKana": "ヒガシネシ",
+                "enUs": "Higashine-shi"
+            },
+            "id": "062111",
+            "path": "higashine-shi-062111",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "東近江市",
+                "jaJpKana": "ヒガシオウミシ",
+                "enUs": "Higashiomi-shi"
+            },
+            "id": "252131",
+            "path": "higashiomi-shi-252131",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "東大阪市",
+                "jaJpKana": "ヒガシオオサカシ",
+                "enUs": "Higashiosaka-shi"
+            },
+            "id": "272272",
+            "path": "higashiosaka-shi-272272",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "光市",
+                "jaJpKana": "ヒカリシ",
+                "enUs": "Hikari-shi"
+            },
+            "id": "352101",
+            "path": "hikari-shi-352101",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "比企郡",
+                "jaJpKana": "ヒキグン",
+                "enUs": "Hiki-gun"
+            },
+            "id": "113433",
+            "path": "hiki-gun-113433",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "彦根市",
+                "jaJpKana": "ヒコネシ",
+                "enUs": "Hikone-shi"
+            },
+            "id": "252026",
+            "path": "hikone-shi-252026",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "姫路市",
+                "jaJpKana": "ヒメジシ",
+                "enUs": "Himeji-shi"
+            },
+            "id": "282014",
+            "path": "himeji-shi-282014",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "氷見市",
+                "jaJpKana": "ヒミシ",
+                "enUs": "Himi-shi"
+            },
+            "id": "162051",
+            "path": "himi-shi-162051",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "枚方市",
+                "jaJpKana": "ヒラカタシ",
+                "enUs": "Hirakata-shi"
+            },
+            "id": "272108",
+            "path": "hirakata-shi-272108",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "平川市",
+                "jaJpKana": "ヒラカワシ",
+                "enUs": "Hirakawa-shi"
+            },
+            "id": "022101",
+            "path": "hirakawa-shi-022101",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "平塚市",
+                "jaJpKana": "ヒラツカシ",
+                "enUs": "Hiratsuka-shi"
+            },
+            "id": "142034",
+            "path": "hiratsuka-shi-142034",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "弘前市",
+                "jaJpKana": "ヒロサキシ",
+                "enUs": "Hirosaki-shi"
+            },
+            "id": "022021",
+            "path": "hirosaki-shi-022021",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "広島市",
+                "jaJpKana": "広島市",
+                "enUs": "Hiroshima-shi"
+            },
+            "id": "341002",
+            "path": "hiroshima-shi-341002",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "日立市",
+                "jaJpKana": "ヒタチシ",
+                "enUs": "Hitachi-shi"
+            },
+            "id": "082023",
+            "path": "hitachi-shi-082023",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "ひたちなか市",
+                "jaJpKana": "ヒタチナカシ",
+                "enUs": "Hitachinaka-shi"
+            },
+            "id": "082210",
+            "path": "hitachinaka-shi-082210",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "常陸大宮市",
+                "jaJpKana": "ヒタチオオミヤシ",
+                "enUs": "Hitachiomiya-shi"
+            },
+            "id": "082252",
+            "path": "hitachiomiya-shi-082252",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "保土ケ谷区",
+                "jaJpKana": "ホドガヤク",
+                "enUs": "Hodogaya-ku"
+            },
+            "id": "14106",
+            "path": "hodogaya-ku-14106",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "防府市",
+                "jaJpKana": "ホウフシ",
+                "enUs": "Hofu-shi"
+            },
+            "id": "352063",
+            "path": "hofu-shi-352063",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "鳳珠郡",
+                "jaJpKana": "ホウスグン",
+                "enUs": "Housu-gun"
+            },
+            "id": "174637",
+            "path": "housu-gun-174637",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "井原市",
+                "jaJpKana": "イバラシ",
+                "enUs": "Ibara-shi"
+            },
+            "id": "332071",
+            "path": "ibara-shi-332071",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "茨木市",
+                "jaJpKana": "イバラキシ",
+                "enUs": "Ibaraki-shi"
+            },
+            "id": "272116",
+            "path": "ibaraki-shi-272116",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "揖斐郡",
+                "jaJpKana": "イビグン",
+                "enUs": "Ibi-gun"
+            },
+            "id": "214019",
+            "path": "ibi-gun-214019",
+            "pid": 21,
+            "dtl": {
+                "jaJp": "揖斐川町",
+                "jaJpKana": "イビガワチョウ",
+                "enUs": "Ibigawa-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "揖斐郡",
+                "jaJpKana": "イビグン",
+                "enUs": "Ibi-gun"
+            },
+            "id": "214035",
+            "path": "ibi-gun-214035",
+            "pid": 21,
+            "dtl": {
+                "jaJp": "大野町",
+                "jaJpKana": "オオノチョウ",
+                "enUs": "Ono-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "揖斐郡",
+                "jaJpKana": "イビグン",
+                "enUs": "Ibi-gun"
+            },
+            "id": "214043",
+            "path": "ibi-gun-214043",
+            "pid": 21,
+            "dtl": {
+                "jaJp": "池田町",
+                "jaJpKana": "イケダチョウ",
+                "enUs": "Ikeda-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "揖保郡",
+                "jaJpKana": "イボグン",
+                "enUs": "Ibo-gun"
+            },
+            "id": "284645",
+            "path": "ibo-gun-284645",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "市原市",
+                "jaJpKana": "イチハラシ",
+                "enUs": "Ichihara-shi"
+            },
+            "id": "122190",
+            "path": "ichihara-shi-122190",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "一宮市",
+                "jaJpKana": "イチノミヤシ",
+                "enUs": "Ichinomiya-shi"
+            },
+            "id": "232033",
+            "path": "ichinomiya-shi-232033",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "一関市",
+                "jaJpKana": "イチノセキシ",
+                "enUs": "Ichinoseki-shi"
+            },
+            "id": "032093",
+            "path": "ichinoseki-shi-032093",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "伊賀市",
+                "jaJpKana": "イガシ",
+                "enUs": "Iga-shi"
+            },
+            "id": "242161",
+            "path": "iga-shi-242161",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "飯田市",
+                "jaJpKana": "イイダシ",
+                "enUs": "Iida-shi"
+            },
+            "id": "202053",
+            "path": "iida-shi-202053",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "飯塚市",
+                "jaJpKana": "イイヅカシ",
+                "enUs": "Iizuka-shi"
+            },
+            "id": "402052",
+            "path": "iizuka-shi-402052",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "今治市",
+                "jaJpKana": "イマバリシ",
+                "enUs": "Imabari-shi"
+            },
+            "id": "382027",
+            "path": "imabari-shi-382027",
+            "pid": 38
+        },
+        {
+            "names": {
+                "jaJp": "伊万里市",
+                "jaJpKana": "イマリシ",
+                "enUs": "Imari-shi"
+            },
+            "id": "412058",
+            "path": "imari-shi-412058",
+            "pid": 41
+        },
+        {
+            "names": {
+                "jaJp": "射水市",
+                "jaJpKana": "イミズシ",
+                "enUs": "Imizu-shi"
+            },
+            "id": "162116",
+            "path": "imizu-shi-162116",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "伊那市",
+                "jaJpKana": "イナシ",
+                "enUs": "Ina-shi"
+            },
+            "id": "202096",
+            "path": "ina-shi-202096",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "稲毛区",
+                "jaJpKana": "イナゲク",
+                "enUs": "Inage-ku"
+            },
+            "id": "12103",
+            "path": "inage-ku-12103",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "稲沢市",
+                "jaJpKana": "イナザワシ",
+                "enUs": "Inazawa-shi"
+            },
+            "id": "232203",
+            "path": "inazawa-shi-232203",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "犬山市",
+                "jaJpKana": "イヌヤマシ",
+                "enUs": "Inuyama-shi"
+            },
+            "id": "232157",
+            "path": "inuyama-shi-232157",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "入間郡",
+                "jaJpKana": "イルマグン",
+                "enUs": "Iruma-gun"
+            },
+            "id": "113263",
+            "path": "iruma-gun-113263",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "諫早市",
+                "jaJpKana": "イサハヤシ",
+                "enUs": "Isahaya-shi"
+            },
+            "id": "422045",
+            "path": "isahaya-shi-422045",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "胆沢郡",
+                "jaJpKana": "イサワグン",
+                "enUs": "Isawa-gun"
+            },
+            "id": "033812",
+            "path": "isawa-gun-033812",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "伊勢市",
+                "jaJpKana": "イセシ",
+                "enUs": "Ise-shi"
+            },
+            "id": "242039",
+            "path": "ise-shi-242039",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "石狩市",
+                "jaJpKana": "イシカリシ",
+                "enUs": "Ishikari-shi"
+            },
+            "id": "012351",
+            "path": "ishikari-shi-012351",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "石巻市",
+                "jaJpKana": "イシノマキシ",
+                "enUs": "Ishinomaki-shi"
+            },
+            "id": "042021",
+            "path": "ishinomaki-shi-042021",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "石岡市",
+                "jaJpKana": "イシオカシ",
+                "enUs": "Ishioka-shi"
+            },
+            "id": "082058",
+            "path": "ishioka-shi-082058",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "伊丹市",
+                "jaJpKana": "イタミシ",
+                "enUs": "Itami-shi"
+            },
+            "id": "282073",
+            "path": "itami-shi-282073",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "伊東市",
+                "jaJpKana": "イトウシ",
+                "enUs": "Ito-shi"
+            },
+            "id": "222089",
+            "path": "ito-shi-222089",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "糸満市",
+                "jaJpKana": "イトマンシ",
+                "enUs": "Itoman-shi"
+            },
+            "id": "472107",
+            "path": "itoman-shi-472107",
+            "pid": 47
+        },
+        {
+            "names": {
+                "jaJp": "糸島市",
+                "jaJpKana": "イトシマシ",
+                "enUs": "Itoshima-shi"
+            },
+            "id": "402303",
+            "path": "itoshima-shi-402303",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "いわき市",
+                "jaJpKana": "イワキシ",
+                "enUs": "Iwaki-shi"
+            },
+            "id": "072044",
+            "path": "iwaki-shi-072044",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "岩国市",
+                "jaJpKana": "イワクニシ",
+                "enUs": "Iwakuni-shi"
+            },
+            "id": "352080",
+            "path": "iwakuni-shi-352080",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "岩倉市",
+                "jaJpKana": "イワクラシ",
+                "enUs": "Iwakura-shi"
+            },
+            "id": "232289",
+            "path": "iwakura-shi-232289",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "岩見沢市",
+                "jaJpKana": "イワミザワシ",
+                "enUs": "Iwamizawa-shi"
+            },
+            "id": "012106",
+            "path": "iwamizawa-shi-012106",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "岩沼市",
+                "jaJpKana": "イワヌマシ",
+                "enUs": "Iwanuma-shi"
+            },
+            "id": "042111",
+            "path": "iwanuma-shi-042111",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "磐田市",
+                "jaJpKana": "イワタシ",
+                "enUs": "Iwata-shi"
+            },
+            "id": "222119",
+            "path": "iwata-shi-222119",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "伊豆市",
+                "jaJpKana": "イズシ",
+                "enUs": "Izu-shi"
+            },
+            "id": "222224",
+            "path": "izu-shi-222224",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "和泉市",
+                "jaJpKana": "イズミシ",
+                "enUs": "Izumi-shi"
+            },
+            "id": "272191",
+            "path": "izumi-shi-272191",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "出雲市",
+                "jaJpKana": "イズモシ",
+                "enUs": "Izumo-shi"
+            },
+            "id": "322032",
+            "path": "izumo-shi-322032",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "伊豆の国市",
+                "jaJpKana": "イズノクニシ",
+                "enUs": "Izunokuni-shi"
+            },
+            "id": "222259",
+            "path": "izunokuni-shi-222259",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "上越市",
+                "jaJpKana": "ジョウエツシ",
+                "enUs": "Joetsu-shi"
+            },
+            "id": "152226",
+            "path": "joetsu-shi-152226",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "常総市",
+                "jaJpKana": "ジョウソウシ",
+                "enUs": "Joso-shi"
+            },
+            "id": "082112",
+            "path": "joso-shi-082112",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "城陽市",
+                "jaJpKana": "ジョウヨウシ",
+                "enUs": "Joyo-shi"
+            },
+            "id": "262072",
+            "path": "joyo-shi-262072",
+            "pid": 26
+        },
+        {
+            "names": {
+                "jaJp": "加賀市",
+                "jaJpKana": "カガシ",
+                "enUs": "Kaga-shi"
+            },
+            "id": "172065",
+            "path": "kaga-shi-172065",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "鹿児島市",
+                "jaJpKana": "カゴシマシ",
+                "enUs": "Kagoshima-shi"
+            },
+            "id": "462012",
+            "path": "kagoshima-shi-462012",
+            "pid": 46
+        },
+        {
+            "names": {
+                "jaJp": "河北郡",
+                "jaJpKana": "カホクグン",
+                "enUs": "Kahoku-gun"
+            },
+            "id": "173614",
+            "path": "kahoku-gun-173614",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "かほく市",
+                "jaJpKana": "カホクシ",
+                "enUs": "Kahoku-shi"
+            },
+            "id": "172090",
+            "path": "kahoku-shi-172090",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "甲斐市",
+                "jaJpKana": "カイシ",
+                "enUs": "Kai-shi"
+            },
+            "id": "192104",
+            "path": "kai-shi-192104",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "海津市",
+                "jaJpKana": "カイヅシ",
+                "enUs": "Kaizu-shi"
+            },
+            "id": "212211",
+            "path": "kaizu-shi-212211",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "貝塚市",
+                "jaJpKana": "カイヅカシ",
+                "enUs": "Kaizuka-shi"
+            },
+            "id": "272086",
+            "path": "kaizuka-shi-272086",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "各務原市",
+                "jaJpKana": "カカミガハラシ",
+                "enUs": "Kakamigahara-shi"
+            },
+            "id": "212130",
+            "path": "kakamigahara-shi-212130",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "掛川市",
+                "jaJpKana": "カケガワシ",
+                "enUs": "Kakegawa-shi"
+            },
+            "id": "222135",
+            "path": "kakegawa-shi-222135",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "加古川市",
+                "jaJpKana": "カコガワシ",
+                "enUs": "Kakogawa-shi"
+            },
+            "id": "282103",
+            "path": "kakogawa-shi-282103",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "角田市",
+                "jaJpKana": "カクダシ",
+                "enUs": "Kakuda-shi"
+            },
+            "id": "042081",
+            "path": "kakuda-shi-042081",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "嘉麻市",
+                "jaJpKana": "カマシ",
+                "enUs": "Kama-shi"
+            },
+            "id": "402273",
+            "path": "kama-shi-402273",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "鎌ケ谷市",
+                "jaJpKana": "カマガヤシ",
+                "enUs": "Kamagaya-shi"
+            },
+            "id": "122246",
+            "path": "kamagaya-shi-122246",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "釜石市",
+                "jaJpKana": "カマイシシ",
+                "enUs": "Kamaishi-shi"
+            },
+            "id": "032115",
+            "path": "kamaishi-shi-032115",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "鎌倉市",
+                "jaJpKana": "カマクラシ",
+                "enUs": "Kamakura-shi"
+            },
+            "id": "142042",
+            "path": "kamakura-shi-142042",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "加美郡",
+                "jaJpKana": "カミグン",
+                "enUs": "Kami-gun"
+            },
+            "id": "044458",
+            "path": "kami-gun-044458",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "上北郡",
+                "jaJpKana": "カミキタグン",
+                "enUs": "Kamikita-gun"
+            },
+            "id": "024015",
+            "path": "kamikita-gun-024015",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "野辺地町",
+                "jaJpKana": "ノヘジマチ",
+                "enUs": "Noheji-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "上北郡",
+                "jaJpKana": "カミキタグン",
+                "enUs": "Kamikita-gun"
+            },
+            "id": "024023",
+            "path": "kamikita-gun-024023",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "七戸町",
+                "jaJpKana": "シチノヘマチ",
+                "enUs": "Shichinohe-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "上北郡",
+                "jaJpKana": "カミキタグン",
+                "enUs": "Kamikita-gun"
+            },
+            "id": "024121",
+            "path": "kamikita-gun-024121",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "おいらせ町",
+                "jaJpKana": "オイラセチョウ",
+                "enUs": "Oirase-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "加茂郡",
+                "jaJpKana": "カモグン",
+                "enUs": "Kamo-gun"
+            },
+            "id": "215031",
+            "path": "kamo-gun-215031",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "賀茂郡",
+                "jaJpKana": "カモグン",
+                "enUs": "Kamo-gun"
+            },
+            "id": "223018",
+            "path": "kamo-gun-223018",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "神奈川区",
+                "jaJpKana": "カナガワク",
+                "enUs": "Kanagawa-ku"
+            },
+            "id": "14102",
+            "path": "kanagawa-ku-14102",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "金沢市",
+                "jaJpKana": "カナザワシ",
+                "enUs": "Kanazawa-shi"
+            },
+            "id": "172014",
+            "path": "kanazawa-shi-172014",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "可児市",
+                "jaJpKana": "カニシ",
+                "enUs": "Kani-shi"
+            },
+            "id": "212148",
+            "path": "kani-shi-212148",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "観音寺市",
+                "jaJpKana": "カンオンジシ",
+                "enUs": "Kanonji-shi"
+            },
+            "id": "372056",
+            "path": "kanonji-shi-372056",
+            "pid": 37
+        },
+        {
+            "names": {
+                "jaJp": "鹿沼市",
+                "jaJpKana": "カヌマシ",
+                "enUs": "Kanuma-shi"
+            },
+            "id": "092053",
+            "path": "kanuma-shi-092053",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "神崎郡",
+                "jaJpKana": "カンザキグン",
+                "enUs": "Kanzaki-gun"
+            },
+            "id": "284432",
+            "path": "kanzaki-gun-284432",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "刈谷市",
+                "jaJpKana": "カリヤシ",
+                "enUs": "Kariya-shi"
+            },
+            "id": "232106",
+            "path": "kariya-shi-232106",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "加西市",
+                "jaJpKana": "カサイシ",
+                "enUs": "Kasai-shi"
+            },
+            "id": "282201",
+            "path": "kasai-shi-282201",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "笠間市",
+                "jaJpKana": "カサマシ",
+                "enUs": "Kasama-shi"
+            },
+            "id": "082163",
+            "path": "kasama-shi-082163",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "笠岡市",
+                "jaJpKana": "カサオカシ",
+                "enUs": "Kasaoka-shi"
+            },
+            "id": "332054",
+            "path": "kasaoka-shi-332054",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "橿原市",
+                "jaJpKana": "カシハラシ",
+                "enUs": "Kashihara-shi"
+            },
+            "id": "292052",
+            "path": "kashihara-shi-292052",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "鹿島郡",
+                "jaJpKana": "カシマグン",
+                "enUs": "Kashima-gun"
+            },
+            "id": "174076",
+            "path": "kashima-gun-174076",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "鹿嶋市",
+                "jaJpKana": "カシマシ",
+                "enUs": "Kashima-shi"
+            },
+            "id": "082228",
+            "path": "kashima-shi-082228",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "柏原市",
+                "jaJpKana": "カシワラシ",
+                "enUs": "Kashiwara-shi"
+            },
+            "id": "272213",
+            "path": "kashiwara-shi-272213",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "春日井市",
+                "jaJpKana": "カスガイシ",
+                "enUs": "Kasugai-shi"
+            },
+            "id": "232068",
+            "path": "kasugai-shi-232068",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "潟上市",
+                "jaJpKana": "カタガミシ",
+                "enUs": "Katagami-shi"
+            },
+            "id": "052116",
+            "path": "katagami-shi-052116",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "交野市",
+                "jaJpKana": "カタノシ",
+                "enUs": "Katano-shi"
+            },
+            "id": "272302",
+            "path": "katano-shi-272302",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "加東市",
+                "jaJpKana": "カトウシ",
+                "enUs": "Kato-shi"
+            },
+            "id": "282286",
+            "path": "kato-shi-282286",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "勝田郡",
+                "jaJpKana": "カツタグン",
+                "enUs": "Katsuta-gun"
+            },
+            "id": "336220",
+            "path": "katsuta-gun-336220",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "勝山市",
+                "jaJpKana": "カツヤマシ",
+                "enUs": "Katsuyama-shi"
+            },
+            "id": "182061",
+            "path": "katsuyama-shi-182061",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "刈田郡",
+                "jaJpKana": "カッタグン",
+                "enUs": "Katta-gun"
+            },
+            "id": "043010",
+            "path": "katta-gun-043010",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "河内郡",
+                "jaJpKana": "カワチグン",
+                "enUs": "Kawachi-gun"
+            },
+            "id": "093017",
+            "path": "kawachi-gun-093017",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "河内長野市",
+                "jaJpKana": "カワチナガノシ",
+                "enUs": "Kawachinagano-shi"
+            },
+            "id": "272167",
+            "path": "kawachinagano-shi-272167",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "川越市",
+                "jaJpKana": "カワゴエシ",
+                "enUs": "Kawagoe-shi"
+            },
+            "id": "112011",
+            "path": "kawagoe-shi-112011",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "川口市",
+                "jaJpKana": "カワグチシ",
+                "enUs": "Kawaguchi-shi"
+            },
+            "id": "112038",
+            "path": "kawaguchi-shi-112038",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "河沼郡",
+                "jaJpKana": "カワヌマグン",
+                "enUs": "Kawanuma-gun"
+            },
+            "id": "074217",
+            "path": "kawanuma-gun-074217",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "川崎市",
+                "jaJpKana": "川崎市",
+                "enUs": "Kawasaki-shi"
+            },
+            "id": "141305",
+            "path": "kawasaki-shi-141305",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "加須市",
+                "jaJpKana": "カゾシ",
+                "enUs": "Kazo-shi"
+            },
+            "id": "112101",
+            "path": "kazo-shi-112101",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "鹿角市",
+                "jaJpKana": "カヅノシ",
+                "enUs": "Kazuno-shi"
+            },
+            "id": "052094",
+            "path": "kazuno-shi-052094",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "菊池市",
+                "jaJpKana": "キクチシ",
+                "enUs": "Kikuchi-shi"
+            },
+            "id": "432105",
+            "path": "kikuchi-shi-432105",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "菊川市",
+                "jaJpKana": "キクガワシ",
+                "enUs": "Kikugawa-shi"
+            },
+            "id": "222241",
+            "path": "kikugawa-shi-222241",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "君津市",
+                "jaJpKana": "キミツシ",
+                "enUs": "Kimitsu-shi"
+            },
+            "id": "122254",
+            "path": "kimitsu-shi-122254",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "紀の川市",
+                "jaJpKana": "キノカワシ",
+                "enUs": "Kinokawa-shi"
+            },
+            "id": "302082",
+            "path": "kinokawa-shi-302082",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "桐生市",
+                "jaJpKana": "キリュウシ",
+                "enUs": "Kiryu-shi"
+            },
+            "id": "102032",
+            "path": "kiryu-shi-102032",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "岸和田市",
+                "jaJpKana": "キシワダシ",
+                "enUs": "Kishiwada-shi"
+            },
+            "id": "272027",
+            "path": "kishiwada-shi-272027",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "北区",
+                "jaJpKana": "キタク",
+                "enUs": "Kita-ku"
+            },
+            "id": "1102",
+            "path": "kita-ku-1102",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "北区",
+                "jaJpKana": "キタク",
+                "enUs": "Kita-ku"
+            },
+            "id": "28109",
+            "path": "kita-ku-28109",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "北区",
+                "jaJpKana": "キタク",
+                "enUs": "Kita-ku"
+            },
+            "id": "33101",
+            "path": "kita-ku-33101",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "北区",
+                "jaJpKana": "キタク",
+                "enUs": "Kita-ku"
+            },
+            "id": "43105",
+            "path": "kita-ku-43105",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "北安曇郡",
+                "jaJpKana": "キタアヅミグン",
+                "enUs": "Kitaazumi-gun"
+            },
+            "id": "204854",
+            "path": "kitaazumi-gun-204854",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "北茨城市",
+                "jaJpKana": "キタイバラキシ",
+                "enUs": "Kitaibaraki-shi"
+            },
+            "id": "082155",
+            "path": "kitaibaraki-shi-082155",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "北上市",
+                "jaJpKana": "キタカミシ",
+                "enUs": "Kitakami-shi"
+            },
+            "id": "032069",
+            "path": "kitakami-shi-032069",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "喜多方市",
+                "jaJpKana": "キタカタシ",
+                "enUs": "Kitakata-shi"
+            },
+            "id": "072087",
+            "path": "kitakata-shi-072087",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "北九州市",
+                "jaJpKana": "北九州市",
+                "enUs": "Kitakyushu-shi"
+            },
+            "id": "401005",
+            "path": "kitakyushu-shi-401005",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "北松浦郡",
+                "jaJpKana": "キタマツウラグン",
+                "enUs": "Kitamatsuura-gun"
+            },
+            "id": "423912",
+            "path": "kitamatsuura-gun-423912",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "北見市",
+                "jaJpKana": "キタミシ",
+                "enUs": "Kitami-shi"
+            },
+            "id": "012084",
+            "path": "kitami-shi-012084",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "北名古屋市",
+                "jaJpKana": "キタナゴヤシ",
+                "enUs": "Kitanagoya-shi"
+            },
+            "id": "232343",
+            "path": "kitanagoya-shi-232343",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "北佐久郡",
+                "jaJpKana": "キタサクグン",
+                "enUs": "Kitasaku-gun"
+            },
+            "id": "203238",
+            "path": "kitasaku-gun-203238",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "神戸市",
+                "jaJpKana": "神戸市",
+                "enUs": "Kobe-shi"
+            },
+            "id": "281000",
+            "path": "kobe-shi-281000",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "高知市",
+                "jaJpKana": "コウチシ",
+                "enUs": "Kochi-shi"
+            },
+            "id": "392014",
+            "path": "kochi-shi-392014",
+            "pid": 39
+        },
+        {
+            "names": {
+                "jaJp": "古河市",
+                "jaJpKana": "コガシ",
+                "enUs": "Koga-shi"
+            },
+            "id": "082040",
+            "path": "koga-shi-082040",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "古賀市",
+                "jaJpKana": "コガシ",
+                "enUs": "Koga-shi"
+            },
+            "id": "402231",
+            "path": "koga-shi-402231",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "甲賀市",
+                "jaJpKana": "コウカシ",
+                "enUs": "Koka-shi"
+            },
+            "id": "252093",
+            "path": "koka-shi-252093",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "小倉北区",
+                "jaJpKana": "コクラキタク",
+                "enUs": "Kokurakita-ku"
+            },
+            "id": "40106",
+            "path": "kokurakita-ku-40106",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "小倉南区",
+                "jaJpKana": "コクラミナミク",
+                "enUs": "Kokuraminami-ku"
+            },
+            "id": "40107",
+            "path": "kokuraminami-ku-40107",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "駒ヶ根市",
+                "jaJpKana": "コマガネシ",
+                "enUs": "Komagane-shi"
+            },
+            "id": "202100",
+            "path": "komagane-shi-202100",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "小牧市",
+                "jaJpKana": "コマキシ",
+                "enUs": "Komaki-shi"
+            },
+            "id": "232190",
+            "path": "komaki-shi-232190",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "小松市",
+                "jaJpKana": "コマツシ",
+                "enUs": "Komatsu-shi"
+            },
+            "id": "172031",
+            "path": "komatsu-shi-172031",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "小松島市",
+                "jaJpKana": "コマツシマシ",
+                "enUs": "Komatsushima-shi"
+            },
+            "id": "362034",
+            "path": "komatsushima-shi-362034",
+            "pid": 36
+        },
+        {
+            "names": {
+                "jaJp": "小諸市",
+                "jaJpKana": "コモロシ",
+                "enUs": "Komoro-shi"
+            },
+            "id": "202088",
+            "path": "komoro-shi-202088",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "江南市",
+                "jaJpKana": "コウナンシ",
+                "enUs": "Konan-shi"
+            },
+            "id": "232173",
+            "path": "konan-shi-232173",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "湖南市",
+                "jaJpKana": "コナンシ",
+                "enUs": "Konan-shi"
+            },
+            "id": "252115",
+            "path": "konan-shi-252115",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "郡山市",
+                "jaJpKana": "コオリヤマシ",
+                "enUs": "Koriyama-shi"
+            },
+            "id": "072036",
+            "path": "koriyama-shi-072036",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "湖西市",
+                "jaJpKana": "コサイシ",
+                "enUs": "Kosai-shi"
+            },
+            "id": "222216",
+            "path": "kosai-shi-222216",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "江東区",
+                "jaJpKana": "コウトウク",
+                "enUs": "Koto-ku"
+            },
+            "id": "13108",
+            "path": "koto-ku-13108",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "下松市",
+                "jaJpKana": "クダマツシ",
+                "enUs": "Kudamatsu-shi"
+            },
+            "id": "352071",
+            "path": "kudamatsu-shi-352071",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "久慈市",
+                "jaJpKana": "クジシ",
+                "enUs": "Kuji-shi"
+            },
+            "id": "032077",
+            "path": "kuji-shi-032077",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "熊谷市",
+                "jaJpKana": "クマガヤシ",
+                "enUs": "Kumagaya-shi"
+            },
+            "id": "112020",
+            "path": "kumagaya-shi-112020",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "熊毛郡",
+                "jaJpKana": "クマゲグン",
+                "enUs": "Kumage-gun"
+            },
+            "id": "353434",
+            "path": "kumage-gun-353434",
+            "pid": 35,
+            "dtl": {
+                "jaJp": "田布施町",
+                "jaJpKana": "タブセチョウ",
+                "enUs": "Tabuse-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "熊毛郡",
+                "jaJpKana": "クマゲグン",
+                "enUs": "Kumage-gun"
+            },
+            "id": "353442",
+            "path": "kumage-gun-353442",
+            "pid": 35,
+            "dtl": {
+                "jaJp": "平生町",
+                "jaJpKana": "ヒラオチョウ",
+                "enUs": "Hirao-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "熊本市",
+                "jaJpKana": "熊本市",
+                "enUs": "Kumamoto-shi"
+            },
+            "id": "431001",
+            "path": "kumamoto-shi-431001",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "久米郡",
+                "jaJpKana": "クメグン",
+                "enUs": "Kume-gun"
+            },
+            "id": "336661",
+            "path": "kume-gun-336661",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "倉敷市",
+                "jaJpKana": "クラシキシ",
+                "enUs": "Kurashiki-shi"
+            },
+            "id": "332020",
+            "path": "kurashiki-shi-332020",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "鞍手郡",
+                "jaJpKana": "クラテグン",
+                "enUs": "Kurate-gun"
+            },
+            "id": "404021",
+            "path": "kurate-gun-404021",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "倉吉市",
+                "jaJpKana": "クラヨシシ",
+                "enUs": "Kurayoshi-shi"
+            },
+            "id": "312037",
+            "path": "kurayoshi-shi-312037",
+            "pid": 31
+        },
+        {
+            "names": {
+                "jaJp": "呉市",
+                "jaJpKana": "クレシ",
+                "enUs": "Kure-shi"
+            },
+            "id": "342025",
+            "path": "kure-shi-342025",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "栗原市",
+                "jaJpKana": "クリハラシ",
+                "enUs": "Kurihara-shi"
+            },
+            "id": "042137",
+            "path": "kurihara-shi-042137",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "黒部市",
+                "jaJpKana": "クロベシ",
+                "enUs": "Kurobe-shi"
+            },
+            "id": "162078",
+            "path": "kurobe-shi-162078",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "黒石市",
+                "jaJpKana": "クロイシシ",
+                "enUs": "Kuroishi-shi"
+            },
+            "id": "022047",
+            "path": "kuroishi-shi-022047",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "黒川郡",
+                "jaJpKana": "クロカワグン",
+                "enUs": "Kurokawa-gun"
+            },
+            "id": "044211",
+            "path": "kurokawa-gun-044211",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "久留米市",
+                "jaJpKana": "クルメシ",
+                "enUs": "Kurume-shi"
+            },
+            "id": "402036",
+            "path": "kurume-shi-402036",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "草津市",
+                "jaJpKana": "クサツシ",
+                "enUs": "Kusatsu-shi"
+            },
+            "id": "252069",
+            "path": "kusatsu-shi-252069",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "釧路市",
+                "jaJpKana": "クシロシ",
+                "enUs": "Kushiro-shi"
+            },
+            "id": "012068",
+            "path": "kushiro-shi-012068",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "牧之原市",
+                "jaJpKana": "マキノハラシ",
+                "enUs": "Makinohara-shi"
+            },
+            "id": "222267",
+            "path": "makinohara-shi-222267",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "真庭市",
+                "jaJpKana": "マニワシ",
+                "enUs": "Maniwa-shi"
+            },
+            "id": "332143",
+            "path": "maniwa-shi-332143",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "益田市",
+                "jaJpKana": "マスダシ",
+                "enUs": "Masuda-shi"
+            },
+            "id": "322041",
+            "path": "masuda-shi-322041",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "松原市",
+                "jaJpKana": "マツバラシ",
+                "enUs": "Matsubara-shi"
+            },
+            "id": "272175",
+            "path": "matsubara-shi-272175",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "松戸市",
+                "jaJpKana": "マツドシ",
+                "enUs": "Matsudo-shi"
+            },
+            "id": "122076",
+            "path": "matsudo-shi-122076",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "松江市",
+                "jaJpKana": "マツエシ",
+                "enUs": "Matsue-shi"
+            },
+            "id": "322016",
+            "path": "matsue-shi-322016",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "松本市",
+                "jaJpKana": "マツモトシ",
+                "enUs": "Matsumoto-shi"
+            },
+            "id": "202029",
+            "path": "matsumoto-shi-202029",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "松阪市",
+                "jaJpKana": "マツサカシ",
+                "enUs": "Matsusaka-shi"
+            },
+            "id": "242047",
+            "path": "matsusaka-shi-242047",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "松山市",
+                "jaJpKana": "マツヤマシ",
+                "enUs": "Matsuyama-shi"
+            },
+            "id": "382019",
+            "path": "matsuyama-shi-382019",
+            "pid": 38
+        },
+        {
+            "names": {
+                "jaJp": "美浜区",
+                "jaJpKana": "ミハマク",
+                "enUs": "Mihama-ku"
+            },
+            "id": "12106",
+            "path": "mihama-ku-12106",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "三原市",
+                "jaJpKana": "ミハラシ",
+                "enUs": "Mihara-shi"
+            },
+            "id": "342041",
+            "path": "mihara-shi-342041",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "三笠市",
+                "jaJpKana": "ミカサシ",
+                "enUs": "Mikasa-shi"
+            },
+            "id": "012220",
+            "path": "mikasa-shi-012220",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "三木市",
+                "jaJpKana": "ミキシ",
+                "enUs": "Miki-shi"
+            },
+            "id": "282154",
+            "path": "miki-shi-282154",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "1106",
+            "path": "minami-ku-1106",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "23112",
+            "path": "minami-ku-23112",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "27145",
+            "path": "minami-ku-27145",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "33104",
+            "path": "minami-ku-33104",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "40134",
+            "path": "minami-ku-40134",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "南区",
+                "jaJpKana": "ミナミク",
+                "enUs": "Minami-ku"
+            },
+            "id": "43104",
+            "path": "minami-ku-43104",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "南アルプス市",
+                "jaJpKana": "ミナミアルプスシ",
+                "enUs": "Minamiarupusu-shi"
+            },
+            "id": "192082",
+            "path": "minamiarupusu-shi-192082",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "南あわじ市",
+                "jaJpKana": "ミナミアワジシ",
+                "enUs": "Minamiawaji-shi"
+            },
+            "id": "282243",
+            "path": "minamiawaji-shi-282243",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "南巨摩郡",
+                "jaJpKana": "ミナミコマグン",
+                "enUs": "Minamikoma-gun"
+            },
+            "id": "193682",
+            "path": "minamikoma-gun-193682",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "南九州市",
+                "jaJpKana": "ミナミキュウシュウシ",
+                "enUs": "Minamikyushu-shi"
+            },
+            "id": "462233",
+            "path": "minamikyushu-shi-462233",
+            "pid": 46
+        },
+        {
+            "names": {
+                "jaJp": "南相馬市",
+                "jaJpKana": "ミナミソウマシ",
+                "enUs": "Minamisoma-shi"
+            },
+            "id": "072125",
+            "path": "minamisoma-shi-072125",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "港区",
+                "jaJpKana": "ミナトク",
+                "enUs": "Minato-ku"
+            },
+            "id": "13103",
+            "path": "minato-ku-13103",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "港区",
+                "jaJpKana": "ミナトク",
+                "enUs": "Minato-ku"
+            },
+            "id": "23111",
+            "path": "minato-ku-23111",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "港区",
+                "jaJpKana": "ミナトク",
+                "enUs": "Minato-ku"
+            },
+            "id": "27107",
+            "path": "minato-ku-27107",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "美祢市",
+                "jaJpKana": "ミネシ",
+                "enUs": "Mine-shi"
+            },
+            "id": "352136",
+            "path": "mine-shi-352136",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "美濃市",
+                "jaJpKana": "ミノシ",
+                "enUs": "Mino-shi"
+            },
+            "id": "212075",
+            "path": "mino-shi-212075",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "美濃加茂市",
+                "jaJpKana": "ミノカモシ",
+                "enUs": "Minokamo-shi"
+            },
+            "id": "212113",
+            "path": "minokamo-shi-212113",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "見沼区",
+                "jaJpKana": "ミヌマク",
+                "enUs": "Minuma-ku"
+            },
+            "id": "11104",
+            "path": "minuma-ku-11104",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "三沢市",
+                "jaJpKana": "ミサワシ",
+                "enUs": "Misawa-shi"
+            },
+            "id": "022071",
+            "path": "misawa-shi-022071",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "水戸市",
+                "jaJpKana": "ミトシ",
+                "enUs": "Mito-shi"
+            },
+            "id": "082015",
+            "path": "mito-shi-082015",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "三豊市",
+                "jaJpKana": "ミトヨシ",
+                "enUs": "Mitoyo-shi"
+            },
+            "id": "372081",
+            "path": "mitoyo-shi-372081",
+            "pid": 37
+        },
+        {
+            "names": {
+                "jaJp": "宮城野区",
+                "jaJpKana": "ミヤギノク",
+                "enUs": "Miyagino-ku"
+            },
+            "id": "4102",
+            "path": "miyagino-ku-4102",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "京都郡",
+                "jaJpKana": "ミヤコグン",
+                "enUs": "Miyako-gun"
+            },
+            "id": "406210",
+            "path": "miyako-gun-406210",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "宮古市",
+                "jaJpKana": "ミヤコシ",
+                "enUs": "Miyako-shi"
+            },
+            "id": "032026",
+            "path": "miyako-shi-032026",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "みやま市",
+                "jaJpKana": "ミヤマシ",
+                "enUs": "Miyama-shi"
+            },
+            "id": "402290",
+            "path": "miyama-shi-402290",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "宮前区",
+                "jaJpKana": "ミヤマエク",
+                "enUs": "Miyamae-ku"
+            },
+            "id": "14136",
+            "path": "miyamae-ku-14136",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "宮崎市",
+                "jaJpKana": "ミヤザキシ",
+                "enUs": "Miyazaki-shi"
+            },
+            "id": "452017",
+            "path": "miyazaki-shi-452017",
+            "pid": 45
+        },
+        {
+            "names": {
+                "jaJp": "みよし市",
+                "jaJpKana": "ミヨシシ",
+                "enUs": "Miyoshi-shi"
+            },
+            "id": "232360",
+            "path": "miyoshi-shi-232360",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "三次市",
+                "jaJpKana": "ミヨシシ",
+                "enUs": "Miyoshi-shi"
+            },
+            "id": "342092",
+            "path": "miyoshi-shi-342092",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "瑞穂市",
+                "jaJpKana": "ミズホシ",
+                "enUs": "Mizuho-shi"
+            },
+            "id": "212164",
+            "path": "mizuho-shi-212164",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "三潴郡",
+                "jaJpKana": "ミズマグン",
+                "enUs": "Mizuma-gun"
+            },
+            "id": "405221",
+            "path": "mizuma-gun-405221",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "瑞浪市",
+                "jaJpKana": "ミズナミシ",
+                "enUs": "Mizunami-shi"
+            },
+            "id": "212083",
+            "path": "mizunami-shi-212083",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "茂原市",
+                "jaJpKana": "モバラシ",
+                "enUs": "Mobara-shi"
+            },
+            "id": "122106",
+            "path": "mobara-shi-122106",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "門司区",
+                "jaJpKana": "モジク",
+                "enUs": "Moji-ku"
+            },
+            "id": "40101",
+            "path": "moji-ku-40101",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "真岡市",
+                "jaJpKana": "モオカシ",
+                "enUs": "Moka-shi"
+            },
+            "id": "092096",
+            "path": "moka-shi-092096",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "盛岡市",
+                "jaJpKana": "モリオカシ",
+                "enUs": "Morioka-shi"
+            },
+            "id": "032018",
+            "path": "morioka-shi-032018",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "本宮市",
+                "jaJpKana": "モトミヤシ",
+                "enUs": "Motomiya-shi"
+            },
+            "id": "072141",
+            "path": "motomiya-shi-072141",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "本巣市",
+                "jaJpKana": "モトスシ",
+                "enUs": "Motosu-shi"
+            },
+            "id": "212181",
+            "path": "motosu-shi-212181",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "宗像市",
+                "jaJpKana": "ムナカタシ",
+                "enUs": "Munakata-shi"
+            },
+            "id": "402206",
+            "path": "munakata-shi-402206",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "村上市",
+                "jaJpKana": "ムラカミシ",
+                "enUs": "Murakami-shi"
+            },
+            "id": "152129",
+            "path": "murakami-shi-152129",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "室蘭市",
+                "jaJpKana": "ムロランシ",
+                "enUs": "Muroran-shi"
+            },
+            "id": "012050",
+            "path": "muroran-shi-012050",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "むつ市",
+                "jaJpKana": "ムツシ",
+                "enUs": "Mutsu-shi"
+            },
+            "id": "022080",
+            "path": "mutsu-shi-022080",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "妙高市",
+                "jaJpKana": "ミョウコウシ",
+                "enUs": "Myoko-shi"
+            },
+            "id": "152170",
+            "path": "myoko-shi-152170",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "名張市",
+                "jaJpKana": "ナバリシ",
+                "enUs": "Nabari-shi"
+            },
+            "id": "242080",
+            "path": "nabari-shi-242080",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "長浜市",
+                "jaJpKana": "ナガハマシ",
+                "enUs": "Nagahama-shi"
+            },
+            "id": "252034",
+            "path": "nagahama-shi-252034",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "長井市",
+                "jaJpKana": "ナガイシ",
+                "enUs": "Nagai-shi"
+            },
+            "id": "062090",
+            "path": "nagai-shi-062090",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "長野市",
+                "jaJpKana": "ナガノシ",
+                "enUs": "Nagano-shi"
+            },
+            "id": "202011",
+            "path": "nagano-shi-202011",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "長岡市",
+                "jaJpKana": "ナガオカシ",
+                "enUs": "Nagaoka-shi"
+            },
+            "id": "152021",
+            "path": "nagaoka-shi-152021",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "長岡京市",
+                "jaJpKana": "ナガオカキョウシ",
+                "enUs": "Nagaokakyo-shi"
+            },
+            "id": "262099",
+            "path": "nagaokakyo-shi-262099",
+            "pid": 26
+        },
+        {
+            "names": {
+                "jaJp": "流山市",
+                "jaJpKana": "ナガレヤマシ",
+                "enUs": "Nagareyama-shi"
+            },
+            "id": "122203",
+            "path": "nagareyama-shi-122203",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "長崎市",
+                "jaJpKana": "ナガサキシ",
+                "enUs": "Nagasaki-shi"
+            },
+            "id": "422011",
+            "path": "nagasaki-shi-422011",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "名古屋市",
+                "jaJpKana": "名古屋市",
+                "enUs": "Nagoya-shi"
+            },
+            "id": "231002",
+            "path": "nagoya-shi-231002",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "中郡",
+                "jaJpKana": "ナカグン",
+                "enUs": "Naka-gun"
+            },
+            "id": "143421",
+            "path": "naka-gun-143421",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "中区",
+                "jaJpKana": "ナカク",
+                "enUs": "Naka-ku"
+            },
+            "id": "34101",
+            "path": "naka-ku-34101",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "中頭郡",
+                "jaJpKana": "ナカガミグン",
+                "enUs": "Nakagami-gun"
+            },
+            "id": "473294",
+            "path": "nakagami-gun-473294",
+            "pid": 47
+        },
+        {
+            "names": {
+                "jaJp": "中新川郡",
+                "jaJpKana": "ナカニイカワグン",
+                "enUs": "Nakaniikawa-gun"
+            },
+            "id": "163210",
+            "path": "nakaniikawa-gun-163210",
+            "pid": 16,
+            "dtl": {
+                "jaJp": "舟橋村",
+                "jaJpKana": "フナハシムラ",
+                "enUs": "Funahashi-mura"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "中新川郡",
+                "jaJpKana": "ナカニイカワグン",
+                "enUs": "Nakaniikawa-gun"
+            },
+            "id": "163236",
+            "path": "nakaniikawa-gun-163236",
+            "pid": 16,
+            "dtl": {
+                "jaJp": "立山町",
+                "jaJpKana": "タテヤママチ",
+                "enUs": "Tateyama-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "中津川市",
+                "jaJpKana": "ナカツガワシ",
+                "enUs": "Nakatsugawa-shi"
+            },
+            "id": "212067",
+            "path": "nakatsugawa-shi-212067",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "南条郡",
+                "jaJpKana": "ナンジョウグン",
+                "enUs": "Nanjou-gun"
+            },
+            "id": "184047",
+            "path": "nanjou-gun-184047",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "南砺市",
+                "jaJpKana": "ナントシ",
+                "enUs": "Nanto-shi"
+            },
+            "id": "162108",
+            "path": "nanto-shi-162108",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "南陽市",
+                "jaJpKana": "ナンヨウシ",
+                "enUs": "Nanyo-shi"
+            },
+            "id": "062138",
+            "path": "nanyo-shi-062138",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "成田市",
+                "jaJpKana": "ナリタシ",
+                "enUs": "Narita-shi"
+            },
+            "id": "122114",
+            "path": "narita-shi-122114",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "那須烏山市",
+                "jaJpKana": "ナスカラスヤマシ",
+                "enUs": "Nasukarasuyama-shi"
+            },
+            "id": "092151",
+            "path": "nasukarasuyama-shi-092151",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "那須塩原市",
+                "jaJpKana": "ナスシオバラシ",
+                "enUs": "Nasushiobara-shi"
+            },
+            "id": "092134",
+            "path": "nasushiobara-shi-092134",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "名取市",
+                "jaJpKana": "ナトリシ",
+                "enUs": "Natori-shi"
+            },
+            "id": "042072",
+            "path": "natori-shi-042072",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "根室市",
+                "jaJpKana": "ネムロシ",
+                "enUs": "Nemuro-shi"
+            },
+            "id": "012238",
+            "path": "nemuro-shi-012238",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "二本松市",
+                "jaJpKana": "ニホンマツシ",
+                "enUs": "Nihommatsu-shi"
+            },
+            "id": "072109",
+            "path": "nihommatsu-shi-072109",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "新潟市",
+                "jaJpKana": "新潟市",
+                "enUs": "Niigata-shi"
+            },
+            "id": "151009",
+            "path": "niigata-shi-151009",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "新見市",
+                "jaJpKana": "ニイミシ",
+                "enUs": "Niimi-shi"
+            },
+            "id": "332101",
+            "path": "niimi-shi-332101",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "にかほ市",
+                "jaJpKana": "ニカホシ",
+                "enUs": "Nikaho-shi"
+            },
+            "id": "052141",
+            "path": "nikaho-shi-052141",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "二戸市",
+                "jaJpKana": "ニノヘシ",
+                "enUs": "Ninohe-shi"
+            },
+            "id": "032131",
+            "path": "ninohe-shi-032131",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "西区",
+                "jaJpKana": "ニシク",
+                "enUs": "Nishi-ku"
+            },
+            "id": "1107",
+            "path": "nishi-ku-1107",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "西区",
+                "jaJpKana": "ニシク",
+                "enUs": "Nishi-ku"
+            },
+            "id": "27144",
+            "path": "nishi-ku-27144",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "西区",
+                "jaJpKana": "ニシク",
+                "enUs": "Nishi-ku"
+            },
+            "id": "34104",
+            "path": "nishi-ku-34104",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "西区",
+                "jaJpKana": "ニシク",
+                "enUs": "Nishi-ku"
+            },
+            "id": "40135",
+            "path": "nishi-ku-40135",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "西区",
+                "jaJpKana": "ニシク",
+                "enUs": "Nishi-ku"
+            },
+            "id": "43103",
+            "path": "nishi-ku-43103",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "西牟婁郡",
+                "jaJpKana": "ニシムログン",
+                "enUs": "Nishimuro-gun"
+            },
+            "id": "304018",
+            "path": "nishimuro-gun-304018",
+            "pid": 30,
+            "dtl": {
+                "jaJp": "白浜町",
+                "jaJpKana": "シラハマチョウ",
+                "enUs": "Shirahama-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "西牟婁郡",
+                "jaJpKana": "ニシムログン",
+                "enUs": "Nishimuro-gun"
+            },
+            "id": "304069",
+            "path": "nishimuro-gun-304069",
+            "pid": 30,
+            "dtl": {
+                "jaJp": "すさみ町",
+                "jaJpKana": "スサミチョウ",
+                "enUs": "Susami-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "西尾市",
+                "jaJpKana": "ニシオシ",
+                "enUs": "Nishio-shi"
+            },
+            "id": "232131",
+            "path": "nishio-shi-232131",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "西白河郡",
+                "jaJpKana": "ニシシラカワグン",
+                "enUs": "Nishishirakawa-gun"
+            },
+            "id": "074667",
+            "path": "nishishirakawa-gun-074667",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "西彼杵郡",
+                "jaJpKana": "ニシソノギグン",
+                "enUs": "Nishisonogi-gun"
+            },
+            "id": "423084",
+            "path": "nishisonogi-gun-423084",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "西東京市",
+                "jaJpKana": "ニシトウキョウシ",
+                "enUs": "Nishitokyo-shi"
+            },
+            "id": "132292",
+            "path": "nishitokyo-shi-132292",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "西脇市",
+                "jaJpKana": "ニシワキシ",
+                "enUs": "Nishiwaki-shi"
+            },
+            "id": "282138",
+            "path": "nishiwaki-shi-282138",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "仁多郡",
+                "jaJpKana": "ニタグン",
+                "enUs": "Nita-gun"
+            },
+            "id": "323438",
+            "path": "nita-gun-323438",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "丹羽郡",
+                "jaJpKana": "ニワグン",
+                "enUs": "Niwa-gun"
+            },
+            "id": "233617",
+            "path": "niwa-gun-233617",
+            "pid": 23,
+            "dtl": {
+                "jaJp": "大口町",
+                "jaJpKana": "オオグチチョウ",
+                "enUs": "Oguchi-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "丹羽郡",
+                "jaJpKana": "ニワグン",
+                "enUs": "Niwa-gun"
+            },
+            "id": "233625",
+            "path": "niwa-gun-233625",
+            "pid": 23,
+            "dtl": {
+                "jaJp": "扶桑町",
+                "jaJpKana": "フソウチョウ",
+                "enUs": "Fuso-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "野田市",
+                "jaJpKana": "ノダシ",
+                "enUs": "Noda-shi"
+            },
+            "id": "122084",
+            "path": "noda-shi-122084",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "直方市",
+                "jaJpKana": "ノオガタシ",
+                "enUs": "Nogata-shi"
+            },
+            "id": "402044",
+            "path": "nogata-shi-402044",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "能美市",
+                "jaJpKana": "ノミシ",
+                "enUs": "Nomi-shi"
+            },
+            "id": "172111",
+            "path": "nomi-shi-172111",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "野々市市",
+                "jaJpKana": "ノノイチシ",
+                "enUs": "Nonoichi-shi"
+            },
+            "id": "172120",
+            "path": "nonoichi-shi-172120",
+            "pid": 17
+        },
+        {
+            "names": {
+                "jaJp": "能代市",
+                "jaJpKana": "ノシロシ",
+                "enUs": "Noshiro-shi"
+            },
+            "id": "052027",
+            "path": "noshiro-shi-052027",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "額田郡",
+                "jaJpKana": "ヌカタグン",
+                "enUs": "Nukata-gun"
+            },
+            "id": "235016",
+            "path": "nukata-gun-235016",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "沼津市",
+                "jaJpKana": "ヌマヅシ",
+                "enUs": "Numazu-shi"
+            },
+            "id": "222038",
+            "path": "numazu-shi-222038",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "丹生郡",
+                "jaJpKana": "ニュウグン",
+                "enUs": "Nyuu-gun"
+            },
+            "id": "184233",
+            "path": "nyuu-gun-184233",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "小浜市",
+                "jaJpKana": "オバマシ",
+                "enUs": "Obama-shi"
+            },
+            "id": "182044",
+            "path": "obama-shi-182044",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "帯広市",
+                "jaJpKana": "オビヒロシ",
+                "enUs": "Obihiro-shi"
+            },
+            "id": "012076",
+            "path": "obihiro-shi-012076",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "大府市",
+                "jaJpKana": "オオブシ",
+                "enUs": "Obu-shi"
+            },
+            "id": "232238",
+            "path": "obu-shi-232238",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "大田市",
+                "jaJpKana": "オオダシ",
+                "enUs": "Oda-shi"
+            },
+            "id": "322059",
+            "path": "oda-shi-322059",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "大館市",
+                "jaJpKana": "オオダテシ",
+                "enUs": "Odate-shi"
+            },
+            "id": "052043",
+            "path": "odate-shi-052043",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "大船渡市",
+                "jaJpKana": "オオフナトシ",
+                "enUs": "Ofunato-shi"
+            },
+            "id": "032034",
+            "path": "ofunato-shi-032034",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "男鹿市",
+                "jaJpKana": "オガシ",
+                "enUs": "Oga-shi"
+            },
+            "id": "052060",
+            "path": "oga-shi-052060",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "雄勝郡",
+                "jaJpKana": "オガチグン",
+                "enUs": "Ogachi-gun"
+            },
+            "id": "054631",
+            "path": "ogachi-gun-054631",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "大垣市",
+                "jaJpKana": "オオガキシ",
+                "enUs": "Ogaki-shi"
+            },
+            "id": "212024",
+            "path": "ogaki-shi-212024",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "小城市",
+                "jaJpKana": "オギシ",
+                "enUs": "Ogi-shi"
+            },
+            "id": "412082",
+            "path": "ogi-shi-412082",
+            "pid": 41
+        },
+        {
+            "names": {
+                "jaJp": "大分市",
+                "jaJpKana": "オオイタシ",
+                "enUs": "Oita-shi"
+            },
+            "id": "442011",
+            "path": "oita-shi-442011",
+            "pid": 44
+        },
+        {
+            "names": {
+                "jaJp": "小千谷市",
+                "jaJpKana": "オヂヤシ",
+                "enUs": "Ojiya-shi"
+            },
+            "id": "152081",
+            "path": "ojiya-shi-152081",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "岡谷市",
+                "jaJpKana": "オカヤシ",
+                "enUs": "Okaya-shi"
+            },
+            "id": "202045",
+            "path": "okaya-shi-202045",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "岡山市",
+                "jaJpKana": "岡山市",
+                "enUs": "Okayama-shi"
+            },
+            "id": "331007",
+            "path": "okayama-shi-331007",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "岡崎市",
+                "jaJpKana": "オカザキシ",
+                "enUs": "Okazaki-shi"
+            },
+            "id": "232025",
+            "path": "okazaki-shi-232025",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "御前崎市",
+                "jaJpKana": "オマエザキシ",
+                "enUs": "Omaezaki-shi"
+            },
+            "id": "222232",
+            "path": "omaezaki-shi-222232",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "近江八幡市",
+                "jaJpKana": "オウミハチマンシ",
+                "enUs": "Omihachiman-shi"
+            },
+            "id": "252042",
+            "path": "omihachiman-shi-252042",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "小美玉市",
+                "jaJpKana": "オミタマシ",
+                "enUs": "Omitama-shi"
+            },
+            "id": "082368",
+            "path": "omitama-shi-082368",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "大村市",
+                "jaJpKana": "オオムラシ",
+                "enUs": "Omura-shi"
+            },
+            "id": "422053",
+            "path": "omura-shi-422053",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "大牟田市",
+                "jaJpKana": "オオムタシ",
+                "enUs": "Omuta-shi"
+            },
+            "id": "402028",
+            "path": "omuta-shi-402028",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "遠賀郡",
+                "jaJpKana": "オンガグン",
+                "enUs": "Onga-gun"
+            },
+            "id": "403814",
+            "path": "onga-gun-403814",
+            "pid": 40,
+            "dtl": {
+                "jaJp": "芦屋町",
+                "jaJpKana": "アシヤマチ",
+                "enUs": "Ashiya-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "遠賀郡",
+                "jaJpKana": "オンガグン",
+                "enUs": "Onga-gun"
+            },
+            "id": "403822",
+            "path": "onga-gun-403822",
+            "pid": 40,
+            "dtl": {
+                "jaJp": "水巻町",
+                "jaJpKana": "ミズマキマチ",
+                "enUs": "Mizumaki-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "小野市",
+                "jaJpKana": "オノシ",
+                "enUs": "Ono-shi"
+            },
+            "id": "282189",
+            "path": "ono-shi-282189",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "尾道市",
+                "jaJpKana": "オノミチシ",
+                "enUs": "Onomichi-shi"
+            },
+            "id": "342050",
+            "path": "onomichi-shi-342050",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "大阪市",
+                "jaJpKana": "大阪市",
+                "enUs": "Osaka-shi"
+            },
+            "id": "271004",
+            "path": "osaka-shi-271004",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "大崎市",
+                "jaJpKana": "オオサキシ",
+                "enUs": "Osaki-shi"
+            },
+            "id": "042153",
+            "path": "osaki-shi-042153",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "奥州市",
+                "jaJpKana": "オウシュウシ",
+                "enUs": "Oshu-shi"
+            },
+            "id": "032158",
+            "path": "oshu-shi-032158",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "太田市",
+                "jaJpKana": "オオタシ",
+                "enUs": "Ota-shi"
+            },
+            "id": "102059",
+            "path": "ota-shi-102059",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "小樽市",
+                "jaJpKana": "オタルシ",
+                "enUs": "Otaru-shi"
+            },
+            "id": "012033",
+            "path": "otaru-shi-012033",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "大田原市",
+                "jaJpKana": "オオタワラシ",
+                "enUs": "Otawara-shi"
+            },
+            "id": "092100",
+            "path": "otawara-shi-092100",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "大津市",
+                "jaJpKana": "オオツシ",
+                "enUs": "Otsu-shi"
+            },
+            "id": "252018",
+            "path": "otsu-shi-252018",
+            "pid": 25
+        },
+        {
+            "names": {
+                "jaJp": "大月市",
+                "jaJpKana": "オオツキシ",
+                "enUs": "Otsuki-shi"
+            },
+            "id": "192066",
+            "path": "otsuki-shi-192066",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "邑楽郡",
+                "jaJpKana": "オウラグン",
+                "enUs": "Oura-gun"
+            },
+            "id": "105244",
+            "path": "oura-gun-105244",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "小矢部市",
+                "jaJpKana": "オヤベシ",
+                "enUs": "Oyabe-shi"
+            },
+            "id": "162094",
+            "path": "oyabe-shi-162094",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "小山市",
+                "jaJpKana": "オヤマシ",
+                "enUs": "Oyama-shi"
+            },
+            "id": "092088",
+            "path": "oyama-shi-092088",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "大洲市",
+                "jaJpKana": "オオズシ",
+                "enUs": "Ozu-shi"
+            },
+            "id": "382078",
+            "path": "ozu-shi-382078",
+            "pid": 38
+        },
+        {
+            "names": {
+                "jaJp": "陸前高田市",
+                "jaJpKana": "リクゼンタカタシ",
+                "enUs": "Rikuzentakata-shi"
+            },
+            "id": "032107",
+            "path": "rikuzentakata-shi-032107",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "留萌市",
+                "jaJpKana": "ルモイシ",
+                "enUs": "Rumoi-shi"
+            },
+            "id": "012122",
+            "path": "rumoi-shi-012122",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "龍ケ崎市",
+                "jaJpKana": "リュウガサキシ",
+                "enUs": "Ryugasaki-shi"
+            },
+            "id": "082082",
+            "path": "ryugasaki-shi-082082",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "佐賀市",
+                "jaJpKana": "サガシ",
+                "enUs": "Saga-shi"
+            },
+            "id": "412015",
+            "path": "saga-shi-412015",
+            "pid": 41
+        },
+        {
+            "names": {
+                "jaJp": "寒河江市",
+                "jaJpKana": "サガエシ",
+                "enUs": "Sagae-shi"
+            },
+            "id": "062065",
+            "path": "sagae-shi-062065",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "相模原市",
+                "jaJpKana": "相模原市",
+                "enUs": "Sagamihara-shi"
+            },
+            "id": "141500",
+            "path": "sagamihara-shi-141500",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "西条市",
+                "jaJpKana": "サイジョウシ",
+                "enUs": "Saijo-shi"
+            },
+            "id": "382060",
+            "path": "saijo-shi-382060",
+            "pid": 38
+        },
+        {
+            "names": {
+                "jaJp": "さいたま市",
+                "jaJpKana": "さいたま市",
+                "enUs": "Saitama-shi"
+            },
+            "id": "111007",
+            "path": "saitama-shi-111007",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "坂井市",
+                "jaJpKana": "サカイシ",
+                "enUs": "Sakai-shi"
+            },
+            "id": "182109",
+            "path": "sakai-shi-182109",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "堺市",
+                "jaJpKana": "堺市",
+                "enUs": "Sakai-shi"
+            },
+            "id": "271403",
+            "path": "sakai-shi-271403",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "坂出市",
+                "jaJpKana": "サカイデシ",
+                "enUs": "Sakaide-shi"
+            },
+            "id": "372030",
+            "path": "sakaide-shi-372030",
+            "pid": 37
+        },
+        {
+            "names": {
+                "jaJp": "境港市",
+                "jaJpKana": "サカイミナトシ",
+                "enUs": "Sakaiminato-shi"
+            },
+            "id": "312045",
+            "path": "sakaiminato-shi-312045",
+            "pid": 31
+        },
+        {
+            "names": {
+                "jaJp": "酒田市",
+                "jaJpKana": "サカタシ",
+                "enUs": "Sakata-shi"
+            },
+            "id": "062049",
+            "path": "sakata-shi-062049",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "佐久市",
+                "jaJpKana": "サクシ",
+                "enUs": "Saku-shi"
+            },
+            "id": "202177",
+            "path": "saku-shi-202177",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "さくら市",
+                "jaJpKana": "サクラシ",
+                "enUs": "Sakura-shi"
+            },
+            "id": "092142",
+            "path": "sakura-shi-092142",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "桜川市",
+                "jaJpKana": "サクラガワシ",
+                "enUs": "Sakuragawa-shi"
+            },
+            "id": "082317",
+            "path": "sakuragawa-shi-082317",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "桜井市",
+                "jaJpKana": "サクライシ",
+                "enUs": "Sakurai-shi"
+            },
+            "id": "292061",
+            "path": "sakurai-shi-292061",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "三田市",
+                "jaJpKana": "サンダシ",
+                "enUs": "Sanda-shi"
+            },
+            "id": "282197",
+            "path": "sanda-shi-282197",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "三戸郡",
+                "jaJpKana": "サンノヘグン",
+                "enUs": "Sannohe-gun"
+            },
+            "id": "024414",
+            "path": "sannohe-gun-024414",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "三戸町",
+                "jaJpKana": "サンノヘマチ",
+                "enUs": "Sannohe-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "三戸郡",
+                "jaJpKana": "サンノヘグン",
+                "enUs": "Sannohe-gun"
+            },
+            "id": "024422",
+            "path": "sannohe-gun-024422",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "五戸町",
+                "jaJpKana": "ゴノヘマチ",
+                "enUs": "Gonohe-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "三戸郡",
+                "jaJpKana": "サンノヘグン",
+                "enUs": "Sannohe-gun"
+            },
+            "id": "024457",
+            "path": "sannohe-gun-024457",
+            "pid": 2,
+            "dtl": {
+                "jaJp": "南部町",
+                "jaJpKana": "ナンブチョウ",
+                "enUs": "Nambu-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "佐野市",
+                "jaJpKana": "サノシ",
+                "enUs": "Sano-shi"
+            },
+            "id": "092045",
+            "path": "sano-shi-092045",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "さぬき市",
+                "jaJpKana": "サヌキシ",
+                "enUs": "Sanuki-shi"
+            },
+            "id": "372064",
+            "path": "sanuki-shi-372064",
+            "pid": 37
+        },
+        {
+            "names": {
+                "jaJp": "山陽小野田市",
+                "jaJpKana": "サンヨウオノダシ",
+                "enUs": "Sanyoonoda-shi"
+            },
+            "id": "352161",
+            "path": "sanyoonoda-shi-352161",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "札幌市",
+                "jaJpKana": "札幌市",
+                "enUs": "Sapporo-shi"
+            },
+            "id": "011002",
+            "path": "sapporo-shi-011002",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "篠山市",
+                "jaJpKana": "ササヤマシ",
+                "enUs": "Sasayama-shi"
+            },
+            "id": "282219",
+            "path": "sasayama-shi-282219",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "佐世保市",
+                "jaJpKana": "サセボシ",
+                "enUs": "Sasebo-shi"
+            },
+            "id": "422029",
+            "path": "sasebo-shi-422029",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "薩摩川内市",
+                "jaJpKana": "サツマセンダイシ",
+                "enUs": "Satsumasendai-shi"
+            },
+            "id": "462152",
+            "path": "satsumasendai-shi-462152",
+            "pid": 46
+        },
+        {
+            "names": {
+                "jaJp": "早良区",
+                "jaJpKana": "サワラク",
+                "enUs": "Sawara-ku"
+            },
+            "id": "40137",
+            "path": "sawara-ku-40137",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "関市",
+                "jaJpKana": "セキシ",
+                "enUs": "Seki-shi"
+            },
+            "id": "212059",
+            "path": "seki-shi-212059",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "仙北市",
+                "jaJpKana": "センボクシ",
+                "enUs": "Semboku-shi"
+            },
+            "id": "052159",
+            "path": "semboku-shi-052159",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "泉北郡",
+                "jaJpKana": "センボクグン",
+                "enUs": "Senboku-gun"
+            },
+            "id": "273414",
+            "path": "senboku-gun-273414",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "仙台市",
+                "jaJpKana": "仙台市",
+                "enUs": "Sendai-shi"
+            },
+            "id": "041009",
+            "path": "sendai-shi-041009",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "世羅郡",
+                "jaJpKana": "セラグン",
+                "enUs": "Sera-gun"
+            },
+            "id": "344621",
+            "path": "sera-gun-344621",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "瀬戸市",
+                "jaJpKana": "セトシ",
+                "enUs": "Seto-shi"
+            },
+            "id": "232041",
+            "path": "seto-shi-232041",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "瀬戸内市",
+                "jaJpKana": "セトウチシ",
+                "enUs": "Setochi-shi"
+            },
+            "id": "332127",
+            "path": "setochi-shi-332127",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "瀬谷区",
+                "jaJpKana": "セヤク",
+                "enUs": "Seya-ku"
+            },
+            "id": "14114",
+            "path": "seya-ku-14114",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "柴田郡",
+                "jaJpKana": "シバタグン",
+                "enUs": "Shibata-gun"
+            },
+            "id": "043214",
+            "path": "shibata-gun-043214",
+            "pid": 4,
+            "dtl": {
+                "jaJp": "大河原町",
+                "jaJpKana": "オオガワラマチ",
+                "enUs": "Ogawara-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "柴田郡",
+                "jaJpKana": "シバタグン",
+                "enUs": "Shibata-gun"
+            },
+            "id": "043231",
+            "path": "shibata-gun-043231",
+            "pid": 4,
+            "dtl": {
+                "jaJp": "柴田町",
+                "jaJpKana": "シバタマチ",
+                "enUs": "Shibata-machi"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "士別市",
+                "jaJpKana": "シベツシ",
+                "enUs": "Shibetsu-shi"
+            },
+            "id": "012203",
+            "path": "shibetsu-shi-012203",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "志摩市",
+                "jaJpKana": "シマシ",
+                "enUs": "Shima-shi"
+            },
+            "id": "242152",
+            "path": "shima-shi-242152",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "島田市",
+                "jaJpKana": "シマダシ",
+                "enUs": "Shimada-shi"
+            },
+            "id": "222097",
+            "path": "shimada-shi-222097",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "四万十市",
+                "jaJpKana": "シマントシ",
+                "enUs": "Shimanto-shi"
+            },
+            "id": "392103",
+            "path": "shimanto-shi-392103",
+            "pid": 39
+        },
+        {
+            "names": {
+                "jaJp": "清水区",
+                "jaJpKana": "シミズク",
+                "enUs": "Shimizu-ku"
+            },
+            "id": "22103",
+            "path": "shimizu-ku-22103",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "下関市",
+                "jaJpKana": "シモノセキシ",
+                "enUs": "Shimonoseki-shi"
+            },
+            "id": "352012",
+            "path": "shimonoseki-shi-352012",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "下都賀郡",
+                "jaJpKana": "シモツガグン",
+                "enUs": "Shimotsuga-gun"
+            },
+            "id": "093611",
+            "path": "shimotsuga-gun-093611",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "下野市",
+                "jaJpKana": "シモツケシ",
+                "enUs": "Shimotsuke-shi"
+            },
+            "id": "092169",
+            "path": "shimotsuke-shi-092169",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "下妻市",
+                "jaJpKana": "シモツマシ",
+                "enUs": "Shimotsuma-shi"
+            },
+            "id": "082104",
+            "path": "shimotsuma-shi-082104",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "品川区",
+                "jaJpKana": "シナガワク",
+                "enUs": "Shinagawa-ku"
+            },
+            "id": "13109",
+            "path": "shinagawa-ku-13109",
+            "pid": 13
+        },
+        {
+            "names": {
+                "jaJp": "新宮市",
+                "jaJpKana": "シングウシ",
+                "enUs": "Shingu-shi"
+            },
+            "id": "302074",
+            "path": "shingu-shi-302074",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "新城市",
+                "jaJpKana": "シンシロシ",
+                "enUs": "Shinshiro-shi"
+            },
+            "id": "232211",
+            "path": "shinshiro-shi-232211",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "白河市",
+                "jaJpKana": "シラカワシ",
+                "enUs": "Shirakawa-shi"
+            },
+            "id": "072052",
+            "path": "shirakawa-shi-072052",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "白石市",
+                "jaJpKana": "シロイシシ",
+                "enUs": "Shiroishi-shi"
+            },
+            "id": "042064",
+            "path": "shiroishi-shi-042064",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "紫波郡",
+                "jaJpKana": "シワグン",
+                "enUs": "Shiwa-gun"
+            },
+            "id": "033219",
+            "path": "shiwa-gun-033219",
+            "pid": 3,
+            "dtl": {
+                "jaJp": "紫波町",
+                "jaJpKana": "シワチョウ",
+                "enUs": "Shiwa-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "紫波郡",
+                "jaJpKana": "シワグン",
+                "enUs": "Shiwa-gun"
+            },
+            "id": "033227",
+            "path": "shiwa-gun-033227",
+            "pid": 3,
+            "dtl": {
+                "jaJp": "矢巾町",
+                "jaJpKana": "ヤハバチョウ",
+                "enUs": "Yahaba-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "静岡市",
+                "jaJpKana": "静岡市",
+                "enUs": "Shizuoka-shi"
+            },
+            "id": "221007",
+            "path": "shizuoka-shi-221007",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "周南市",
+                "jaJpKana": "シュウナンシ",
+                "enUs": "Shunan-shi"
+            },
+            "id": "352152",
+            "path": "shunan-shi-352152",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "周智郡",
+                "jaJpKana": "シュウチグン",
+                "enUs": "Shuuchi-gun"
+            },
+            "id": "224618",
+            "path": "shuuchi-gun-224618",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "総社市",
+                "jaJpKana": "ソウジャシ",
+                "enUs": "Soja-shi"
+            },
+            "id": "332089",
+            "path": "soja-shi-332089",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "相馬市",
+                "jaJpKana": "ソウマシ",
+                "enUs": "Soma-shi"
+            },
+            "id": "072095",
+            "path": "soma-shi-072095",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "空知郡",
+                "jaJpKana": "ソラチグン",
+                "enUs": "Sorachi-gun"
+            },
+            "id": "014249",
+            "path": "sorachi-gun-014249",
+            "pid": 1,
+            "dtl": {
+                "jaJp": "奈井江町",
+                "jaJpKana": "ナイエチョウ",
+                "enUs": "Naie-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "空知郡",
+                "jaJpKana": "ソラチグン",
+                "enUs": "Sorachi-gun"
+            },
+            "id": "014257",
+            "path": "sorachi-gun-014257",
+            "pid": 1,
+            "dtl": {
+                "jaJp": "上砂川町",
+                "jaJpKana": "カミスナガワチョウ",
+                "enUs": "Kamisunagawa-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "匝瑳市",
+                "jaJpKana": "ソウサシ",
+                "enUs": "Sosa-shi"
+            },
+            "id": "122351",
+            "path": "sosa-shi-122351",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "須賀川市",
+                "jaJpKana": "スカガワシ",
+                "enUs": "Sukagawa-shi"
+            },
+            "id": "072079",
+            "path": "sukagawa-shi-072079",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "洲本市",
+                "jaJpKana": "スモトシ",
+                "enUs": "Sumoto-shi"
+            },
+            "id": "282057",
+            "path": "sumoto-shi-282057",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "砂川市",
+                "jaJpKana": "スナガワシ",
+                "enUs": "Sunagawa-shi"
+            },
+            "id": "012262",
+            "path": "sunagawa-shi-012262",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "駿東郡",
+                "jaJpKana": "スントウグン",
+                "enUs": "Suntou-gun"
+            },
+            "id": "223417",
+            "path": "suntou-gun-223417",
+            "pid": 22,
+            "dtl": {
+                "jaJp": "清水町",
+                "jaJpKana": "シミズチョウ",
+                "enUs": "Shimizu-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "駿東郡",
+                "jaJpKana": "スントウグン",
+                "enUs": "Suntou-gun"
+            },
+            "id": "223425",
+            "path": "suntou-gun-223425",
+            "pid": 22,
+            "dtl": {
+                "jaJp": "長泉町",
+                "jaJpKana": "ナガイズミチョウ",
+                "enUs": "Nagaizumi-cho"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "裾野市",
+                "jaJpKana": "スソノシ",
+                "enUs": "Susono-shi"
+            },
+            "id": "222208",
+            "path": "susono-shi-222208",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "諏訪市",
+                "jaJpKana": "スワシ",
+                "enUs": "Suwa-shi"
+            },
+            "id": "202061",
+            "path": "suwa-shi-202061",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "須坂市",
+                "jaJpKana": "スザカシ",
+                "enUs": "Suzaka-shi"
+            },
+            "id": "202070",
+            "path": "suzaka-shi-202070",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "鈴鹿市",
+                "jaJpKana": "スズカシ",
+                "enUs": "Suzuka-shi"
+            },
+            "id": "242071",
+            "path": "suzuka-shi-242071",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "田川市",
+                "jaJpKana": "タガワシ",
+                "enUs": "Tagawa-shi"
+            },
+            "id": "402061",
+            "path": "tagawa-shi-402061",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "太白区",
+                "jaJpKana": "タイハクク",
+                "enUs": "Taihaku-ku"
+            },
+            "id": "4104",
+            "path": "taihaku-ku-4104",
+            "pid": 4
+        },
+        {
+            "names": {
+                "jaJp": "大正区",
+                "jaJpKana": "タイショウク",
+                "enUs": "Taisho-ku"
+            },
+            "id": "27108",
+            "path": "taisho-ku-27108",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "多治見市",
+                "jaJpKana": "タジミシ",
+                "enUs": "Tajimi-shi"
+            },
+            "id": "212041",
+            "path": "tajimi-shi-212041",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "多可郡",
+                "jaJpKana": "タカグン",
+                "enUs": "Taka-gun"
+            },
+            "id": "283657",
+            "path": "taka-gun-283657",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "高萩市",
+                "jaJpKana": "タカハギシ",
+                "enUs": "Takahagi-shi"
+            },
+            "id": "082147",
+            "path": "takahagi-shi-082147",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "高浜市",
+                "jaJpKana": "タカハマシ",
+                "enUs": "Takahama-shi"
+            },
+            "id": "232271",
+            "path": "takahama-shi-232271",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "高岡市",
+                "jaJpKana": "タカオカシ",
+                "enUs": "Takaoka-shi"
+            },
+            "id": "162027",
+            "path": "takaoka-shi-162027",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "宝塚市",
+                "jaJpKana": "タカラヅカシ",
+                "enUs": "Takarazuka-shi"
+            },
+            "id": "282146",
+            "path": "takarazuka-shi-282146",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "高崎市",
+                "jaJpKana": "タカサキシ",
+                "enUs": "Takasaki-shi"
+            },
+            "id": "102024",
+            "path": "takasaki-shi-102024",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "高槻市",
+                "jaJpKana": "タカツキシ",
+                "enUs": "Takatsuki-shi"
+            },
+            "id": "272078",
+            "path": "takatsuki-shi-272078",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "高山市",
+                "jaJpKana": "タカヤマシ",
+                "enUs": "Takayama-shi"
+            },
+            "id": "212032",
+            "path": "takayama-shi-212032",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "竹原市",
+                "jaJpKana": "タケハラシ",
+                "enUs": "Takehara-shi"
+            },
+            "id": "342033",
+            "path": "takehara-shi-342033",
+            "pid": 34
+        },
+        {
+            "names": {
+                "jaJp": "滝沢市",
+                "jaJpKana": "タキザワシ",
+                "enUs": "Takizawa-shi"
+            },
+            "id": "032166",
+            "path": "takizawa-shi-032166",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "多久市",
+                "jaJpKana": "タクシ",
+                "enUs": "Taku-shi"
+            },
+            "id": "412040",
+            "path": "taku-shi-412040",
+            "pid": 41
+        },
+        {
+            "names": {
+                "jaJp": "玉野市",
+                "jaJpKana": "タマノシ",
+                "enUs": "Tamano-shi"
+            },
+            "id": "332046",
+            "path": "tamano-shi-332046",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "丹波市",
+                "jaJpKana": "タンバシ",
+                "enUs": "Tamba-shi"
+            },
+            "id": "282235",
+            "path": "tamba-shi-282235",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "田村市",
+                "jaJpKana": "タムラシ",
+                "enUs": "Tamura-shi"
+            },
+            "id": "072117",
+            "path": "tamura-shi-072117",
+            "pid": 7
+        },
+        {
+            "names": {
+                "jaJp": "田辺市",
+                "jaJpKana": "タナベシ",
+                "enUs": "Tanabe-shi"
+            },
+            "id": "302066",
+            "path": "tanabe-shi-302066",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "館林市",
+                "jaJpKana": "タテバヤシシ",
+                "enUs": "Tatebayashi-shi"
+            },
+            "id": "102075",
+            "path": "tatebayashi-shi-102075",
+            "pid": 10
+        },
+        {
+            "names": {
+                "jaJp": "手稲区",
+                "jaJpKana": "テイネク",
+                "enUs": "Teine-ku"
+            },
+            "id": "1109",
+            "path": "teine-ku-1109",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "天童市",
+                "jaJpKana": "テンドウシ",
+                "enUs": "Tendo-shi"
+            },
+            "id": "062103",
+            "path": "tendo-shi-062103",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "天竜区",
+                "jaJpKana": "テンリュウク",
+                "enUs": "Tenryu-ku"
+            },
+            "id": "22140",
+            "path": "tenryu-ku-22140",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "鳥羽市",
+                "jaJpKana": "トバシ",
+                "enUs": "Toba-shi"
+            },
+            "id": "242110",
+            "path": "toba-shi-242110",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "栃木市",
+                "jaJpKana": "トチギシ",
+                "enUs": "Tochigi-shi"
+            },
+            "id": "092037",
+            "path": "tochigi-shi-092037",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "東海市",
+                "jaJpKana": "トウカイシ",
+                "enUs": "Tokai-shi"
+            },
+            "id": "232220",
+            "path": "tokai-shi-232220",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "土岐市",
+                "jaJpKana": "トキシ",
+                "enUs": "Toki-shi"
+            },
+            "id": "212121",
+            "path": "toki-shi-212121",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "常滑市",
+                "jaJpKana": "トコナメシ",
+                "enUs": "Tokoname-shi"
+            },
+            "id": "232165",
+            "path": "tokoname-shi-232165",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "所沢市",
+                "jaJpKana": "トコロザワシ",
+                "enUs": "Tokorozawa-shi"
+            },
+            "id": "112089",
+            "path": "tokorozawa-shi-112089",
+            "pid": 11
+        },
+        {
+            "names": {
+                "jaJp": "徳島市",
+                "jaJpKana": "トクシマシ",
+                "enUs": "Tokushima-shi"
+            },
+            "id": "362018",
+            "path": "tokushima-shi-362018",
+            "pid": 36
+        },
+        {
+            "names": {
+                "jaJp": "東京都２３区",
+                "jaJpKana": "トウキョウト２３ク",
+                "enUs": "Tokyo ２３ wards"
+            },
+            "id": "131032",
+            "path": "tokyo-wards-131032",
+            "pid": 13,
+            "dtl": {
+                "jaJp": "港区",
+                "jaJpKana": "ミナトク",
+                "enUs": "Minato-ku"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "東京都２３区",
+                "jaJpKana": "トウキョウト２３ク",
+                "enUs": "Tokyo ２３ wards"
+            },
+            "id": "131083",
+            "path": "tokyo-wards-131083",
+            "pid": 13,
+            "dtl": {
+                "jaJp": "江東区",
+                "jaJpKana": "コウトウク",
+                "enUs": "Koto-ku"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "東京都２３区",
+                "jaJpKana": "トウキョウト２３ク",
+                "enUs": "Tokyo ２３ wards"
+            },
+            "id": "131091",
+            "path": "tokyo-wards-131091",
+            "pid": 13,
+            "dtl": {
+                "jaJp": "品川区",
+                "jaJpKana": "シナガワク",
+                "enUs": "Shinagawa-ku"
+            }
+        },
+        {
+            "names": {
+                "jaJp": "苫小牧市",
+                "jaJpKana": "トマコマイシ",
+                "enUs": "Tomakomai-shi"
+            },
+            "id": "012131",
+            "path": "tomakomai-shi-012131",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "苫田郡",
+                "jaJpKana": "トマタグン",
+                "enUs": "Tomata-gun"
+            },
+            "id": "336068",
+            "path": "tomata-gun-336068",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "東御市",
+                "jaJpKana": "トウミシ",
+                "enUs": "Tomi-shi"
+            },
+            "id": "202193",
+            "path": "tomi-shi-202193",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "砺波市",
+                "jaJpKana": "トナミシ",
+                "enUs": "Tonami-shi"
+            },
+            "id": "162086",
+            "path": "tonami-shi-162086",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "遠野市",
+                "jaJpKana": "トオノシ",
+                "enUs": "Tono-shi"
+            },
+            "id": "032085",
+            "path": "tono-shi-032085",
+            "pid": 3
+        },
+        {
+            "names": {
+                "jaJp": "取手市",
+                "jaJpKana": "トリデシ",
+                "enUs": "Toride-shi"
+            },
+            "id": "082171",
+            "path": "toride-shi-082171",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "鳥栖市",
+                "jaJpKana": "トスシ",
+                "enUs": "Tosu-shi"
+            },
+            "id": "412031",
+            "path": "tosu-shi-412031",
+            "pid": 41
+        },
+        {
+            "names": {
+                "jaJp": "鳥取市",
+                "jaJpKana": "トットリシ",
+                "enUs": "Tottori-shi"
+            },
+            "id": "312011",
+            "path": "tottori-shi-312011",
+            "pid": 31
+        },
+        {
+            "names": {
+                "jaJp": "東伯郡",
+                "jaJpKana": "トウハクグン",
+                "enUs": "Touhaku-gun"
+            },
+            "id": "313645",
+            "path": "touhaku-gun-313645",
+            "pid": 31
+        },
+        {
+            "names": {
+                "jaJp": "十和田市",
+                "jaJpKana": "トワダシ",
+                "enUs": "Towada-shi"
+            },
+            "id": "022063",
+            "path": "towada-shi-022063",
+            "pid": 2
+        },
+        {
+            "names": {
+                "jaJp": "富山市",
+                "jaJpKana": "トヤマシ",
+                "enUs": "Toyama-shi"
+            },
+            "id": "162019",
+            "path": "toyama-shi-162019",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "豊橋市",
+                "jaJpKana": "トヨハシシ",
+                "enUs": "Toyohashi-shi"
+            },
+            "id": "232017",
+            "path": "toyohashi-shi-232017",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "豊平区",
+                "jaJpKana": "トヨヒラク",
+                "enUs": "Toyohira-ku"
+            },
+            "id": "1105",
+            "path": "toyohira-ku-1105",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "豊岡市",
+                "jaJpKana": "トヨオカシ",
+                "enUs": "Toyoka-shi"
+            },
+            "id": "282090",
+            "path": "toyoka-shi-282090",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "豊川市",
+                "jaJpKana": "トヨカワシ",
+                "enUs": "Toyokawa-shi"
+            },
+            "id": "232076",
+            "path": "toyokawa-shi-232076",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "豊田市",
+                "jaJpKana": "トヨタシ",
+                "enUs": "Toyota-shi"
+            },
+            "id": "232114",
+            "path": "toyota-shi-232114",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "津市",
+                "jaJpKana": "ツシ",
+                "enUs": "Tsu-shi"
+            },
+            "id": "242012",
+            "path": "tsu-shi-242012",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "燕市",
+                "jaJpKana": "ツバメシ",
+                "enUs": "Tsubame-shi"
+            },
+            "id": "152137",
+            "path": "tsubame-shi-152137",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "土浦市",
+                "jaJpKana": "ツチウラシ",
+                "enUs": "Tsuchiura-shi"
+            },
+            "id": "082031",
+            "path": "tsuchiura-shi-082031",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "つくば市",
+                "jaJpKana": "ツクバシ",
+                "enUs": "Tsukuba-shi"
+            },
+            "id": "082201",
+            "path": "tsukuba-shi-082201",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "都窪郡",
+                "jaJpKana": "ツクボグン",
+                "enUs": "Tsukubo-gun"
+            },
+            "id": "334235",
+            "path": "tsukubo-gun-334235",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "都留市",
+                "jaJpKana": "ツルシ",
+                "enUs": "Tsuru-shi"
+            },
+            "id": "192040",
+            "path": "tsuru-shi-192040",
+            "pid": 19
+        },
+        {
+            "names": {
+                "jaJp": "敦賀市",
+                "jaJpKana": "ツルガシ",
+                "enUs": "Tsuruga-shi"
+            },
+            "id": "182028",
+            "path": "tsuruga-shi-182028",
+            "pid": 18
+        },
+        {
+            "names": {
+                "jaJp": "鶴岡市",
+                "jaJpKana": "ツルオカシ",
+                "enUs": "Tsuruoka-shi"
+            },
+            "id": "062031",
+            "path": "tsuruoka-shi-062031",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "津島市",
+                "jaJpKana": "ツシマシ",
+                "enUs": "Tsushima-shi"
+            },
+            "id": "232084",
+            "path": "tsushima-shi-232084",
+            "pid": 23
+        },
+        {
+            "names": {
+                "jaJp": "津山市",
+                "jaJpKana": "ツヤマシ",
+                "enUs": "Tsuyama-shi"
+            },
+            "id": "332038",
+            "path": "tsuyama-shi-332038",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "宇部市",
+                "jaJpKana": "ウベシ",
+                "enUs": "Ube-shi"
+            },
+            "id": "352021",
+            "path": "ube-shi-352021",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "上田市",
+                "jaJpKana": "ウエダシ",
+                "enUs": "Ueda-shi"
+            },
+            "id": "202037",
+            "path": "ueda-shi-202037",
+            "pid": 20
+        },
+        {
+            "names": {
+                "jaJp": "宇治市",
+                "jaJpKana": "ウジシ",
+                "enUs": "Uji-shi"
+            },
+            "id": "262048",
+            "path": "uji-shi-262048",
+            "pid": 26
+        },
+        {
+            "names": {
+                "jaJp": "宇城市",
+                "jaJpKana": "ウキシ",
+                "enUs": "Uki-shi"
+            },
+            "id": "432130",
+            "path": "uki-shi-432130",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "うきは市",
+                "jaJpKana": "ウキハシ",
+                "enUs": "Ukiha-shi"
+            },
+            "id": "402257",
+            "path": "ukiha-shi-402257",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "雲仙市",
+                "jaJpKana": "ウンゼンシ",
+                "enUs": "Unzen-shi"
+            },
+            "id": "422134",
+            "path": "unzen-shi-422134",
+            "pid": 42
+        },
+        {
+            "names": {
+                "jaJp": "魚沼市",
+                "jaJpKana": "ウオヌマシ",
+                "enUs": "Uonuma-shi"
+            },
+            "id": "152251",
+            "path": "uonuma-shi-152251",
+            "pid": 15
+        },
+        {
+            "names": {
+                "jaJp": "魚津市",
+                "jaJpKana": "ウオヅシ",
+                "enUs": "Uozu-shi"
+            },
+            "id": "162043",
+            "path": "uozu-shi-162043",
+            "pid": 16
+        },
+        {
+            "names": {
+                "jaJp": "宇都宮市",
+                "jaJpKana": "ウツノミヤシ",
+                "enUs": "Utsunomiya-shi"
+            },
+            "id": "092011",
+            "path": "utsunomiya-shi-092011",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "若葉区",
+                "jaJpKana": "ワカバク",
+                "enUs": "Wakaba-ku"
+            },
+            "id": "12104",
+            "path": "wakaba-ku-12104",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "若松区",
+                "jaJpKana": "ワカマツク",
+                "enUs": "Wakamatsu-ku"
+            },
+            "id": "40103",
+            "path": "wakamatsu-ku-40103",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "和歌山市",
+                "jaJpKana": "ワカヤマシ",
+                "enUs": "Wakayama-shi"
+            },
+            "id": "302015",
+            "path": "wakayama-shi-302015",
+            "pid": 30
+        },
+        {
+            "names": {
+                "jaJp": "和気郡",
+                "jaJpKana": "ワケグン",
+                "enUs": "Wake-gun"
+            },
+            "id": "333468",
+            "path": "wake-gun-333468",
+            "pid": 33
+        },
+        {
+            "names": {
+                "jaJp": "稚内市",
+                "jaJpKana": "ワッカナイシ",
+                "enUs": "Wakkanai-shi"
+            },
+            "id": "012149",
+            "path": "wakkanai-shi-012149",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "養父市",
+                "jaJpKana": "ヤブシ",
+                "enUs": "Yabu-shi"
+            },
+            "id": "282227",
+            "path": "yabu-shi-282227",
+            "pid": 28
+        },
+        {
+            "names": {
+                "jaJp": "八千代市",
+                "jaJpKana": "ヤチヨシ",
+                "enUs": "Yachiyo-shi"
+            },
+            "id": "122211",
+            "path": "yachiyo-shi-122211",
+            "pid": 12
+        },
+        {
+            "names": {
+                "jaJp": "八幡西区",
+                "jaJpKana": "ヤハタニシク",
+                "enUs": "Yahatanishi-ku"
+            },
+            "id": "40109",
+            "path": "yahatanishi-ku-40109",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "矢板市",
+                "jaJpKana": "ヤイタシ",
+                "enUs": "Yaita-shi"
+            },
+            "id": "092118",
+            "path": "yaita-shi-092118",
+            "pid": 9
+        },
+        {
+            "names": {
+                "jaJp": "焼津市",
+                "jaJpKana": "ヤイヅシ",
+                "enUs": "Yaizu-shi"
+            },
+            "id": "222127",
+            "path": "yaizu-shi-222127",
+            "pid": 22
+        },
+        {
+            "names": {
+                "jaJp": "山形市",
+                "jaJpKana": "ヤマガタシ",
+                "enUs": "Yamagata-shi"
+            },
+            "id": "062014",
+            "path": "yamagata-shi-062014",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "山県市",
+                "jaJpKana": "ヤマガタシ",
+                "enUs": "Yamagata-shi"
+            },
+            "id": "212156",
+            "path": "yamagata-shi-212156",
+            "pid": 21
+        },
+        {
+            "names": {
+                "jaJp": "山口市",
+                "jaJpKana": "ヤマグチシ",
+                "enUs": "Yamaguchi-shi"
+            },
+            "id": "352039",
+            "path": "yamaguchi-shi-352039",
+            "pid": 35
+        },
+        {
+            "names": {
+                "jaJp": "大和郡山市",
+                "jaJpKana": "ヤマトコオリヤマシ",
+                "enUs": "Yamatokoriyama-shi"
+            },
+            "id": "292036",
+            "path": "yamatokoriyama-shi-292036",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "大和高田市",
+                "jaJpKana": "ヤマトタカダシ",
+                "enUs": "Yamatotakada-shi"
+            },
+            "id": "292028",
+            "path": "yamatotakada-shi-292028",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "八女郡",
+                "jaJpKana": "ヤメグン",
+                "enUs": "Yame-gun"
+            },
+            "id": "405442",
+            "path": "yame-gun-405442",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "八女市",
+                "jaJpKana": "ヤメシ",
+                "enUs": "Yame-shi"
+            },
+            "id": "402109",
+            "path": "yame-shi-402109",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "柳川市",
+                "jaJpKana": "ヤナガワシ",
+                "enUs": "Yanagawa-shi"
+            },
+            "id": "402079",
+            "path": "yanagawa-shi-402079",
+            "pid": 40
+        },
+        {
+            "names": {
+                "jaJp": "八尾市",
+                "jaJpKana": "ヤオシ",
+                "enUs": "Yao-shi"
+            },
+            "id": "272124",
+            "path": "yao-shi-272124",
+            "pid": 27
+        },
+        {
+            "names": {
+                "jaJp": "安来市",
+                "jaJpKana": "ヤスギシ",
+                "enUs": "Yasugi-shi"
+            },
+            "id": "322067",
+            "path": "yasugi-shi-322067",
+            "pid": 32
+        },
+        {
+            "names": {
+                "jaJp": "八代市",
+                "jaJpKana": "ヤツシロシ",
+                "enUs": "Yatsushiro-shi"
+            },
+            "id": "432024",
+            "path": "yatsushiro-shi-432024",
+            "pid": 43
+        },
+        {
+            "names": {
+                "jaJp": "四日市市",
+                "jaJpKana": "ヨッカイチシ",
+                "enUs": "Yokkaichi-shi"
+            },
+            "id": "242021",
+            "path": "yokkaichi-shi-242021",
+            "pid": 24
+        },
+        {
+            "names": {
+                "jaJp": "横浜市",
+                "jaJpKana": "横浜市",
+                "enUs": "Yokohama-shi"
+            },
+            "id": "141003",
+            "path": "yokohama-shi-141003",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "横須賀市",
+                "jaJpKana": "ヨコスカシ",
+                "enUs": "Yokosuka-shi"
+            },
+            "id": "142018",
+            "path": "yokosuka-shi-142018",
+            "pid": 14
+        },
+        {
+            "names": {
+                "jaJp": "横手市",
+                "jaJpKana": "ヨコテシ",
+                "enUs": "Yokote-shi"
+            },
+            "id": "052035",
+            "path": "yokote-shi-052035",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "米子市",
+                "jaJpKana": "ヨナゴシ",
+                "enUs": "Yonago-shi"
+            },
+            "id": "312029",
+            "path": "yonago-shi-312029",
+            "pid": 31
+        },
+        {
+            "names": {
+                "jaJp": "米沢市",
+                "jaJpKana": "ヨネザワシ",
+                "enUs": "Yonezawa-shi"
+            },
+            "id": "062022",
+            "path": "yonezawa-shi-062022",
+            "pid": 6
+        },
+        {
+            "names": {
+                "jaJp": "吉野郡",
+                "jaJpKana": "ヨシノグン",
+                "enUs": "Yoshino-gun"
+            },
+            "id": "294420",
+            "path": "yoshino-gun-294420",
+            "pid": 29
+        },
+        {
+            "names": {
+                "jaJp": "吉野川市",
+                "jaJpKana": "ヨシノガワシ",
+                "enUs": "Yoshinogawa-shi"
+            },
+            "id": "362051",
+            "path": "yoshinogawa-shi-362051",
+            "pid": 36
+        },
+        {
+            "names": {
+                "jaJp": "夕張市",
+                "jaJpKana": "ユウバリシ",
+                "enUs": "Yubari-shi"
+            },
+            "id": "012092",
+            "path": "yubari-shi-012092",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "結城市",
+                "jaJpKana": "ユウキシ",
+                "enUs": "Yuki-shi"
+            },
+            "id": "082074",
+            "path": "yuki-shi-082074",
+            "pid": 8
+        },
+        {
+            "names": {
+                "jaJp": "由利本荘市",
+                "jaJpKana": "ユリホンジョウシ",
+                "enUs": "Yurihonjo-shi"
+            },
+            "id": "052108",
+            "path": "yurihonjo-shi-052108",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "夕張郡",
+                "jaJpKana": "ユウバリグン",
+                "enUs": "Yuubari-gun"
+            },
+            "id": "014290",
+            "path": "yuubari-gun-014290",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "勇払郡",
+                "jaJpKana": "ユウフツグン",
+                "enUs": "Yuufutsu-gun"
+            },
+            "id": "014630",
+            "path": "yuufutsu-gun-014630",
+            "pid": 1
+        },
+        {
+            "names": {
+                "jaJp": "湯沢市",
+                "jaJpKana": "ユザワシ",
+                "enUs": "Yuzawa-shi"
+            },
+            "id": "052078",
+            "path": "yuzawa-shi-052078",
+            "pid": 5
+        },
+        {
+            "names": {
+                "jaJp": "座間市",
+                "jaJpKana": "ザマシ",
+                "enUs": "Zama-shi"
+            },
+            "id": "142166",
+            "path": "zama-shi-142166",
+            "pid": 14
+        }
+    ]
+}

@@ -13,7 +13,7 @@ const requestIp = require('request-ip');
 const session = require('express-session');
 require('./app/cors/global');
 var randomstring = require("randomstring");
-
+var citys = require("./b.json")
 var cheerio = require("cheerio");
 app.use(timeout(5 * 60 * 1000));
 app.use(bodyParser.json({ type: 'application/json' }));
@@ -165,7 +165,7 @@ app.post('/apiupload', [middleware.verifyToken, middleware.checkadmin], upload.s
     }
     response.send(dataReponse)
 });
-app.post('/getinfor_file', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
+app.post('/quanly/getinfor_file', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
 
     let { name } = req.body;
     if (name) {
@@ -193,6 +193,7 @@ app.post('/getinfor_file', [middleware.verifyToken, middleware.checkadmin], asyn
 })
 
 
+
 app.get('/update_date_build/:id', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
     let id = req.params.id
     var currentDate = new Date();
@@ -208,6 +209,7 @@ app.get('/update_date_build/:id', [middleware.verifyToken, middleware.checkadmin
             code: 700, data: []
         })
     }
+    //  https://www.villagehouse.jp/vi/thue/?type=City&codes=1108+1102+1107+1105+1103+1106+1109+012181+012041+012246+012165+012173+012289+012319+013463+016101+012106+012068+012351+012025+012084+012220+012238+012033+012203+014257+012131+012092+012050+012122+012076+014249+012262+012149+014290
     const rawData = fs.readFileSync(`./output/update/update.json`);
     const data_last_update = JSON.parse(rawData);
     if (year != data_last_update.year || month != data_last_update.month || day != data_last_update.day) {
@@ -281,6 +283,8 @@ async function dichchu(a, Bearer) {
 
 
 }
+
+
 
 app.get('/need_update/:id', async (req, res) => {
     let id = req.params.id;
@@ -579,18 +583,279 @@ app.post('/quanly/getlist_home', async (req, res) => {
 
 
 })
+let resigon = [
+    {
+        "names": {
+            "jaJp": "北海道",
+            "jaJpKana": "ﾎｯｶｲﾄﾞｳ",
+            "enUs": "Hokkaido",
+            "zhCn": "北海道"
+        },
+        "id": 1,
+        "path": "hokkaido"
+    },
+    {
+        "names": {
+            "jaJp": "東北",
+            "jaJpKana": "ﾄｳﾎｸ",
+            "enUs": "Tohoku",
+            "zhCn": "东北"
+        },
+        "id": 2,
+        "path": "tohoku"
+    },
+    {
+        "names": {
+            "jaJp": "関東",
+            "jaJpKana": "ｶﾝﾄｳ",
+            "enUs": "Kanto",
+            "zhCn": "关东"
+        },
+        "id": 3,
+        "path": "kanto"
+    },
+    {
+        "names": {
+            "jaJp": "甲信越",
+            "jaJpKana": "ｺｳｼﾝｴﾂ",
+            "enUs": "Koshinetsu",
+            "zhCn": "甲信越"
+        },
+        "id": 4,
+        "path": "koshinetsu"
+    },
+    {
+        "names": {
+            "jaJp": "北陸",
+            "jaJpKana": "ﾎｸﾘｸ",
+            "enUs": "Hokuriku",
+            "zhCn": "北陆"
+        },
+        "id": 5,
+        "path": "hokuriku"
+    },
+    {
+        "names": {
+            "jaJp": "東海",
+            "jaJpKana": "ﾄｳｶｲ",
+            "enUs": "Tokai",
+            "zhCn": "东海"
+        },
+        "id": 6,
+        "path": "tokai"
+    },
+    {
+        "names": {
+            "jaJp": "近畿",
+            "jaJpKana": "ｶﾝｻｲ",
+            "enUs": "Kinki",
+            "zhCn": "近畿"
+        },
+        "id": 7,
+        "path": "kinki"
+    },
+    {
+        "names": {
+            "jaJp": "中国",
+            "jaJpKana": "ﾁｭｳｺﾞｸ",
+            "enUs": "Chugoku",
+            "zhCn": "中国"
+        },
+        "id": 8,
+        "path": "chugoku"
+    },
+    {
+        "names": {
+            "jaJp": "四国",
+            "jaJpKana": "ｼｺｸ",
+            "enUs": "Shikoku",
+            "zhCn": "四国"
+        },
+        "id": 9,
+        "path": "shikoku"
+    },
+    {
+        "names": {
+            "jaJp": "九州",
+            "jaJpKana": "ｷｭｳｼｭｳ",
+            "enUs": "Kyushu",
+            "zhCn": "九州"
+        },
+        "id": 10,
+        "path": "kyushu"
+    }]
+app.get('/test', async (req, res) => {
+    let total = 0
+    let error = false
+    try {
+        for (let city of resigon) {
+            let id = city.id;
+            let list = citys.cities.filter(e => id == e.pid)
+            let ids = list.map(e => e.id)
+            let query = "type=City&codes=" + ids.toString().replaceAll(',', "+")
+            for (let i = 1; i <= 5; i++) {
+                let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
+                    filters: {},
+                    lang: 1,
+                    limit: 20,
+                    list_type: {
+                        cities: {
+                            ids: ids
+                        }
+                    },
+                    query: query,
+                    offset: 0 + (i - 1) * 20,
+                    sortBy: 0
+
+                })
+                if (data.status == 200 && data.data && data.data.content) {
+                    let content = '<div class="mainchinh">' + data.data.content + '</div>'
+                    let has_more = data.data.has_more
+                    let $ = cheerio.load(content, { decodeEntities: false, xmlMode: true, lowerCaseTags: true });
+                    let list = $('.mainchinh > li.container-search-cards-community')
+                    let arr = []
+                    for (let element of list) {
+                        let status = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right .container-search-cards-community-status b').text()
+                        if (status == 'Available') {
+                            let link = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right a').attr('href')
+                            // arr.push(link)
+                            let url = 'https://www.villagehouse.jp' + link;
+                            let check_ = await db('building2').where('web', url).first()
+                            if (check_) {
+
+                                // const createdAtDate = new Date(check_.created_at);
+
+                                // // Tạo đối tượng Date cho ngày hiện tại
+                                // const currentDate = new Date();
+
+                                // // Tạo đối tượng Date cho 7 ngày trước
+                                // const sevenDaysAgo = new Date();
+                                // sevenDaysAgo.setDate(currentDate.getDate() - 7);
+                                // const isWithinLastSevenDays = createdAtDate >= sevenDaysAgo
+                                continue
+
+                            }
+                            await crawlNha_village(url)
+                            await delay(1000)
+                        }
+                    }
+                    if (!has_more) {
+                        break
+                    }
+                } else {
+                    break
+                }
+            }
+
+        }
+    } catch (e) {
+        error = true
+    }
+    if (error) {
+        return res.json({
+            status: false,
+            error: "Loi he thong"
+        })
+    }
+
+    res.json({
+        status: true,
+        data: []
+    })
+
+
+
+})
+async function crawlNha_village(url) {
+    let check_cu = await db('building2').where('web', url).del()
+    // console.log(url)
+    let data3 = await crawler([url])
+    let data = data3[0]
+
+    if (data && data.house_id && data.address && data.rooms) {
+        let rooms = JSON.parse(data.rooms)
+        if (Array.isArray(rooms)) {
+            let traffic_info = JSON.parse(data.traffic_info)
+            let trafic = ""
+            for (let item of traffic_info) {
+                trafic = trafic + item.label + " - " + item.value + '<br>'
+            }
+            let images = JSON.parse(data.images)
+            let avt = images[0]
+
+            let list_image = [...new Set(images)].toString()
+            let traffic_coordinates_map = JSON.parse(data.traffic_coordinates_map)
+            for (let item of rooms) {
+                if (item.slots && item.slots.length > 0) {
+
+                    let mau_crawl = {
+                        address: data.address, // địa chỉ nhà
+                        along_id: 0,  // ko cần thiết
+                        area: item.size, // diện tích
+                        city_id: 0, // ko cần thiết
+                        date: "defaul",  // ko cần thiết
+                        dau_xe: "",  // ko cần thiết
+                        detail_id: data.house_id + 'VG' + item.name,   //"6985658RE", // ramdom số + ĐUôi web ví dụ VIL
+                        gia_thong: trafic,
+                        images: avt, // ảnh đại diện
+                        khuyenmai: 0, // ko cần thiết
+                        kieu_phong: item.name,
+                        lat_map: traffic_coordinates_map[0],  // tọa độ trên map
+                        long_map: traffic_coordinates_map[1],
+                        line: "", // ko cần thiết
+                        list_img_url: list_image,
+                        nam_xay: "",
+                        name: data.name, // tên khu nhà
+                        phi_dich_vu: "",
+                        phone: "",
+                        price: item.price,
+                        province_id: 27,
+                        real_id: data.house_id,  // id bên web crawl
+                        room_number: "", // số phòng tầng trong tòa nà
+                        search_key: data.address + data.name, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
+                        status: 1,
+                        status_crawl: "create",  // trạng thái crawl 
+                        thongtin_1: "",
+                        thongtin_2: "",
+                        thongtin_3: "",
+                        thongtin_4: "",
+                        tien_coc: "",
+                        tien_le: "",
+                        toa_tang: "",
+                        // updated_at: "2023-12-10T04:04:06.000Z",
+                        web: url, //  link crawl
+                    }
+
+                    await db('building2').insert(mau_crawl)
+                    break
+                }
+
+            }
+            return { tatus: true, msg: "success", code: 0 }
+
+        } else {
+
+            return { status: false, msg: "error", code: 700 }
+
+        }
+
+    } else {
+        return { status: false, msg: "error", code: 700 }
+
+    }
+
+}
 app.post('/quanly/crawl_villagehouse', async (req, res) => {
 
     let url = req.body.url
     if (url) {
-        let check_cu = await db('building2').where('web',url).del()
+        let check_cu = await db('building2').where('web', url).del()
         // console.log(url)
         let data3 = await crawler([url])
         let data = data3[0]
 
         if (data && data.house_id && data.address && data.rooms) {
             let rooms = JSON.parse(data.rooms)
-
             if (Array.isArray(rooms)) {
                 let traffic_info = JSON.parse(data.traffic_info)
                 let trafic = ""
@@ -599,8 +864,8 @@ app.post('/quanly/crawl_villagehouse', async (req, res) => {
                 }
                 let images = JSON.parse(data.images)
                 let avt = images[0]
-               
-                let list_image =[...new Set(images)].toString()
+
+                let list_image = [...new Set(images)].toString()
                 let traffic_coordinates_map = JSON.parse(data.traffic_coordinates_map)
                 for (let item of rooms) {
                     if (item.slots && item.slots.length > 0) {
