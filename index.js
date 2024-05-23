@@ -583,112 +583,13 @@ app.post('/quanly/getlist_home', async (req, res) => {
 
 
 })
-let resigon = [
-    {
-        "names": {
-            "jaJp": "北海道",
-            "jaJpKana": "ﾎｯｶｲﾄﾞｳ",
-            "enUs": "Hokkaido",
-            "zhCn": "北海道"
-        },
-        "id": 1,
-        "path": "hokkaido"
-    },
-    {
-        "names": {
-            "jaJp": "東北",
-            "jaJpKana": "ﾄｳﾎｸ",
-            "enUs": "Tohoku",
-            "zhCn": "东北"
-        },
-        "id": 2,
-        "path": "tohoku"
-    },
-    {
-        "names": {
-            "jaJp": "関東",
-            "jaJpKana": "ｶﾝﾄｳ",
-            "enUs": "Kanto",
-            "zhCn": "关东"
-        },
-        "id": 3,
-        "path": "kanto"
-    },
-    {
-        "names": {
-            "jaJp": "甲信越",
-            "jaJpKana": "ｺｳｼﾝｴﾂ",
-            "enUs": "Koshinetsu",
-            "zhCn": "甲信越"
-        },
-        "id": 4,
-        "path": "koshinetsu"
-    },
-    {
-        "names": {
-            "jaJp": "北陸",
-            "jaJpKana": "ﾎｸﾘｸ",
-            "enUs": "Hokuriku",
-            "zhCn": "北陆"
-        },
-        "id": 5,
-        "path": "hokuriku"
-    },
-    {
-        "names": {
-            "jaJp": "東海",
-            "jaJpKana": "ﾄｳｶｲ",
-            "enUs": "Tokai",
-            "zhCn": "东海"
-        },
-        "id": 6,
-        "path": "tokai"
-    },
-    {
-        "names": {
-            "jaJp": "近畿",
-            "jaJpKana": "ｶﾝｻｲ",
-            "enUs": "Kinki",
-            "zhCn": "近畿"
-        },
-        "id": 7,
-        "path": "kinki"
-    },
-    {
-        "names": {
-            "jaJp": "中国",
-            "jaJpKana": "ﾁｭｳｺﾞｸ",
-            "enUs": "Chugoku",
-            "zhCn": "中国"
-        },
-        "id": 8,
-        "path": "chugoku"
-    },
-    {
-        "names": {
-            "jaJp": "四国",
-            "jaJpKana": "ｼｺｸ",
-            "enUs": "Shikoku",
-            "zhCn": "四国"
-        },
-        "id": 9,
-        "path": "shikoku"
-    },
-    {
-        "names": {
-            "jaJp": "九州",
-            "jaJpKana": "ｷｭｳｼｭｳ",
-            "enUs": "Kyushu",
-            "zhCn": "九州"
-        },
-        "id": 10,
-        "path": "kyushu"
-    }]
+let resigon = require('./json.json')
 app.get('/quanly/test', async (req, res) => {
     let total = 0
     let error = false
     try {
-        for (let city of resigon) {
+        for (let city of resigon.prefectures) {
+            
             let id = city.id;
             let list = citys.cities.filter(e => id == e.pid)
             let ids = list.map(e => e.id)
