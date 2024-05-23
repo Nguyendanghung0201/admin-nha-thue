@@ -863,8 +863,8 @@ async function crawler3(urls) {
 async function crawlNha_village(url) {
     let check_cu = await db('building2').where('web', url).del()
     // console.log(url)
-    let data3 = await crawler3(url)
-    let data = data3[0]
+    let data = await crawler3(url)
+
 
     if (data && data.house_id && data.address && data.rooms) {
         let rooms = JSON.parse(data.rooms)
