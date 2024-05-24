@@ -287,7 +287,7 @@ async function dichchu(a, Bearer) {
 
 app.get('/quanly/update_real', async (req, res) => {
     // let { cookie } = req.body;
-    let list = await db('building2').select('id','name','web','status','detail_id','real_id').where('thongtin_1', 'realpro').andWhereRaw('created_at < NOW() - INTERVAL 3 DAY')
+    let list = await db('building2').select('id', 'name', 'web', 'status', 'detail_id', 'real_id').where('thongtin_1', 'realpro').andWhereRaw('created_at < NOW() - INTERVAL 3 DAY')
     res.json({
         status: true,
         msg: "success",
@@ -951,7 +951,7 @@ async function crawlNha_village(url) {
 }
 
 //https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/sapporo-shi-011002/sakuradai-1063/ 
-app.get('/tesst2', async (req, res) => {
+app.get('/quanly/tesst2', async (req, res) => {
     // let list = citys.cities.filter(e => 23 == e.pid)
     // let ids = list.map(e => e.id)
     // let ids2 = [ids[0], ids[1]]
@@ -971,10 +971,29 @@ app.get('/tesst2', async (req, res) => {
     //     sortBy: 0
 
     // })
-    let data = await crawler3('https://www.villagehouse.jp/vi/thue/hokkaido/hokkaido/sapporo-shi-011002/sakuradai-1063/')
-    res.send(
-        data
-    )
+
+    let list = await db("building2").select('id', 'search_key').where('thongtin_1', 'village')
+    for (let item of list) {
+        let token = await axios.get('https://edge.microsoft.com/translate/auth', {
+            headers: { "content-type": "text/plain" }
+        })
+        let Bearer = ''
+        if (token.status == 200) {
+            Bearer = token.data
+        }
+        let arr = [{
+            Text: item.search_key
+        }]
+
+
+        let b = await dichchu(arr, Bearer)
+        let new_search = b[0].translations[0].text
+        await db('building2').update('search_key', item.search_key + new_search).where('id', item.id)
+
+    }
+    res.json({
+        kq: 'ok'
+    })
 })
 app.post('/quanly/crawl_villagehouse', async (req, res) => {
 
