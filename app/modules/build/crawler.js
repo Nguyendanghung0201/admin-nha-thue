@@ -218,7 +218,7 @@ const crawler = async (urls) => {
         },
 
         // Comment this option to scrape the full website.
-        maxRequestsPerCrawl: 20,
+        maxRequestsPerCrawl: 1500,
 
         // On error, retry each page at most once.
         maxRequestRetries: 1,
