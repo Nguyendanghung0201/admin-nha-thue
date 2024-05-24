@@ -597,7 +597,9 @@ app.get('/quanly/test', async (req, res) => {
             let list = citys.cities.filter(e => id == e.pid)
             let ids = list.map(e => e.id)
             let query = "type=City&codes=" + ids.toString().replaceAll(',', "+")
+            console.log('hh ',id)
             for (let i = 1; i <= 5; i++) {
+                // https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent
                 let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
                     filters: {},
                     lang: 0,
@@ -620,7 +622,7 @@ app.get('/quanly/test', async (req, res) => {
                     let arr = []
                     for (let element of list) {
                         let status = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right .container-search-cards-community-status b').text()
-                        if (status == 'Available') {
+                        if (status == '空室あり') {
                             let link = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right a').attr('href')
                             // arr.push(link)
                             let url = 'https://www.villagehouse.jp' + link;
