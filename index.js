@@ -285,6 +285,16 @@ async function dichchu(a, Bearer) {
 
 }
 
+app.get('/quanly/update_real', async (req, res) => {
+    // let { cookie } = req.body;
+    let list = await db('building2').where('thongtin_1', 'realpro').andWhere('create_at', '<', 'NOW() - INTERVAL 3 DAY')
+    res.json({
+        status: true,
+        msg: "success",
+        code: 0,
+        data: list
+    })
+})
 
 
 app.get('/need_update/:id', async (req, res) => {
@@ -344,6 +354,7 @@ app.get('/quanly/checkgetdetail/:id', async (req, res) => {
     }
 })
 
+
 app.post('/quanly/getdetail', async (req, res) => {
     try {
         let { url, cookie, id } = req.body;
@@ -377,12 +388,11 @@ app.post('/quanly/getdetail', async (req, res) => {
         })
 
         if (html.data === 'この部屋の情報は入居中であるか公開されていません。') {
-            // await db('building2').delete().where('detail_id', id)
+            await db('building2').where('detail_id', id).del()
             return res.json({
                 status: true,
                 data: [],
                 delete: true,
-
                 code: 0,
                 pass: true
 
@@ -591,15 +601,21 @@ app.get('/quanly/test', async (req, res) => {
     let count = 0
     console.log('bat dau crawl ')
     try {
+        res.json({
+            status: true,
+            msg: "success",
+            code: 0,
+            data: [],
+        })
         for (let city of resigon.prefectures) {
 
             let id = city.id;
             let list = citys.cities.filter(e => id == e.pid)
             let ids = list.map(e => e.id)
             let query = "type=City&codes=" + ids.toString().replaceAll(',', "+")
-            console.log('hh ',id)
+            console.log('hh ', id)
             for (let i = 1; i <= 5; i++) {
-                // https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent
+                //
                 let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
                     filters: {},
                     lang: 0,
@@ -666,19 +682,6 @@ app.get('/quanly/test', async (req, res) => {
         error = true
         console.log('looi  ', e)
     }
-    if (error) {
-        return res.json({
-            status: false,
-            error: "Loi he thong"
-        })
-    }
-
-    res.json({
-        status: true,
-        data: []
-    })
-
-
 
 })
 async function crawler3(urls) {
