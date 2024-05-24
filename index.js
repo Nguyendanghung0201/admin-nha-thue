@@ -594,6 +594,7 @@ app.post('/quanly/getlist_home', async (req, res) => {
 
 
 })
+let Bearer_village = ""
 let resigon = require('./json.json')
 app.get('/quanly/test', async (req, res) => {
     let total = 0
@@ -607,6 +608,13 @@ app.get('/quanly/test', async (req, res) => {
             code: 0,
             data: [],
         })
+        let token = await axios.get('https://edge.microsoft.com/translate/auth', {
+            headers: { "content-type": "text/plain" }
+        })
+
+        if (token.status == 200) {
+            Bearer_village = token.data
+        }
         for (let city of resigon.prefectures) {
 
             let id = city.id;
@@ -891,7 +899,12 @@ async function crawlNha_village(url) {
             let traffic_coordinates_map = JSON.parse(data.traffic_coordinates_map)
             for (let item of rooms) {
                 if (item.slots && item.slots.length > 0) {
-
+                    let a = data.address + data.name + trafic
+                    let arr = [{
+                        Text: a
+                    }]
+                    let b = await dichchu(arr, Bearer_village)
+                    let new_search = b[0].translations[0].text
                     let mau_crawl = {
                         address: data.address, // địa chỉ nhà
                         along_id: 0,  // ko cần thiết
@@ -916,7 +929,7 @@ async function crawlNha_village(url) {
                         province_id: 27,
                         real_id: data.house_id,  // id bên web crawl
                         room_number: "", // số phòng tầng trong tòa nà
-                        search_key: data.address + data.name + trafic, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
+                        search_key: a + new_search, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
                         status: 1,
                         status_crawl: "create",  // trạng thái crawl 
                         thongtin_1: "village",
