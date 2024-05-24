@@ -287,7 +287,7 @@ async function dichchu(a, Bearer) {
 
 app.get('/quanly/update_real', async (req, res) => {
     // let { cookie } = req.body;
-    let list = await db('building2').where('thongtin_1', 'realpro').andWhere('created_at', '<', 'NOW() - INTERVAL 3 DAY')
+    let list = await db('building2').where('thongtin_1', 'realpro').andWhereRaw('created_at < NOW() - INTERVAL 3 DAY')
     res.json({
         status: true,
         msg: "success",
