@@ -588,6 +588,7 @@ let resigon = require('./json.json')
 app.get('/quanly/test', async (req, res) => {
     let total = 0
     let error = false
+    let count = 0
     try {
         for (let city of resigon.prefectures) {
 
@@ -598,7 +599,7 @@ app.get('/quanly/test', async (req, res) => {
             for (let i = 1; i <= 5; i++) {
                 let data = await axios.post('https://www.villagehouse.jp/vhmserverapi.PropertyListService/GetListContent', {
                     filters: {},
-                    lang: 1,
+                    lang: 0,
                     limit: 20,
                     list_type: {
                         cities: {
@@ -639,6 +640,9 @@ app.get('/quanly/test', async (req, res) => {
                             }
                             let result = await crawlNha_village(url)
                             console.log('ressult ', result)
+                            if (result.code == 700) {
+                                count++
+                            }
                             await delay(1000)
                         }
                     }
@@ -648,6 +652,9 @@ app.get('/quanly/test', async (req, res) => {
                 } else {
                     break
                 }
+            }
+            if (count >= 2) {
+                break
             }
 
 
@@ -673,10 +680,7 @@ app.get('/quanly/test', async (req, res) => {
 })
 async function crawler3(urls) {
     let result = await axios.get(urls)
-
-
     let $ = cheerio.load(result.data, { decodeEntities: false, xmlMode: true, lowerCaseTags: true });
-
     // Extract data from the page using cheerio.
     const house_id = $('.container-instance.container-showcase').attr(
         'data-property-id',
@@ -906,10 +910,10 @@ async function crawlNha_village(url) {
                         province_id: 27,
                         real_id: data.house_id,  // id bên web crawl
                         room_number: "", // số phòng tầng trong tòa nà
-                        search_key: data.address + data.name, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
+                        search_key: data.address + data.name + trafic, // tổng hợp địa chỉ , giao thông tên tòa nha để tìm key search
                         status: 1,
                         status_crawl: "create",  // trạng thái crawl 
-                        thongtin_1: "",
+                        thongtin_1: "village",
                         thongtin_2: "",
                         thongtin_3: "",
                         thongtin_4: "",
