@@ -736,7 +736,7 @@ async function crawler3(urls) {
             .get(),
     );
     const traffic_map = $(
-        '.container-information-traffic-right img',
+        '.container-information-traffic-right-map img',
     ).attr('src');
     console.log('ajajj ', traffic_map)
     const traffic_coordinates_map = JSON.stringify(
