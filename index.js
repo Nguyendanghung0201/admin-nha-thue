@@ -740,7 +740,7 @@ async function crawler3(urls) {
     const traffic_map2 = $('.container-information-traffic-right-map img').attr('data-src');
     console.log('ajajj ',house_id, traffic_map,traffic_map2)
     const traffic_coordinates_map = JSON.stringify(
-        new URL(traffic_map).searchParams.get('center')?.split(','),
+        new URL(traffic_map2).searchParams.get('center')?.split(','),
     );
 
     // house information
