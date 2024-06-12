@@ -665,6 +665,7 @@ app.get('/quanly/test', async (req, res) => {
                                 continue
 
                             }
+                            console.log('crawl nha ',url)
                             let result = await crawlNha_village(url)
                             console.log('ressult ', result)
                             if (result.code == 700) {
