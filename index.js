@@ -735,9 +735,10 @@ async function crawler3(urls) {
             })
             .get(),
     );
-     let check = $('.container-information-traffic-right-map').text()
+   
     const traffic_map = $('.container-information-traffic-right-map img').attr('src');
-    console.log('ajajj ',house_id,check, traffic_map)
+    const traffic_map2 = $('.container-information-traffic-right-map img').attr('data-src');
+    console.log('ajajj ',house_id, traffic_map,traffic_map2)
     const traffic_coordinates_map = JSON.stringify(
         new URL(traffic_map).searchParams.get('center')?.split(','),
     );
