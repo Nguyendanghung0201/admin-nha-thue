@@ -650,7 +650,7 @@ app.get('/quanly/test', async (req, res) => {
                             let link = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right a').attr('href')
                             // arr.push(link)
                             let url = 'https://www.villagehouse.jp' + link;
-                            let check_ = await db('building2').where('web', url).first()
+                            let check_ =  await db('building2').where('web', url).first()
                             if (check_) {
                                 console.log('da them')
                                 // const createdAtDate = new Date(check_.created_at);
@@ -665,13 +665,14 @@ app.get('/quanly/test', async (req, res) => {
                                 continue
 
                             }
-                            console.log('crawl nha ',url)
+                           
                             let result = await crawlNha_village(url)
-                            console.log('ressult ', result)
+                          
                             if (result.code == 700) {
                                 count++
                             }
                             await delay(1000)
+                          
                         }
                     }
                     if (!has_more) {
@@ -712,7 +713,7 @@ async function crawler3(urls) {
             .map((_, elem1) => {
                 return $(elem1)
                     .find('img')
-                    .map((__, elem2) => $(elem2).attr('src'))
+                    .map((__, elem2) => $(elem2).attr('data-src'))
                     .get();
             })
             .get(),
@@ -735,12 +736,12 @@ async function crawler3(urls) {
             })
             .get(),
     );
-   
-    const traffic_map = $('.container-information-traffic-right-map img').attr('src');
-    const traffic_map2 = $('.container-information-traffic-right-map img').attr('data-src');
-    console.log('ajajj ',house_id, traffic_map,traffic_map2)
+
+    const traffic_map = $('.container-information-traffic-right-map img').attr('data-src');
+    // const traffic_map2 = $('.container-information-traffic-right-map img').attr('data-src');
+
     const traffic_coordinates_map = JSON.stringify(
-        new URL(traffic_map2).searchParams.get('center')?.split(','),
+        new URL(traffic_map).searchParams.get('center')?.split(','),
     );
 
     // house information
@@ -943,7 +944,7 @@ async function crawlNha_village(url) {
                         // updated_at: "2023-12-10T04:04:06.000Z",
                         web: url, //  link crawl
                     }
-                    console.log('them moi vao nha')
+                 
                     await db('building2').insert(mau_crawl)
                     break
                 }
