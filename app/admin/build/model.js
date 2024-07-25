@@ -12,7 +12,7 @@ exports.delete = async function (query) {
 
 
 exports.add = async function (query) {
-   let detail= await buildRes.insert_build(query.list)
+    let detail = await buildRes.insert_build(query.list)
     return {
         status: true,
         msg: "success",
@@ -44,14 +44,20 @@ exports.uploadfile = async function (query) {
 }
 
 exports.getbuilding = async function (query) {
-    let list =[]
-    if(query.type ==1){
+    let list = []
+    if (query.type == 1) {
         //  nhà chưa cho thuê
         let key = 'realpro'
-         list = await  buildRes.get_list_nha_chua_thue(query.page ,key)
-    }else{
-        let key = 'village'
-        list = await  buildRes.get_list_nha_chua_thue(query.page ,key)
+        list = await buildRes.get_list_nha_chua_thue(query.page, key)
+    } else {
+        if (query.type == 2) {
+            let key = 'samuraichintai'
+            list = await buildRes.get_list_nha_chua_thue(query.page, key)
+        } else {
+            let key = 'village'
+            list = await buildRes.get_list_nha_chua_thue(query.page, key)
+        }
+
     }
     return {
         status: true,
