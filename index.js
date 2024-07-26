@@ -600,7 +600,7 @@ app.get('/quanly/test', async (req, res) => {
     let total = 0
     let error = false
     let count = 0
-    console.log('bat dau crawl ')
+ 
     try {
         res.json({
             status: true,
