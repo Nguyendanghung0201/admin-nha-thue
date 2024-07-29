@@ -33,7 +33,7 @@ const multer = require('multer');
 const crawler = require('./app/modules/build/crawler');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname, '/public/quanly/uploads'))
+        cb(null, path.join(__dirname, '/public/admin/uploads'))
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + file.originalname
