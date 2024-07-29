@@ -41,6 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 output/
+public/quanly/uploads/
 storage/
 jspm_packages/
 
