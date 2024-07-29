@@ -33,7 +33,7 @@ const multer = require('multer');
 const crawler = require('./app/modules/build/crawler');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname, '/public/uploads'))
+        cb(null, path.join(__dirname, '/public/quanly/uploads'))
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + file.originalname
@@ -144,7 +144,7 @@ app.all('/quanly/admin/:act', [middleware.verifyToken, middleware.checkadmin], a
     }
     response.send(dataReponse)
 });
-app.post('/apiupload', [middleware.verifyToken, middleware.checkadmin], upload.single('single'), async function (request, response) {
+app.post('/quanly/apiupload', [middleware.verifyToken, middleware.checkadmin], upload.single('single'), async function (request, response) {
     let dataReponse;
 
     try {
@@ -152,7 +152,7 @@ app.post('/apiupload', [middleware.verifyToken, middleware.checkadmin], upload.s
         if (!file) {
             return dataReponse = { status: false, msg: "error", code: 700, data: 'sys' };
         }
-        let url = 'http://157.230.27.124:2021/uploads/';
+        let url = 'https://samuraichintai.com/quanly/uploads/';
 
         dataReponse = {
             status: true,
@@ -600,7 +600,7 @@ app.get('/quanly/test', async (req, res) => {
     let total = 0
     let error = false
     let count = 0
- 
+
     try {
         res.json({
             status: true,
@@ -650,7 +650,7 @@ app.get('/quanly/test', async (req, res) => {
                             let link = $(element).find('.container-search-cards-community-wrap .container-search-cards-community-right a').attr('href')
                             // arr.push(link)
                             let url = 'https://www.villagehouse.jp' + link;
-                            let check_ =  await db('building2').where('web', url).first()
+                            let check_ = await db('building2').where('web', url).first()
                             if (check_) {
                                 console.log('da them')
                                 // const createdAtDate = new Date(check_.created_at);
@@ -665,14 +665,14 @@ app.get('/quanly/test', async (req, res) => {
                                 continue
 
                             }
-                           
+
                             let result = await crawlNha_village(url)
-                          
+
                             if (result.code == 700) {
                                 count++
                             }
                             await delay(1000)
-                          
+
                         }
                     }
                     if (!has_more) {
@@ -944,7 +944,7 @@ async function crawlNha_village(url) {
                         // updated_at: "2023-12-10T04:04:06.000Z",
                         web: url, //  link crawl
                     }
-                 
+
                     await db('building2').insert(mau_crawl)
                     break
                 }
