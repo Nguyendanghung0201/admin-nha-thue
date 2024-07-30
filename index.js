@@ -36,7 +36,7 @@ const storage = multer.diskStorage({
         cb(null, path.join(__dirname, '/public/admin/uploads'))
     },
     filename: function (req, file, cb) {
-        const uniqueSuffix = Date.now() + '-' + file.originalname
+        const uniqueSuffix =""+ Date.now() 
         cb(null, uniqueSuffix)
     }
 })
@@ -158,7 +158,7 @@ app.post('/quanly/apiupload', [middleware.verifyToken, middleware.checkadmin], u
             status: true,
             msg: "success",
             code: 0,
-            data: url + file.filename
+            data: url 
         }
     } catch (sys) {
         console.log(sys)
