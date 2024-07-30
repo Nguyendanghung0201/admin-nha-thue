@@ -156,7 +156,7 @@ app.post('/quanly/apiupload', [middleware.verifyToken, middleware.checkadmin], u
         if (!file) {
             return dataReponse = { status: false, msg: "error", code: 700, data: 'sys' };
         }
-        let url = 'https://samuraichintai.com/quanly/uploads/' + req.file.filename
+        let url = 'https://samuraichintai.com/quanly/uploads/' + request.file.filename
 
         dataReponse = {
             status: true,
