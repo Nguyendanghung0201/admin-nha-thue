@@ -14,7 +14,7 @@ const requestIp = require('request-ip');
 const session = require('express-session');
 require('./app/cors/global');
 var randomstring = require("randomstring");
-var citys = require("./b.json")
+var citys = require("./city.json")
 var cheerio = require("cheerio");
 app.use(timeout(5 * 60 * 1000));
 app.use(bodyParser.json({ type: 'application/json' }));
