@@ -164,6 +164,7 @@ app.post('/quanly/apiupload', [middleware.verifyToken, middleware.checkadmin], u
         console.log(sys)
         dataReponse = { status: false, msg: "error", code: 700, data: sys };
     }
+    dataReponse = JSON.stringify(dataReponse)
     response.send(dataReponse)
 });
 app.post('/quanly/getinfor_file', [middleware.verifyToken, middleware.checkadmin], async (req, res) => {
