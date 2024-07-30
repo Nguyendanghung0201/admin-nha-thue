@@ -33,7 +33,7 @@ const multer = require('multer');
 const crawler = require('./app/modules/build/crawler');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname, '/public/admin/uploads'))
+        cb(null, path.join(__dirname, '/public/admin/quanly/uploads'))
     },
     filename: function (req, file, cb) {
         const fileName = file.originalname
@@ -156,7 +156,7 @@ app.post('/quanly/apiupload', [middleware.verifyToken, middleware.checkadmin], u
         if (!file) {
             return dataReponse = { status: false, msg: "error", code: 700, data: 'sys' };
         }
-        let url = 'https://samuraichintai.com/quanly/uploads/';
+        let url = 'https://samuraichintai.com/quanly/uploads/' + req.file.filename
 
         dataReponse = {
             status: true,
